@@ -62,8 +62,14 @@ const StyledPostList = styled.ul`
   list-style: none;
   display: grid;
   justify-items: center;
-  grid-gap: 2em;
+  grid-gap: var(--size-600);
   grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
+
+  @media screen and (max-width: 500px) {
+    & {
+      display: block;
+    }
+  }
 `;
 
 const StyledPostListItem = styled.li`
@@ -77,6 +83,12 @@ const StyledPostListItem = styled.li`
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  @media screen and (max-width: 500px) {
+    & {
+      margin-top: var(--size-600);
+    }
   }
 `;
 

@@ -107,6 +107,7 @@ body {
   background-attachment: fixed;
   background-color: #d9e4f5;
   background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+
 }
 
 h1,
