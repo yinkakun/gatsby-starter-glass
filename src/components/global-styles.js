@@ -120,12 +120,11 @@ h4 {
 h1,
 h2,
 h3 {
-  font-weight: 400;
+  font-weight: 700;
 }
 
 h1 {
   font-size: var(--size-800);
-  font-weight: 700;
 }
 
 h2 {
