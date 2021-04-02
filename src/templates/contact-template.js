@@ -42,8 +42,6 @@ const ContactForm = () => {
       <NetlifyFormProvider {...netlify}>
         <NetlifyFormComponent onSubmit={handleSubmit(onSubmit)}>
           <Honeypot />
-          {netlify.success && <p>Thanks for contacting me</p>}
-          {netlify.error && <p>Something went wrong, please try again later</p>}
 
           <FormGroup>
             <label htmlFor="name">Name</label>
@@ -89,6 +87,17 @@ const ContactForm = () => {
               <FormErrorMessage>{errors.message.message}</FormErrorMessage>
             )}
           </FormGroup>
+
+          <FormFeedbackWrapper>
+            {netlify.success && (
+              <FormSucessFeedback>Message sent succesfully</FormSucessFeedback>
+            )}
+            {netlify.error && (
+              <FormErrorFeedback>
+                Something went wrong, please try again.
+              </FormErrorFeedback>
+            )}
+          </FormFeedbackWrapper>
 
           <FormButton type="submit">Send Message</FormButton>
         </NetlifyFormComponent>
@@ -149,7 +158,6 @@ const FormGroup = styled.div`
   & label {
     margin-top: 1rem;
     text-transform: capitalize;
-    opacity: 0.8;
     font-size: var(--size-400);
   }
 
@@ -160,10 +168,8 @@ const FormGroup = styled.div`
     font-family: inherit;
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
-    background-color: #fff5f8;
     background-color: #e4b8c7;
     border: 2px solid transparent;
-    /* border: 1px solid #37292c; */
   }
 
   & textarea:focus,
@@ -177,6 +183,20 @@ const FormErrorMessage = styled.span`
   color: red;
   font-size: var(--size-300);
   opacity: 0.7;
+`;
+
+const FormFeedbackWrapper = styled.div`
+  margin-top: 1rem;
+  text-transform: uppercase;
+  font-size: var(--size-300);
+`;
+
+const FormSucessFeedback = styled.span`
+  color: green;
+`;
+
+const FormErrorFeedback = styled.span`
+  color: red;
 `;
 
 const FormButton = styled.button`
