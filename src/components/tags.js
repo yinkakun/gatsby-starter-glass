@@ -11,7 +11,7 @@ const toKebabCase = (str) => {
 
 const Tags = ({ tags }) => {
   return (
-    <PostListTagsContainer>
+    <div>
       {tags &&
         tags.map((tag) => {
           return (
@@ -20,28 +20,24 @@ const Tags = ({ tags }) => {
             </Tag>
           );
         })}
-    </PostListTagsContainer>
+    </div>
   );
 };
 
 export default Tags;
-
-const PostListTagsContainer = styled.div`
-  margin-top: 1rem;
-`;
 
 const Tag = styled.span`
   margin-right: 0.6rem;
   margin-bottom: 0.6rem;
   text-transform: uppercase;
   font-size: var(--size-300);
-  opacity: 0.7;
 
   & a {
+    position: relative;
+    z-index: 2;
     background-color: rgba(255, 255, 255, 0.4);
     text-decoration: none;
     color: inherit;
-    position: relative;
     padding: 0.2rem 0.6rem;
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.8);

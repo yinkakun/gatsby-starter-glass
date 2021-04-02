@@ -57,7 +57,7 @@ const HeaderNavListItem = ({ children }) => {
 };
 
 const StyledHeader = styled.header`
-  padding-top: 2rem;
+  padding-top: var(--size-300);
 `;
 
 const HeaderWrapper = styled(Container)`

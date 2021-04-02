@@ -125,6 +125,7 @@ h3 {
 
 h1 {
   font-size: var(--size-800);
+  font-weight: 700;
 }
 
 h2 {
@@ -143,16 +144,14 @@ p {
   background: rgba(255, 255, 255, 0.9);
 }
 
-p,
-li {
-  max-width: 60ch;
+p, li {
+    max-width: none;
 }
 
-h1,
-h2,
-h3 {
-  max-width: 25ch;
+.gatsby-resp-image-wrapper {
+    margin-left: 0 !important;
 }
+
 
 `;
 
