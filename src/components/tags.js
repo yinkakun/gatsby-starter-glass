@@ -35,15 +35,14 @@ const Tag = styled.span`
   & a {
     position: relative;
     z-index: 2;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
     color: inherit;
     padding: 0.2rem 0.6rem;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 1);
   }
 
   & a:hover {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
   }
 `;

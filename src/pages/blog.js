@@ -36,7 +36,6 @@ const HeaderWrapper = styled.div`
   flex-direction: column;
   margin-top: var(--size-900);
   margin-bottom: var(--size-700);
-  text-align: center;
 
   h1 {
     max-width: none;
