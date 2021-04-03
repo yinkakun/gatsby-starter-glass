@@ -11,6 +11,7 @@ const StyledLink = styled(Link)`
   border-radius: 0px;
   border: 1px solid rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
+  border-radius: 4px;
 `;
 
 export default StyledLink;
