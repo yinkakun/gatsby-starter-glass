@@ -40,6 +40,7 @@ const Tag = styled.span`
     color: inherit;
     padding: 0.2rem 0.6rem;
     border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 4px;
   }
 
   & a:hover {
