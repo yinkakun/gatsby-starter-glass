@@ -23,7 +23,7 @@ Syntax highlighting via PrismJS
 git clone https://github.com/yinkakun/gatsby-starter-glass
 
 # 2. Navigate into repository
-cd gatsby-frosted-blog
+cd gatsby-starter-glass
 
 # 3. Install the dependencies
 yarn install
