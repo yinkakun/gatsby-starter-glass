@@ -5,7 +5,7 @@ module.exports = {
       name: `Yinka Adedire`,
       summary: `Self-taught front-end web dev. JAMStack.`,
     },
-    description: `Принятие решений, изменение собственных майндсетов, психология, продуктовый менеджмент, предпринимательство, разные инсайты, работающие системы и что-нибудь наверняка еще`,
+    description: `TEST`,
     siteUrl: `https://gatsbyglass.netlify.app`,
     social: {
       twitter: `yinkakun`,
