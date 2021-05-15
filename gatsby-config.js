@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Glass`,
+    title: `Denis Kuznetsov`,
     author: {
       name: `Yinka Adedire`,
       summary: `Self-taught front-end web dev. JAMStack.`,
     },
-    description: `A minimal & beautiful gatsby personal blog starter with a nice glassmorphism UI.`,
+    description: `Принятие решений, изменение собственных майндсетов, психология, продуктовый менеджмент, предпринимательство, разные инсайты, работающие системы и что-нибудь наверняка еще`,
     siteUrl: `https://gatsbyglass.netlify.app`,
     social: {
       twitter: `yinkakun`,
