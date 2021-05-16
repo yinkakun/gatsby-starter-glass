@@ -5,4 +5,3 @@ title: 'Gatsby Starter Glass'
 
 # 
 
-.

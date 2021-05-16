@@ -1,54 +1,23 @@
 ---
-title: Mornings are for coffee and contemplation
-date: 2020-03-01
-tags: [stranger things, tv series]
-social_image: '/media/rocket.jpg'
-description: This is a custom description for SEO and Open Graph purposes. If it's not provided, it defaults to auto-generated excerpts of the page content.
+title: Теория минной проволоки
+date: 2020-10-10
+tags: [psychology, mindset]
 ---
 
-Mornings are for coffee and contemplation. If we’re both going crazy, then we’ll go crazy together, right? I need my paddles! Yeah, I want a date with Bo Derek. We all want things. Just wait till we tell Will that Jennifer Hayes was crying at his funeral.You shouldn't like things because people tell you you're supposed to. You’re right. You are a freak…. Who would you rather be friends with: Bowie or Kenny Rogers? You’re going to be home by 8, listening to the Talking Heads and reading Vonnegut or something. That sounds like a nice night.If we’re both going crazy, then we’ll go crazy together, right? Why do we even need weapons anyway? We have her.
+Теория минной проволоки
 
-You're an idiot, Steve Harrington. You're beautiful, Nancy Wheeler. Let’s burn that lab to the ground. Bitchin' You shouldn't like things because people tell you you're supposed to.Friends don't lie. It's just, sometimes... people don't really say what they're really thinking. But when you capture the right moment, it says more. You’re going to take out the demigorgon with a slingshot? Mistakes have been made. He’s a sensitive kid. Lonnie used to say he was queer. Called him a fag. Is he? He’s missing, is what he is!
+Одна женщина как-то увидела красивые фоточки из Австралии и решила во что бы то ни стало туда съездить. В один прекрасный миг все звезды сошлись — появилась реальная возможность для путешествия, но она отложила поездку из-за сложной ситуации на работе. Она часто думала про Сидней и Мельбурн, листала разные блоги, но время летело незаметно, годы превращались в пятилетия, и в один прекрасный момент она оказалась разбита чем-то вроде артрита — практически перестала ходить и лишилась возможности для каких-то далеких путешествий в будущем.
 
-You’re going to be home by 8, listening to the Talking Heads and reading Vonnegut or something. That sounds like a nice night. I need my paddles! If we’re both going crazy, then we’ll go crazy together, right? If anyone asks where I am, I've left the country.
+В какой момент она «сделала выбор» не ездить в Австралию? Делала ли она его каждый день? Или не делала никогда? Наверняка она и представить не могла, что ее первое решение отложить поездку, в конце концов станет единственным и постоянным. 
 
-## Image
+Каждый день мы сталкиваемся с распространенной штукой, которая в принятии решений называется автопилотом. Такое неосознанное следование какому-то решению, которое было принято когда-то в прошлом, но спустя много времени, в повседневности, человек исходит из ощущения, что оно как будто безальтернативно, и не существует никакой возможности его пересмотреть. 
 
-![Rocket launch](/media/rocket.jpg)
+Работа давно перестала приносить удовольствие, но он все равно продолжает ходить на нее, объясняя себе это тем, что нужно еще немножко потерпеть. Бизнес по созданию сайтов уже давно устарел и бесперспективен, но он все равно отчаянно ищет каких-то клиентов вокруг себя — а вдруг все снова станет по-прежнему? Отношения в паре давно уже не те и продолжают деградировать, но он по-прежнему живет с мыслями о счастливой семье в большом особняке на опушке леса, и решает просто посмотреть на то что будет дальше.
 
-## Header
+По сути дела, автопилот — это какое-то странное и очень знакомое (по крайней мере мне) состояние, в которое мы то и дело попадаем, и в котором перестаем воспринимать какие-то явные сигналы о том, что изначальное решение уже давно пора пересматривать. Самое хреновое, что в этом состоянии мы упускаем кучу новых возможностей, которые постоянно появляются, но тупо игнорируются.
 
-Solebat cetera infelix duorum gravidi possit, et nec, est inpia mentique, consistere quae. Amplexus uror, pars pars aevo curas Cinyreius
-pennis sacrum inpulsaque o cunctos Oleniden peragit, se Athamas inmaduit
-transierant. Relicta significat rubenti potest.
+Один из самых крутых способов выключить автопилот и взять управление на себя — натянуть в своем воображении что-то типа минной проволоки (или растяжки). При наступлении каких-то событий, которые определены заранее, они задевают проволоку — происходит серия мощнейших взрывов, которые привлекают наше внимание. Если очень просто, то что-то типа «если произойдет вот это, это и это, это будет сигналом, что пора менять решение».
 
-Illa tibi cruentum adpulit pallent. Una dolorem quaque. Pars parvi, mihi quae
-Lyciaeque legit. Hic vitae felix illi laudatis? Et caelum, precatur nec pectora,
-Phoebi volucris moveo.
+Изменения, которые происходят в жизни день за днем практически незаметны, и на таком масштабе довольно сложно понять, что уже пора «спрыгивать». Растяжки, расставленные заранее, сообщают нам «Вот тот самый момент — дальше нельзя, ДЕРГАЙ СКОРЕЕ ЭТОТ ГРЕБАНЫЙ СТОП-КРАН!». Вроде простая и понятная штука, но вот я до нее почти никогда осознанно не добирался)
 
-## Unordered Lists
-
-- Item 1
-- Item 2
-- Item 3
-
-## Ordered Lists
-
-1. Item 1
-2. Item 2
-3. Item 3
-
-## Code Block
-
-```javascript
-// finds a given word in a string and replace with another one
-const findAndReplace = (string, wordToFind, wordToReplace) => {
-  return string.split(wordToFind).join(wordToReplace);
-};
-
-let result = findAndReplace('I like banana', 'banana', 'apple'); // I like apple
-```
-
-## Quoted Text
-
-> Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.
+Понятное дело, что способ не гарантирует, что решения, принятые впоследствии, будут какими-то правильными. Но, как минимум, он гарантирует, что мы будем предупреждены о том, что вот оно — время менять решение. Ну и вполне возможно, что очередная крутая возможность не будет упущена из-за того, что мы слишком долго летим в какой-то полудреме, под сладкое убаюкивание автопилота.

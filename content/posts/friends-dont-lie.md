@@ -1,54 +1,21 @@
 ---
-title: Friends don't lie
-date: 2021-01-04
-tags: [stranger things, tv series]
-social_image: '/media/rocket.jpg'
-description: This is a custom description for SEO and Open Graph purposes. If it's not provided, it defaults to auto-generated excerpts of the page content.
+title: Парадокс дофаминовой ловушки
+date: 2021-04-24
+tags: [psychology]
 ---
 
-Friends don't lie. Um, I'm happy you're home. We never would've upset you if we knew you had superpowers. Um, I'm happy you're home. Let’s burn that lab to the ground. Don’t take it so personally, okay? I don’t like most people. He’s in the vast majority.Nancy, seriously, you're gonna be so cool now, it's ridiculous. So, Jonathan, how was the pull-out? Um, I'm happy you're home. You're an idiot, Steve Harrington. You're beautiful, Nancy Wheeler. It's just, sometimes... people don't really say what they're really thinking.
+Люди всегда обманываются ожиданиями мнимого счастья. Зимой я купил очередной айфон и снова прочувствовал это на себе — разница между последними моделями настолько мала, что эмоции от предвкушения были сильнее, чем ощущения через несколько часов владения новым телефоном.
 
-But when you capture the right moment, it says more.If we’re both going crazy, then we’ll go crazy together, right? If we’re both going crazy, then we’ll go crazy together, right? I need my paddles! You're an idiot, Steve Harrington. You're beautiful, Nancy Wheeler. Friends don't lie. He’s a sensitive kid. Lonnie used to say he was queer. Called him a fag. Is he? He’s missing, is what he is!You're an idiot, Steve Harrington. You're beautiful, Nancy Wheeler. Do you know anything about sensory deprivation tanks?
+Когда мозг распознает возможность получить награду, в ее предвкушении он выделяет дофамин. Дофамин в свою очередь сообщает мозгу на что ему стоит обратить внимание, а что внимания совсем не достойно. Дофаминовый «приход» не вызывает счастья сам по себе, он скорее про ощущение подъема и трепета. Мы распознаем возможность почувствовать себя лучше, после чего готовы бросить все, сместить фокус, и сделать что-то конкретное прямо сейчас, чтобы получить желаемое.
 
-Specifically how to build one? Yeah, I want a date with Bo Derek. We all want things. No... no El, you're not the monster. You saved me. Do you understand? You saved me.If anyone asks where I am, I've left the country. Friends don't lie. You are such a nerd. No wonder you only hang out with boys. Mouth-breather. Let’s burn that lab to the ground. Why’s he gotta kick the door? You’re right. You are a freak…. Who would you rather be friends with: Bowie or Kenny Rogers?
+Парадокс состоит в том, что после того как награда получена, вместо того самого счастья и радости, мы получаем откат — обратный эффект в виде раздражения, злости на самого себя, упадка сил, и так далее. Недавно где-то читал, что эффект от покупки новой машины в среднем сохраняется две недели, после чего мы просто привыкаем к ней и воспринимаем как должное. «Стоила ли она после этого миллионы?» — спрашиваете вы себя и задумываетесь 🙂
 
-## Image
+Во всем этом современном мире, с его разнообразием технологий и развитостью, мы по-прежнему живем с невероятно устаревшей операционной системой, скорее всего той самой прошивки, с которой жил и древний человек. Все, что как нам кажется заставит нас чувствовать себя лучше, триггерит работу системы вознаграждения, которая запустит дофаминовый цикл. 
 
-![Rocket launch](/media/rocket.jpg)
+С точки зрения эволюции это ни что иное, как один из способов не дать нам умереть. В момент, когда древний человек-собиратель чувствует запах еды, ему ни в коем случае нельзя отвлекаться: за кустом прячется тигр, или кто-то другой в любой момент отберет его находку и он просто умрет от голода. Эволюции плевать на счастье древнего человека, но она использует трюк с ожиданием счастья, чтобы древний человек продолжал бороться за свою жизнь.
 
-## Header
+Вкусная выпечка, запах свежесваренного кофе, скидка 50% в витрине магазина, загадочная улыбка сексуальной незнакомки, реклама приложения для инвестиций, которая обещает сделать вас богатыми — все подобные штуки запускают в нас систему вознаграждения. С помощью дофамина мозг тут же определяет объект «критичным» для нашего существования. Ну а дальше вы знаете.
 
-Solebat cetera infelix duorum gravidi possit, et nec, est inpia mentique, consistere quae. Amplexus uror, pars pars aevo curas Cinyreius
-pennis sacrum inpulsaque o cunctos Oleniden peragit, se Athamas inmaduit
-transierant. Relicta significat rubenti potest.
+Предвкушение счастья — одна из стратегий психики, благодаря которой мы можем продолжать охотиться, собирать фрукты, искать добычу и работать. Реальность, наступающая после удовлетворения предвкушения, является чем угодно, но только не счастьем. 
 
-Illa tibi cruentum adpulit pallent. Una dolorem quaque. Pars parvi, mihi quae
-Lyciaeque legit. Hic vitae felix illi laudatis? Et caelum, precatur nec pectora,
-Phoebi volucris moveo.
-
-## Unordered Lists
-
-- Item 1
-- Item 2
-- Item 3
-
-## Ordered Lists
-
-1. Item 1
-2. Item 2
-3. Item 3
-
-## Code Block
-
-```javascript
-// finds a given word in a string and replace with another one
-const findAndReplace = (string, wordToFind, wordToReplace) => {
-  return string.split(wordToFind).join(wordToReplace);
-};
-
-let result = findAndReplace('I like banana', 'banana', 'apple'); // I like apple
-```
-
-## Quoted Text
-
-> Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.
+До встречи в Старбаксе 😉

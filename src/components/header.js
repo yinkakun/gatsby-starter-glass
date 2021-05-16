@@ -26,15 +26,15 @@ const Header = () => {
 
         <HeaderNavList>
           <HeaderNavListItem>
-            <Link to="/blog">Blog</Link>
+            <Link to="/blog">Блог</Link>
           </HeaderNavListItem>
 
           <HeaderNavListItem>
-            <Link to="/about">About</Link>
+            <Link to="/about">Обо мне</Link>
           </HeaderNavListItem>
 
           <HeaderNavListItem>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">Связаться</Link>
           </HeaderNavListItem>
         </HeaderNavList>
       </HeaderWrapper>

@@ -44,12 +44,12 @@ const ContactForm = () => {
           <Honeypot />
 
           <FormGroup>
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">Имя</label>
             <input
               id="name"
               name="name"
               type="text"
-              ref={register({ required: 'Name is required' })}
+              ref={register({ required: 'Без имени никуда.' })}
             />
             {errors.name && (
               <FormErrorMessage>{errors.name.message}</FormErrorMessage>
@@ -57,15 +57,15 @@ const ContactForm = () => {
           </FormGroup>
 
           <FormGroup>
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">Почта</label>
             <input
               id="email"
               name="email"
               type="text"
               ref={register({
-                required: 'Email is required.',
+                required: 'Без почты никак.',
                 pattern: {
-                  message: 'Email is not valid.',
+                  message: 'Не похоже на почту.',
                   value: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
                 },
               })}
@@ -76,12 +76,12 @@ const ContactForm = () => {
           </FormGroup>
 
           <FormGroup>
-            <label htmlFor="message">Your message</label>
+            <label htmlFor="message">Сообщение</label>
             <textarea
               id="message"
               name="message"
               rows="4"
-              ref={register({ required: 'Message is required' })}
+              ref={register({ required: 'Без сообщения и слать нечего.' })}
             />
             {errors.message && (
               <FormErrorMessage>{errors.message.message}</FormErrorMessage>
@@ -99,7 +99,7 @@ const ContactForm = () => {
             )}
           </FormFeedbackWrapper>
 
-          <FormButton type="submit">Send Message</FormButton>
+          <FormButton type="submit">Отправить</FormButton>
         </NetlifyFormComponent>
       </NetlifyFormProvider>
     </FormWrapper>

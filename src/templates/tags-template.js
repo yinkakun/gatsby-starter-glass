@@ -15,7 +15,7 @@ const TagsTemplate = ({ pageContext, data }) => {
     <Layout title={title}>
       <TagsTemplateWrapper>
         <Title>
-          {totalCount} posts tagged "{tag}"
+          {totalCount} topics "{tag}"
         </Title>
         <Link
           css={`
@@ -26,7 +26,7 @@ const TagsTemplate = ({ pageContext, data }) => {
           `}
           to="/tags"
         >
-          view all tags
+          Все темы
         </Link>
         <PostList posts={posts} />
 
@@ -37,7 +37,7 @@ const TagsTemplate = ({ pageContext, data }) => {
           `}
           to="/tags"
         >
-          View All tags
+          Все темы
         </StyledLink>
       </TagsTemplateWrapper>
     </Layout>

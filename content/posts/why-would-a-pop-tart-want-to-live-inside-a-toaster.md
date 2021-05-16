@@ -1,52 +1,19 @@
 ---
-title: why would a Pop-Tart want to live inside a toaster
-date: 2021-03-12
-tags: [tv series, rick and morty]
+title: Как стать тем, кем хочется быть
+date: 2021-04-30
+tags: [mindset, self-development]
 ---
 
-I mean, why would a Pop-Tart want to live inside a toaster, Rick? I mean, that would be like the scariest place for them to live. You know what I mean?. Wow, I really Cronenberged up the whole place, huh Morty? Just a bunch a Cronenbergs walkin' around. I mean, why would a Pop-Tart want to live inside a toaster, Rick? I mean, that would be like the scariest place for them to live. You know what I mean?. If it was, you could call me Ernest Hemingway. You're missing the point Morty. Why would he drive a smaller toaster with wheels? I mean, does your car look like a smaller version of your house? No.
+«Сложный процент» — говорю я вам, и вы сразу представляете себе идущие вверх графики в терминалах своих брокеров. Сложный процент — один из немногих способов разбогатеть любому, даже самому небогатому человеку. Круто, что магию сложного процента можно применить не только к собственным деньгам, но и к самому себе.
 
-I dunno, some people would pay top dollar for that kind of breakthrough. Morty, do you know what “wubba lubba dub dub” means?. It's like the N word and the C word had a baby and it was raised by all the bad words for Jews. Those guys are inside you building a piece of shit Ethan!! They're inside you building a monument to compromise!! Fuck them. Fuck those people. Fuck this whole thing Ethan. I mean, why would a Pop-Tart want to live inside a toaster, Rick? I mean, that would be like the scariest place for them to live. You know what I mean?.
+Формула, которая описывает сложный процент, применимый к жизни, выглядит примерно так:
 
-I mean, why would a Pop-Tart want to live inside a toaster, Rick? I mean, that would be like the scariest place for them to live. You know what I mean?. Morty, do you know what “wubba lubba dub dub” means?. Nobody exists on purpose. Nobody belongs anywhere. We're all going to die. Come watch TV. Nobody exists on purpose. Nobody belongs anywhere. We're all going to die. Come watch TV. He's not a hot girl. He can't just bail on his life and set up shop in someone else's.
+#### малые события + последовательность + время = РАДИКАЛЬНЫЕ ИЗМЕНЕНИЯ. 
+<br>
+В моменте мелкие инвестиции в какой-то навык (или в фонд 🙂) как всегда кажутся очень незначительными — но на горизонте месяцев и лет, благодаря сложному проценту, результаты превосходят самые смелые ожидания. Очень простой концепт, который мне было не так просто осознать.
 
-## Image
+Значимый для себя и окружающих эффект начинает проявляться через десятки месяцев, после того, последовательность малых событий запущена. Представить это легко на таком примере — вообразите себе самого толстого толстяка, который сегодня вдруг начал есть на 150 калорий меньше своей нормы. А потом представьте его же, через два года, все эти месяцы строго придерживающегося этой тактики. Уверен, это будут два абсолютно разных человека. 
 
-![Rocket launch](/media/rocket.jpg)
+Самых больших изменений в жизни мы можем добиться, постоянно работая над одними и теми же навыками, день за днем инвестируя в одно и то же. Это скучно и странно и тяжело, и точно не всем подходит.
 
-## Header
-
-Solebat cetera infelix duorum gravidi possit, et nec, est inpia mentique, consistere quae. Amplexus uror, pars pars aevo curas Cinyreius
-pennis sacrum inpulsaque o cunctos Oleniden peragit, se Athamas inmaduit
-transierant. Relicta significat rubenti potest.
-
-Illa tibi cruentum adpulit pallent. Una dolorem quaque. Pars parvi, mihi quae
-Lyciaeque legit. Hic vitae felix illi laudatis? Et caelum, precatur nec pectora,
-Phoebi volucris moveo.
-
-## Unordered Lists
-
-- Item 1
-- Item 2
-- Item 3
-
-## Ordered Lists
-
-1. Item 1
-2. Item 2
-3. Item 3
-
-## Code Block
-
-```javascript
-// finds a given word in a string and replace with another one
-const findAndReplace = (string, wordToFind, wordToReplace) => {
-  return string.split(wordToFind).join(wordToReplace);
-};
-
-let result = findAndReplace('I like banana', 'banana', 'apple'); // I like apple
-```
-
-## Quoted Text
-
-> Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.
+Чтобы стать тем, кем хочется быть — нужно заставить сложный процент работать на себя, а для этого долго и тяжело впахивать. Другой вопрос — знаем ли мы, кем хотим быть? 🙂

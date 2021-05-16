@@ -10,7 +10,7 @@ const Blog = ({ data }) => {
   return (
     <Layout title="Blog">
       <HeaderWrapper>
-        <h1>Blog</h1>
+        <h1>Блог</h1>
 
         <Link
           css={`
@@ -20,7 +20,7 @@ const Blog = ({ data }) => {
           `}
           to="/tags"
         >
-          view all tags
+          по темам
         </Link>
       </HeaderWrapper>
 

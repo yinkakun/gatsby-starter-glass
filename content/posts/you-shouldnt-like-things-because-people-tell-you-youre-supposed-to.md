@@ -1,50 +1,26 @@
 ---
-title: You shouldn't like things because people tell you you're supposed to.
-date: 2021-02-18
-tags: [tv series, stranger things]
+title: Формула удачи
+date: 2021-05-07
+tags: [luck]
 ---
 
-Why’s he gotta kick the door? You're an idiot, Steve Harrington. You're beautiful, Nancy Wheeler. You’re pretty cute, you know that? Nobody normal ever accomplished anything meaningful in this world.This is not yours to fix alone. You act like you’re all alone out there in the world, but you’re not. You’re not alone. You're an idiot, Steve Harrington. You're beautiful, Nancy Wheeler. If we’re both going crazy, then we’ll go crazy together, right?Hey kiddo, would you like a balloon? You shouldn't like things because people tell you you're supposed to. You are such a nerd. No wonder you only hang out with boys. You act like you want me to be your friend and then you treat me like garbage. We never would've upset you if we knew you had superpowers.
+В нашей культуре есть традиция желать друг другу удачи. Почти в каждом поздравлении или тосте, помимо пожеланий здоровья и счастья, звучит «и удачи!». Это всегда подкрепляло мое ощущение, что удача — это что-то спущенное сверху, что нельзя в полной мере осознать и, тем более, управлять. 
 
-So, Jonathan, how was the pull-out? You’re pretty cute, you know that? Nancy, seriously, you're gonna be so cool now, it's ridiculous. This is not yours to fix alone. You act like you’re all alone out there in the world, but you’re not. You’re not alone.You are such a nerd. No wonder you only hang out with boys. Just wait till we tell Will that Jennifer Hayes was crying at his funeral. Why are you keeping this curiosity door lock? Hey kiddo, would you like a balloon? Why are you keeping this curiosity door lock?
+То, что все рождаются с разными картами, мы давно знали. Но, имея лучшие карты за столом, можно вдребезги проиграть по самым разным причинам (ребята, которые умеют в покер знают это не понаслышке). В среднем дети богатых родителей не развивают или полностью теряют весь капитал, который достается им по наследству — зачастую у них нет нужных знаний и навыков по его сохранению и развитию.
 
-## Image
+За последнее время я встречал несколько классных определений удачи. Наиболее близкой кажется формула, которую проповедует Даррен Харди (помимо писательства, он делает [SUCCESS Magazine](https://www.success.com/), где со знаменитыми ачиверами погружается в эту тему прям глубоко).
 
-![Rocket launch](/media/rocket.jpg)
+## Preparation + Attitude + Opportunity + Action = LUCK
+<br><br>
+Трактовать можно примерно так
 
-## Header
+- Preparation: подготовка, инвестиции в собственные навыки
+- Attitude: убеждения/маиндсет
+- Opportunity: возможности, умение поместить себя в нужный контекст
+- Action: готовность действовать.
 
-Solebat cetera infelix duorum gravidi possit, et nec, est inpia mentique, consistere quae. Amplexus uror, pars pars aevo curas Cinyreius
-pennis sacrum inpulsaque o cunctos Oleniden peragit, se Athamas inmaduit
-transierant. Relicta significat rubenti potest.
+Сколько бы возможностей не возникало каждый день на пути, без прокаченного лидара увидеть их невозможно. Если лидар достаточно прокачен, и мы уже видим какую-то часть возможностей, понадобятся отточенные навыки, чтобы их потянуть. Кроме этого, для того, чтобы действовать, нужна психологическая готовность, как минимум уверенность в себе. И в конечном итоге — правильный маиндсет, который позволит в целом смотреть на картину с нужной точки зрения и понимать устройство картины. 
 
-Illa tibi cruentum adpulit pallent. Una dolorem quaque. Pars parvi, mihi quae
-Lyciaeque legit. Hic vitae felix illi laudatis? Et caelum, precatur nec pectora,
-Phoebi volucris moveo.
+Если верить, что формула правдива (а похоже так оно и есть), получается, что собственной удачей можно осознанно управлять. А значит, сколько бы мы ни желали друг другу удачи на день рождения или Новый год, без усилий, которые скрываются за каждым составляющим формулы, она вряд ли будет спущена кому-то сверху. Короче говоря: везет тому, кто везет.
 
-## Unordered Lists
-
-- Item 1
-- Item 2
-- Item 3
-
-## Ordered Lists
-
-1. Item 1
-2. Item 2
-3. Item 3
-
-## Code Block
-
-```javascript
-// finds a given word in a string and replace with another one
-const findAndReplace = (string, wordToFind, wordToReplace) => {
-  return string.split(wordToFind).join(wordToReplace);
-};
-
-let result = findAndReplace('I like banana', 'banana', 'apple'); // I like apple
-```
-
-## Quoted Text
-
-> Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.
+Всем удачки ♥️

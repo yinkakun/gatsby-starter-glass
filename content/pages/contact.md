@@ -1,8 +1,8 @@
 ---
-title: 'Contact Me'
+title: 'Связаться со мной'
 template: 'contact-template'
 ---
 
-# Get in Touch.
+# Связаться
 
-If you've got an inquiry for a job or project,drop me a line at hello@hello.com or fill the form right here.
+Если у вас возникнут вопросы — мне можно (а иногда даже нужно) написать.

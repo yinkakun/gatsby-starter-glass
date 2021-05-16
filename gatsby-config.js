@@ -2,27 +2,27 @@ module.exports = {
   siteMetadata: {
     title: `Denis Kuznetsov`,
     author: {
-      name: `Yinka Adedire`,
-      summary: `Self-taught front-end web dev. JAMStack.`,
+      name: `Denis Kuznetsov`,
+      summary: `Как стать тем, кем хочется быть.`,
     },
-    description: `TEST`,
+    description: `Как стать тем, кем хочется быть`,
     siteUrl: `https://gatsbyglass.netlify.app`,
     social: {
       twitter: `yinkakun`,
     },
     socialLinks: [
       {
-        name: 'github',
-        url: 'https://github.com',
+        name: 'Канал в Телеграме',
+        url: 'https://t.me/onmondays',
       },
-      {
+      /*{
         name: 'twitter',
         url: 'https://twitter.com',
       },
       {
         name: 'instagram',
         url: 'https://instagram.com',
-      },
+      },*/
     ],
   },
   plugins: [
