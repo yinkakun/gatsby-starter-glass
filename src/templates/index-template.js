@@ -50,7 +50,7 @@ const Intro = styled.div`
   text-align: center;
 
   & p {
-    text-transform: capitalize;
+    
     font-size: var(--size-400);
   }
 
