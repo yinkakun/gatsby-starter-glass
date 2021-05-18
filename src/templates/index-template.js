@@ -50,7 +50,7 @@ const Intro = styled.div`
   text-align: center;
 
   & p {
-    
+    text-transform: capitalize;
     font-size: var(--size-400);
   }
 
@@ -80,7 +80,7 @@ export const pageQuery = graphql`
         excerpt
         timeToRead
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
+          date(formatString: "DD MMM YYYY", locale: "ru")
           description
           title
           tags
