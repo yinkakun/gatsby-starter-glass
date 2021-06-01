@@ -100,7 +100,7 @@ You’ll need to set up Netlify’s Identity service to authorize users to log i
 - Go to Identity and Click Enable Identity.
 - Click on Invite Users and invite yourself. You will receive an email and you need to accept the invitation to set the password.
 - Now headover to Settings > Identity > Services and Enable Git Gateway
-- You can also manage who can register and log in to your CMS. Go to Settings > Identity > Registration  Registration Preferences. I would prefer to keep it to Invite Only, if I am the only one using it.
+- You can also manage who can register and log in to your CMS. Go to Settings > Identity > Registration  Registration Preferences. I would prefer to keep it to Invite Only if I am the only one using it.
 - Now, go to to site-name.netlify.app/admin/, and login with your credentials.
 
 Once you are in your Netlify CMS, you can navigate to Posts and Pages. Here you will find a list of existing pages and posts.
