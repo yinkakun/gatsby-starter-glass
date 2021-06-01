@@ -8,13 +8,13 @@ A Minimal & Beautiful Gatsby Personal Blog Starter With Nice Glassmorphism UI.
 
 ## Features
 
-Fully responsive
-SEO metadata and Open Graph tags
-Maximize lighthouse score
-Contact form with Netlify Form
-Edit Content with Netlify CMS
-Easy to deploy
-Syntax highlighting via PrismJS
+* Fully responsive
+* SEO metadata and Open Graph tags
+* Maximized lighthouse score
+* Contact form with Netlify Form
+* Edit Content with Netlify CMS
+* Easy to deploy
+* Syntax highlighting via PrismJS
 
 ## Local Install
 
@@ -66,7 +66,7 @@ Netlify is a great way to easily deploy sites plus this starter uses Netlify For
 
 - Generate a new repo from this repo which will copy all files from this repo to your newly created repo.
 
-- Goto app.netlify.com, Once you’ve logged in, click the 'New site from Git' button on your dashboard and choose your newly created repo.
+- Go to <https://app.netlify.com>. Once you’ve logged in, click the 'New site from Git' button on your dashboard and choose your newly created repo.
 
 - Follow the prompts, it will build and deploy the new site on Netlify, bringing you to the site dashboard when the build is complete.
 
@@ -88,7 +88,7 @@ This top portion is the beginning of the post and will show up as the excerpt on
 
 ### Pages
 
-Homepage intro, Contact and About page content can be updated in markdown format at `content/pages`
+Homepage intro, Contact, and About page content can be updated in Markdown format at `content/pages`.
 
 # Editing Contents with Netlify CMS
 
@@ -96,12 +96,12 @@ This project is preconfigured to work with Netlify CMS.
 When Netlify CMS makes commits to your repo, Netlify will auto-trigger a rebuild / deploy when new commits are made.
 You’ll need to set up Netlify’s Identity service to authorize users to log in to the CMS.
 
-- Goto app.netlify.com > select your website from the list.
-- Goto identity and Click Enable Identiy.
+- Go to <https://app.netlify.com> > select your website from the list.
+- Go to Identity and click Enable Identity.
 - Click on Invite Users and invite yourself. You will receive an email and you need to accept the invitation to set the password.
-- Now headover to Settings > Identity > Services and Enable Git Gateway
-- You can also manage who can register and log in to your CMS. Goto Settings > Identity > Registration >Registration Preferences. I would prefer to keep it to Invite Only, if I am the only one using it.
-- Now, goto to site-name.netlify.app/admin/, and login with your credentials.
+- Now headover to Settings > Identity > Services and Enable Git Gateway.
+- You can also manage who can register and log in to your CMS. Go to Settings > Identity > Registration  Registration Preferences. I would prefer to keep it to Invite Only if I am the only one using it.
+- Now, go to to site-name.netlify.app/admin/, and login with your credentials.
 
 Once you are in your Netlify CMS, you can navigate to Posts and Pages. Here you will find a list of existing pages and posts.
 
