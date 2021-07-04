@@ -1,7 +1,10 @@
 ---
-title: Weddings are basically funerals with cake
+title: Weddings are basically funerals with cake 1
 date: 2021-09-03
-tags: [rick and morty, tv series]
+tags:
+  - rick and morty
+  - tv series
+description: Test
 ---
 
 Weddings are basically funerals with cake. I mean, why would a Pop-Tart want to live inside a toaster, Rick? I mean, that would be like the scariest place for them to live. You know what I mean?. Those guys are inside you building a piece of shit Ethan!! They're inside you building a monument to compromise!! Fuck them. Fuck those people. Fuck this whole thing Ethan. What about the reality where Hitler cured cancer, Morty? The answer is: Don't think about it. All right, all right, cool it! I see what's happening here. You're both young, you're both unsure about your place in the universe, and you both want to be Grandpa's favorite. I can fix this. Morty, sit here. Summer, you sit here. Now, listen—I know the two of you are very different from each other in a lot of ways, but you have to understand that as far as Grandpa's concerned, you're both pieces of shit! Yeah. I can prove it mathematically. Actually, l-l-let me grab my whiteboard. This has been a long time coming, anyways.
