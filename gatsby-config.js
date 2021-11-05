@@ -1,27 +1,31 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Glass`,
+    title: `Avneet Singh`,
     author: {
-      name: `Yinka Adedire`,
-      summary: `Self-taught front-end web dev. JAMStack.`,
+      name: `Avneet Singh`,
+      summary: `A Student from India, Currently living in Canada.`,
     },
-    description: `A minimal & beautiful gatsby personal blog starter with a nice glassmorphism UI.`,
-    siteUrl: `https://gatsbyglass.netlify.app`,
+    description: `A minimal & informative personal blog to share latest work and life updates with the world.`,
+    siteUrl: `https://iamavneetsk.cf`,
     social: {
-      twitter: `yinkakun`,
+      twitter: `iamavneetsk`,
     },
     socialLinks: [
       {
-        name: 'github',
-        url: 'https://github.com',
+        name: 'facebook',
+        url: 'https://www.facebook.com/iamavneetsk',
       },
       {
         name: 'twitter',
-        url: 'https://twitter.com',
+        url: 'https://twitter.com/iamavneetsk',
       },
       {
         name: 'instagram',
-        url: 'https://instagram.com',
+        url: 'https://instagram.com/iamavneetsk',
+      },
+      {
+        name: 'all socials',
+        url: 'https://iamavneetsk.bio.link',
       },
     ],
   },
@@ -151,8 +155,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Frosted Blog`,
-        short_name: `Gatsby Frosted`,
+        name: `Avneet Singh`,
+        short_name: `Avneet`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
