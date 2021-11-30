@@ -5,6 +5,7 @@ module.exports = {
       name: `Yinka Adedire`,
       summary: `Self-taught front-end web dev. JAMStack.`,
     },
+    openGraphImage: `open-graph-image.png`,
     description: `A minimal & beautiful gatsby personal blog starter with a nice glassmorphism UI.`,
     siteUrl: `https://gatsbyglass.netlify.app`,
     social: {
