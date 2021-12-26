@@ -33,9 +33,9 @@ const Header = () => {
             <Link to="/about">About</Link>
           </HeaderNavListItem>
 
-          <HeaderNavListItem>
+          {/* <HeaderNavListItem>
             <Link to="/contact">Contact</Link>
-          </HeaderNavListItem>
+          </HeaderNavListItem> */}
         </HeaderNavList>
       </HeaderWrapper>
     </StyledHeader>

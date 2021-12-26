@@ -1,8 +1,8 @@
 ---
 template: 'index-template'
-title: 'Gatsby Starter Glass'
+title: 'Home'
 ---
 
-#Hello World
+# smacon.dev
 
-A minimal & beautiful gatsby personal blog starter with nice glassmorphism UI.
+How to develop smart contracts, build Web3 Dapps on Blockchains.

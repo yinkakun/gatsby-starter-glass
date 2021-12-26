@@ -1,12 +1,10 @@
 ---
 title: About Me
 template: about-template
-profile_image: /media/profile-image.jpg
+profile_image: /media/profile.jpg
 ---
 
-# Hi, I'm John Doe
+# Moto Sakanosita
 
-This website is a live example of a Gatsby Starter — it's not a real blog.
-People using this starter may want to add some information to this page about them or their business.
-
-
+Hi, I'm Moto, Web3 programmer and working at Edtech.
+Also I've been building Dapps and some smart contracts.

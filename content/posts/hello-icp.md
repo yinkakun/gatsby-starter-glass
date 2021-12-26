@@ -3,13 +3,14 @@ title: 5ステップではじめるMotokoプログラミング
 date: 2021-08-15 19:38
 tags:
   - ICP
+  - beginner
 social_image: /media/dfinity.jpeg
 description: |-
   はじめてDAppsやブロックチェーンで開発したい
   将来Webエンジニアになりたい
   ITエンジニアで新しい技術に興味がある
   ICP(Dfinity)に興味がある
-  Motokoを始めたい
+  <https://dfinity.org/developers>
 ---
 この記事はこんな人におすすめです！
 
