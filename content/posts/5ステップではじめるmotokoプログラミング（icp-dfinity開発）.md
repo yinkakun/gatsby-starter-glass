@@ -13,11 +13,11 @@ description: |-
 ---
 この記事はこんな人におすすめです！
 
-- はじめてDAppsやブロックチェーンで開発したい
-- 将来Webエンジニアになりたい
-- ITエンジニアで新しい技術に興味がある
-- ICP(Dfinity)に興味がある
-- Motokoを始めたい
+* はじめてDAppsやブロックチェーンで開発したい
+* 将来Webエンジニアになりたい
+* ITエンジニアで新しい技術に興味がある
+* ICP(Dfinity)に興味がある
+* Motokoを始めたい
 
 「スマコンかいはつ室」へようこそ！坂ノ下もとです。
 
@@ -27,25 +27,24 @@ ICP(Internet Computer Protocol)は2021年5月に開始したサービスで、�
 
 パソコンさえあればICPを使ったプログラミングを無料で簡単に始めることができるので、まずは実際にやってみましょう。
 
-
 本記事では以下のMac環境を使った開発を紹介しています。
 
-- Mac OS 11.4 Big Sur
-- テキストエディタ：Visual Studio Code 1.59
-- ターミナルソフト：iTerm2 3.4.8
-- dfx：0.8.0
-- npm：7.19.1
-
+* Mac OS 11.4 Big Sur
+* テキストエディタ：Visual Studio Code 1.59
+* ターミナルソフト：iTerm2 3.4.8
+* dfx：0.8.0
+* npm：7.19.1
 
 ## はじめに
+
 当記事で紹介する５つのステップは、Dfinityの公式ページに簡潔にまとまっています。
 
-[https://dfinity.org/developers](https://dfinity.org/developers)
+<https://dfinity.org/developers>
 
 ICPにおけるプログラミングを学ぶには、２つの方法があります。はじめにその２つの違いを説明します。
 
-- SDKを使ったローカルPC上での開発（dfxコマンド）
-- ブラウザのみを使った開発（Motoko Playground）
+* SDKを使ったローカルPC上での開発（dfxコマンド）
+* ブラウザのみを使った開発（Motoko Playground）
 
 dfxコマンドはオールインワンの開発キットです。ローカルPCでの実行環境の作成から、本番環境へのデプロイまで、すべてdfxコマンド１つでできます。
 
@@ -55,6 +54,7 @@ Motoko Playgroundについては、また別の記事で紹介します。
 当記事では、これまでのWeb開発より便利なICPの特徴を理解しやすいdfxを使った開発を紹介します。
 
 ## ステップ1: dfx(SDK)をインストールする
+
 ターミナルソフトで以下のコマンドを実行します。
 
 ```
@@ -70,6 +70,7 @@ dfx 0.8.0
 ```
 
 ## ステップ2: Hello Worldプロジェクトを作る
+
 自分の好きな作業用ディレクトリを作って移動します。ぼくはdfinityというディレクトリを作っています。
 
 ```
@@ -92,6 +93,7 @@ README.md dfx.json dist node_modules package-lock.json package.json src webpack.
 ```
 
 ## ステップ3: PC版のテスト用Internet Computerを起動する
+
 helloディレクトリにいる状態で、ローカルPC上でテスト用のIC(Internet Computer)を起動します。
 
 ```
@@ -116,6 +118,7 @@ $ dfx ping
 上記のようにエラーではなくJSONフォーマットの謎の数字が返ってきたら成功です。
 
 ## ステップ4: ビルドしてデプロイする
+
 helloディレクトリにいる状態で、以下のコマンドを実行してフロントエンド用のライブラリをインストールします。
 
 ```
@@ -134,19 +137,20 @@ dfx deploy
 
 このコマンドでは、以下の3つのことをまとめてやってくれます。
 
-- テスト用Internet Computerにキャニスターを作る（IDを取得する）
-- Motokoで書いたソースコードをコンパイルして、WASM実行プログラムを作る
-- WAS実行プログラムをキャニスターにインストールする
+* テスト用Internet Computerにキャニスターを作る（IDを取得する）
+* Motokoで書いたソースコードをコンパイルして、WASM実行プログラムを作る
+* WAS実行プログラムをキャニスターにインストールする
 
 キャニスターやWASMについて今はわからなくても大丈夫です。この３つはそれぞれ以下のコマンドで個別に実行することができます。
 
-- dfx canister create
-- dfx build
-- dfx canister install
+* dfx canister create
+* dfx build
+* dfx canister install
 
 dfx deployはこの３つをまとめて、しかも終わっていないところだけを実行してくれる便利なコマンドです。
 
 ## ステップ5: Hello Worldプログラムを実行する
+
 以下のコマンドを実行すると、ローカルPC上のInternet Computerで動くキャニスターを実行することができます。
 
 ```
@@ -159,6 +163,7 @@ helloというキャニスターのgreetという命令を、everyoneという�
 $ dfx canister call hello greet everyone
 ("Hello, everyone!")
 ```
+
 作ったプログラムをブラウザで呼び出してみましょう。
 
 フロントエンドのプログラムを起動します
@@ -166,15 +171,16 @@ $ dfx canister call hello greet everyone
 ```
 npm start
 ```
+
 以下のURLにブラウザでアクセスして、起動したフロントエンド用のページにアクセスします。
 
-[http://localhost:8080](http://localhost:8080)
+<http://localhost:8080>
 
-![icp](/images/hello-icp/hello-icp-1.png)
+![icp](/media/hello-icp-1.png)
 
 名前をいれてクリックしてみましょう、先程ローカルのICにデプロイしたキャニスターを実行して結果をブラウザで表示します。
 
-![icp](/images/hello-icp/hello-icp-2.png)
+![icp](/media/hello-icp-2.png)
 
 今は、ローカルPC上のテスト用のInternet Computerにデプロイしたプログラム（キャニスター）を呼び出しています。
 
