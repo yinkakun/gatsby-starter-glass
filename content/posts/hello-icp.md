@@ -6,21 +6,15 @@ tags:
   - beginner
 social_image: /media/dfinity.jpeg
 description: |-
-  はじめてDAppsやブロックチェーンで開発したい
-  将来Webエンジニアになりたい
-  ITエンジニアで新しい技術に興味がある
-  ICP(Dfinity)に興味がある
-  <https://dfinity.org/developers>
+  The Quick start provided a simplified introduction to the basic work flow for creating and deploying a new project without exploring the contents of the project directory or sample code.
 ---
-この記事はこんな人におすすめです！
+この記事はこんな人におすすめです
 
 * はじめてDAppsやブロックチェーンで開発したい
 * 将来Webエンジニアになりたい
 * ITエンジニアで新しい技術に興味がある
 * ICP(Dfinity)に興味がある
 * Motokoを始めたい
-
-「スマコンかいはつ室」へようこそ！坂ノ下もとです。
 
 ぼくは2017年ごろからブロックチェーンを触り、2021年現在はWeb系のグローバルスタートアップで働く本業の傍らで、起業してブロックチェーンを使ったサービスを開発しています。
 
@@ -40,7 +34,7 @@ ICP(Internet Computer Protocol)は2021年5月に開始したサービスで、�
 
 当記事で紹介する５つのステップは、Dfinityの公式ページに簡潔にまとまっています。
 
-<https://dfinity.org/developers>
+https://dfinity.org/developers
 
 ICPにおけるプログラミングを学ぶには、２つの方法があります。はじめにその２つの違いを説明します。
 
