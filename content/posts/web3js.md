@@ -200,13 +200,14 @@ HTMLとJavaScriptを使った一番シンプルなやり方です。
 Web3.givenProviderで取得できない場合は、”ws://localhost:7545″に接続するように書いています。
 これはGanacheに接続するときのWebSocketのエンドポイントです。
 
-### #Next.jsを使ったweb3.js（Chromeのコンソールに表示）
+## Next.jsを使ったweb3.js（Chromeのコンソールに表示）
 
-#### コード
+### コード
 Next.jsアプリケーションのpagesディレクトリの下にhello1.jsというファイルを作って、以下のコードを貼り付けます。
 
 コントラクトアドレスやABIは自分の使うコントラクトに置き換えましょう。
 
+#### pages/hello1.js
 ```
 import Web3 from 'web3'
 
@@ -243,7 +244,7 @@ function Hello1() {
 export default Hello1
 ```
 
-#### 確認手順
+### 確認手順
 Next.jsのドキュメントに従ってNext.jsを起動します。インストール方法によって起動コマンドは変わります。
 
 ```
@@ -279,12 +280,13 @@ return "ret: " + ret;
 
 つぎの3番目の方法では、Next.jsでAPIやスマートコントラクトなど外部から取得したデータをHTMLに表示するやり方で紹介します。
 
-### Next.jsを使ったweb3.js（HTMLに表示）
-#### コード
+## Next.jsを使ったweb3.js（HTMLに表示）
+### コード
 Next.jsアプリケーションのpagesディレクトリの下にhello2.jsというファイルを作って、以下のコードを貼り付けます。
 
 コントラクトアドレスやABIは自分の使うコントラクトに置き換えましょう。
 
+#### pages/hello2.js
 ```
 import Web3 from 'web3'
 
@@ -333,7 +335,7 @@ export async function getStaticProps() {
 export default Hello2;
 ```
 
-#### 確認手順
+### 確認手順
 Next.jsのドキュメントに従ってNext.jsを起動します。インストール方法によって起動コマンドは変わります。
 
 ```
