@@ -10,7 +10,6 @@ description: |-
   自分で作ったスマートコントラクトを実行
   JavaScriptからスマコンを実行する方法
 
-
 ---
 
 こんな人にピッタリ！
@@ -362,7 +361,7 @@ http://localhost:3000/hello2
 
 そういう時に、1番目や2番目のやり方を合わせて使うことで、どこがうまく動いて、どこが動いていないのかを見分けることができます。
 
-よかったらTwitterフォローお願いします！
-https://twitter.com/motosakanosita
 
-スマコン開発の最新の情報や、開発中に見ているドキュメントの和訳などをTwitterで発信しています。
+スマコン開発の最新の情報をTwitterで発信しています。
+
+https://twitter.com/motosakanosita
