@@ -1,10 +1,11 @@
 ---
-title: 5ステップではじめるMotokoプログラミング（ICP/Dfinity開発）
+title: 5ステップではじめるMotokoプログラミング
 date: 2021-08-15 19:17
 tags:
   - ICP
 social_image: /media/dfinity.jpeg
 description: |-
+  ICP/Dfinity開発
   はじめてDAppsやブロックチェーンで開発したい
   将来Webエンジニアになりたい
   ITエンジニアで新しい技術に興味がある
