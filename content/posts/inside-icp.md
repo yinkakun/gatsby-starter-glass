@@ -11,6 +11,15 @@ description: |-
 ## Technology
 https://medium.com/dfinity/https-medium-com-dfinity-technology/home
 
+## How ICP Works
+https://dfinity.org/howitworks
+
+## Community Conversations
+https://dfinity.org/conversations
+
+## Dev Forum
+https://forum.dfinity.org/
+
 ## YouTube
 ### Execution
 https://www.youtube.com/watch?v=UHA7W-8My_I

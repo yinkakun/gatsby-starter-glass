@@ -20,16 +20,19 @@ https://internetcomputer.org/
 https://medium.com/dfinity
 
 ## A Technical Overview of the Internet Computer
+### INTERNET COMPUTER BLOCKCHAIN OVERVIEW
+https://dfinity.org/howitworks/overview-of-the-internet-computer
+
 ### Medium
 https://medium.com/dfinity/a-technical-overview-of-the-internet-computer-f57c62abc20f
 ### YouTube
 [![Technical Overview](https://img.youtube.com/vi/zHl-oVPoX88/0.jpg)](https://www.youtube.com/watch?v=zHl-oVPoX88)
 
-## How ICP Works
-https://dfinity.org/howitworks
-
 ## Genesis Launch Event
 [![Genesis Launch Event](https://img.youtube.com/vi/xiupEw4MfxY/0.jpg)](https://www.youtube.com/watch?v=xiupEw4MfxY)
 
-### Education Center
+## Education Center
 https://internetcomputer.org/education
+
+## Dashboard
+https://dashboard.internetcomputer.org/
