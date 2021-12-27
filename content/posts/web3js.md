@@ -4,7 +4,7 @@ date: 2021-06-06 19:38
 tags:
   - Solidity
   - beginner
-  - web3.js
+  - JavaScript
   - jp
 social_image: /media/dfinity.jpeg
 description: |-

@@ -1,6 +1,7 @@
 ---
 title: Overview of the Internet Computer
 date: 2021-12-27 19:38
+slug: overview
 tags:
   - ICP
   - Dfinity
@@ -20,6 +21,3 @@ https://dfinity.org/howitworks
 
 ## Genesis Launch Event
 [![Genesis Launch Event](https://img.youtube.com/vi/xiupEw4MfxY/0.jpg)](https://www.youtube.com/watch?v=xiupEw4MfxY)
-
-## Disentangling DFINITY and Ethereum
-https://medium.com/dfinity/disentangling-dfinity-and-ethereum-dfa2151ad419
