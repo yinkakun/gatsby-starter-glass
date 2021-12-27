@@ -6,8 +6,11 @@ tags:
   - Dfinity
   - en
 description: |-
-  The Quick start provided a simplified introduction to the basic work flow for creating and deploying a new project without exploring the contents of the project directory or sample code.
+  Internet Computer Technology
 ---
+
+## Technology
+https://medium.com/dfinity/https-medium-com-dfinity-technology/home
 
 ## Execution
 https://www.youtube.com/watch?v=UHA7W-8My_I

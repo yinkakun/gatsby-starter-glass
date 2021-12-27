@@ -8,10 +8,9 @@ description: |-
   The DFINITY Foundation’s contributions to the Internet Computer roadmap are subject to community discussion and voting.
 ---
 
-## Roadmap
-https://dfinity.org/roadmap/
+## [Roadmap](https://dfinity.org/roadmap/)
 
-## Internet Computer Roadmap Guide: 25 Motion Proposals Outlining New Areas for Crypto Innovation]
+## Internet Computer Roadmap Guide: 25 Motion Proposals Outlining New Areas for Crypto Innovation
 https://medium.com/dfinity/the-internet-computers-long-term-r-d-plans-motion-proposals-guide-dce6fdcd697d
 
 ## Proposal
