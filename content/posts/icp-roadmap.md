@@ -10,6 +10,9 @@ description: |-
 
 ## [Roadmap](https://dfinity.org/roadmap/)
 
+## The Internet Computer Community Adopts 25 Proposals for Future Crypto Innovation
+https://medium.com/dfinity/the-internet-computer-community-adopts-25-proposals-for-future-crypto-innovation-7465984c5ad1
+
 ## Internet Computer Roadmap Guide: 25 Motion Proposals Outlining New Areas for Crypto Innovation
 https://medium.com/dfinity/the-internet-computers-long-term-r-d-plans-motion-proposals-guide-dce6fdcd697d
 
