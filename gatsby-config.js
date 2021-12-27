@@ -18,7 +18,7 @@ module.exports = {
       },
       {
         name: 'Twitter',
-        url: 'https://twitter.com/motosakanosita',
+        url: 'https://twitter.com/smacondev',
       },
     ],
   },
