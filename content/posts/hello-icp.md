@@ -3,6 +3,7 @@ title: 5ステップではじめるMotokoプログラミング
 date: 2021-08-15 19:38
 tags:
   - ICP
+  - motoko
   - beginner
 social_image: /media/dfinity.jpeg
 description: |-

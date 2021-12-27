@@ -13,11 +13,11 @@ module.exports = {
     },
     socialLinks: [
       {
-        name: 'github',
-        url: 'https://github.com/sakanosita',
+        name: 'GitHub',
+        url: 'https://github.com/sakanosita/smacon-dev',
       },
       {
-        name: 'twitter',
+        name: 'Twitter',
         url: 'https://twitter.com/motosakanosita',
       },
     ],
