@@ -1,6 +1,6 @@
 ---
 title: Overview of the Internet Computer
-date: 2021-12-27 19:38
+date: 2021-12-27 18:38
 tags:
   - ICP
   - Dfinity
