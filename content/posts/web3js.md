@@ -5,6 +5,7 @@ tags:
   - Solidity
   - beginner
   - web3.js
+  - jp
 social_image: /media/dfinity.jpeg
 description: |-
   自分で作ったスマートコントラクトを実行

@@ -4,6 +4,7 @@ date: 2021-06-03 00:00
 tags:
   - Solidity
   - beginner
+  - jp
 description: |-
   非エンジニアでもできるオリジナル仮想通貨の作り方
   完全にコピペでOK

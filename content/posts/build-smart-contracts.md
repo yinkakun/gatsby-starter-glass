@@ -4,6 +4,7 @@ date: 2021-07-06 00:00
 tags:
   - Solidity
   - beginner
+  - jp
 description: |-
   RemixとMetamaskを使い、スマートコントラクトをブロックチェーンに作ろう
   コードは全部コピペでOK!【初心者向け】

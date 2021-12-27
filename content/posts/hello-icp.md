@@ -5,6 +5,7 @@ tags:
   - ICP
   - motoko
   - beginner
+  - jp
 social_image: /media/dfinity.jpeg
 description: |-
   The Quick start provided a simplified introduction to the basic work flow for creating and deploying a new project without exploring the contents of the project directory or sample code.
