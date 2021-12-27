@@ -23,6 +23,12 @@ Aug 29,2020
 ### [Disentangling DFINITY and Ethereum](https://medium.com/dfinity/disentangling-dfinity-and-ethereum-dfa2151ad419)
 May 10, 2019
 
+### [The Decentralized Cloud Vision of the DFINITY Blockchain](https://medium.com/dfinity/the-decentralized-cloud-vision-of-the-dfinity-blockchain-f68449c49be2)
+Jul 25, 2017
+
+### [Future Governance? Integrating Traditional AI Technology Into the Blockchain Nervous System](https://medium.com/dfinity/future-governance-integrating-traditional-ai-technology-into-the-blockchain-nervous-system-825ababf9d9)
+Mar 21, 2017
+
 ### [Notes on protocols suitable for emerging Proof of Stake networks](https://dominic-w.medium.com/notes-on-protocols-suitable-for-emerging-proof-of-stake-networks-9c5f67361860)
 Dec 2, 2016
 
