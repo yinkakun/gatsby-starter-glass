@@ -15,10 +15,12 @@ https://smartcontracts.org/
 ### Motoko SDK
 https://smartcontracts.org/docs/language-guide/motoko.html
 
-#### [Motoko Playground](https://m7sm4-2iaaa-aaaab-qabra-cai.raw.ic0.app/)
+* [Motoko Playground](https://m7sm4-2iaaa-aaaab-qabra-cai.raw.ic0.app/)
+* [Overview of Building a Dapp in Motoko](https://www.youtube.com/watch?v=fFaNLKAgoUU)
 
 ### Rust SDK
 https://smartcontracts.org/docs/rust-guide/rust-intro.html
+* [Best Practices for Canisters in Rust](https://www.youtube.com/watch?v=36L33S_DYHY)
 
 ## Dev Forum
 https://forum.dfinity.org/
@@ -40,8 +42,6 @@ https://forum.dfinity.org/
 * [Charging Canister Cycles](https://www.youtube.com/watch?v=YL4R4jQ78u0)
   * [Deck](https://assets.ctfassets.net/ywqk17d3hsnp/2raWECOfhx8qZiJTS5QtlA/541072e45c1fc288f904e345703b72b1/Charging_canisters_cycles_on_the_IC.pdf)
 * [Threshold ECDSA Signing](https://www.youtube.com/watch?v=MulbKPwv6_s)
-* [Overview of Building a Dapp in Motoko](https://www.youtube.com/watch?v=fFaNLKAgoUU)
-* [Best Practices for Canisters in Rust](https://www.youtube.com/watch?v=36L33S_DYHY)
 * [Toniq Labs](https://www.youtube.com/watch?v=iGICt5NPADo)
 * [Departure Labs](https://www.youtube.com/watch?v=n9tU9VM-ZBs)
 
