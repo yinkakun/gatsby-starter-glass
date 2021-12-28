@@ -148,8 +148,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Frosted Blog`,
-        short_name: `Gatsby Frosted`,
+        name: `SMACON DEV`,
+        short_name: `smacon.dev`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
