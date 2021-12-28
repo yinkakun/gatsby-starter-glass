@@ -20,10 +20,10 @@ A Minimal & Beautiful Gatsby Personal Blog Starter With Nice Glassmorphism UI.
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yinkakun/gatsby-starter-glass
+git clone https://github.com/sakanosita/smacon-dev
 
 # 2. Navigate into repository
-cd gatsby-starter-glass
+cd smacon-dev
 
 # 3. Install the dependencies
 yarn install
@@ -32,7 +32,7 @@ yarn install
 yarn start
 
 # 5. Start the build mode
-yarn  build
+yarn build
 ```
 
 ## Configuration
