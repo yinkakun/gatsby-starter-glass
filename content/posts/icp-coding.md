@@ -33,9 +33,22 @@ https://forum.dfinity.org/
   * [DIP20 (Psychedelic)](https://github.com/Psychedelic/DIP20)
   * [DFT Standard (Deland Labs)](https://dft.delandlabs.com/)
 
-### [Grants](https://dfinity.org/grants/)
-### [Discord](https://discord.com/invite/cA7y6ezyE2)
-### [Telegram](https://t.me/dfinity/)
+### Community Conversations
+* [The Ledger Canister](https://www.youtube.com/watch?v=im5HBRd3mqo)
+* [Internet Identity](https://www.youtube.com/watch?v=vCyQb9IHNQY)
+* [Service Nervous System](https://www.youtube.com/watch?v=vCyQb9IHNQY)
+* [Charging Canister Cycles](https://www.youtube.com/watch?v=YL4R4jQ78u0)
+  * [Deck](https://assets.ctfassets.net/ywqk17d3hsnp/2raWECOfhx8qZiJTS5QtlA/541072e45c1fc288f904e345703b72b1/Charging_canisters_cycles_on_the_IC.pdf)
+* [Threshold ECDSA Signing](https://www.youtube.com/watch?v=MulbKPwv6_s)
+* [Overview of Building a Dapp in Motoko](https://www.youtube.com/watch?v=fFaNLKAgoUU)
+* [Best Practices for Canisters in Rust](https://www.youtube.com/watch?v=36L33S_DYHY)
+* [Toniq Labs](https://www.youtube.com/watch?v=iGICt5NPADo)
+* [Departure Labs](https://www.youtube.com/watch?v=n9tU9VM-ZBs)
+
+### Links
+* [Grants](https://dfinity.org/grants/)
+* [Discord](https://discord.com/invite/cA7y6ezyE2)
+* [Telegram](https://t.me/dfinity/)
 
 ### In-site Pages
 * [Overview](/blog/icp-overview)
