@@ -33,8 +33,6 @@ https://forum.dfinity.org/
   * [DIP20 (Psychedelic)](https://github.com/Psychedelic/DIP20)
   * [DFT Standard (Deland Labs)](https://dft.delandlabs.com/)
 
-### Psychedelic
-
 ### [Grants](https://dfinity.org/grants/)
 ### [Discord](https://discord.com/invite/cA7y6ezyE2)
 ### [Telegram](https://t.me/dfinity/)
