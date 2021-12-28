@@ -25,7 +25,15 @@ https://forum.dfinity.org/
 
 ### Community Consideration
 * [Non Fungible Token (NFT) Standard](https://forum.dfinity.org/t/non-fungible-token-nft-standard-community-consideration/6157)
+  * [EXT Standard (Toniq Labs)](https://github.com/Toniq-Labs/extendable-token)
+  * [ICPunks](https://github.com/stopak/ICPunks)
+  * [DepartureLabs](https://github.com/DepartureLabsIC/non-fungible-token)
+  * [DAB NFT List](https://github.com/Psychedelic/dab/blob/main/registries/nft/list.json)
 * [Fungible Token Standard](https://forum.dfinity.org/t/fungible-token-standard-community-consideration/6158)
+  * [DIP20 (Psychedelic)](https://github.com/Psychedelic/DIP20)
+  * [DFT Standard (Deland Labs)](https://dft.delandlabs.com/)
+
+### Psychedelic
 
 ### [Grants](https://dfinity.org/grants/)
 ### [Discord](https://discord.com/invite/cA7y6ezyE2)
