@@ -28,3 +28,9 @@ https://medium.com/dfinity/announcing-internet-computer-mainnet-and-a-20-year-ro
 - [YouTube](https://www.youtube.com/watch?v=MxBIvPhPzzc)
 - [Medium](https://medium.com/dfinity/motion-proposal-to-integrate-bitcoin-with-the-internet-computer-is-approved-95b00e1dcc9c)
 - [Proposal](https://dashboard.internetcomputer.org/proposal/20586)
+
+### In-site Pages
+* [Overview](/blog/icp-overview)
+* [Technology](/blog/inside-icp)
+* [Development](/blog/icp-roadmap)
+* [Roadmap](/blog/icp-roadmap)

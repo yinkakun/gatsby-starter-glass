@@ -36,3 +36,9 @@ https://internetcomputer.org/education
 
 ## Dashboard
 https://dashboard.internetcomputer.org/
+
+### In-site Pages
+* [Overview](/blog/icp-overview)
+* [Technology](/blog/inside-icp)
+* [Development](/blog/icp-roadmap)
+* [Roadmap](/blog/icp-roadmap)

@@ -52,4 +52,6 @@ https://forum.dfinity.org/
 
 ### In-site Pages
 * [Overview](/blog/icp-overview)
+* [Technology](/blog/inside-icp)
+* [Development](/blog/icp-roadmap)
 * [Roadmap](/blog/icp-roadmap)
