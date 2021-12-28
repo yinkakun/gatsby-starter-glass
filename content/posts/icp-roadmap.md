@@ -10,6 +10,9 @@ description: |-
 
 ## [Roadmap](https://dfinity.org/roadmap/)
 
+## Dev Forum (Roadmap)
+https://forum.dfinity.org/c/roadmap/29/l/top
+
 ## The Internet Computer Community Adopts 25 Proposals for Future Crypto Innovation
 https://medium.com/dfinity/the-internet-computer-community-adopts-25-proposals-for-future-crypto-innovation-7465984c5ad1
 
