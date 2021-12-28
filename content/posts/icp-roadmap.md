@@ -22,6 +22,9 @@ https://medium.com/dfinity/the-internet-computers-long-term-r-d-plans-motion-pro
 ## Announcing the Internet Computer “Mainnet” and a 20-Year Roadmap
 https://medium.com/dfinity/announcing-internet-computer-mainnet-and-a-20-year-roadmap-790e56cbe04a
 
-## Proposal
-### Direct Integration of Internet Computer with Bitcoin network
-https://dashboard.internetcomputer.org/proposal/20586
+### DIRECT INTEGRATION WITH BITCOIN
+- [How it works](https://dfinity.org/howitworks/direct-integration-with-bitcoin)
+- [Forum](https://forum.dfinity.org/t/direct-integration-with-bitcoin/6147)
+- [YouTube](https://www.youtube.com/watch?v=MxBIvPhPzzc)
+- [Medium](https://medium.com/dfinity/motion-proposal-to-integrate-bitcoin-with-the-internet-computer-is-approved-95b00e1dcc9c)
+- [Proposal](https://dashboard.internetcomputer.org/proposal/20586)
