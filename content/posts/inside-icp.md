@@ -8,14 +8,17 @@ description: |-
   Internet Computer Technology
 ---
 
-## Technology
-https://medium.com/dfinity/https-medium-com-dfinity-technology/home
+## Medium
+* [Internet Computer Technology](https://medium.com/dfinity/https-medium-com-dfinity-technology/home)
+* [Achieving Consensus on the Internet Computer](https://medium.com/dfinity/achieving-consensus-on-the-internet-computer-ee9fbfbafcbc)
+* [Chain Key Cryptography: The Scientific Breakthrough Behind the Internet Computer](https://medium.com/dfinity/chain-key-technology-one-public-key-for-the-internet-computer-6a3644901e28)
 
 ## How ICP Works
 https://dfinity.org/howitworks
 
 ## Community Conversations
 https://dfinity.org/conversations
+* [Threshold ECDSA Signing](https://www.youtube.com/watch?v=MulbKPwv6_s)
 
 ## Dev Forum
 https://forum.dfinity.org/
