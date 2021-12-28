@@ -27,9 +27,10 @@ https://forum.dfinity.org/
 * [Non Fungible Token (NFT) Standard](https://forum.dfinity.org/t/non-fungible-token-nft-standard-community-consideration/6157)
 * [Fungible Token Standard](https://forum.dfinity.org/t/fungible-token-standard-community-consideration/6158)
 
-
-
 ### [Grants](https://dfinity.org/grants/)
-### [Roadmap](/blog/icp-roadmap)
 ### [Discord](https://discord.com/invite/cA7y6ezyE2)
 ### [Telegram](https://t.me/dfinity/)
+
+### In-site Pages
+* [Overview](/blog/icp-overview)
+* [Roadmap](/blog/icp-roadmap)
