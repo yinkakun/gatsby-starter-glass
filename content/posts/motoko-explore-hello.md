@@ -72,8 +72,9 @@ dfx start
 ### キャニスターの作成
 キャニスターとは、スマートコントラクトの入れ物です。
 直訳すると空き缶という意味で、ここでは空の入れ物をまず作るイメージです。
-
+dfx.jsonがあるプロジェクトディレクトリ上でdfxコマンドを実行します。
 ```
+cd explore_hello
 dfx canister create --all
 ```
 
@@ -165,3 +166,12 @@ greet()という関数に`"everyone"`というtext型の文字列を渡してい
 結果
 ("Hello, everyone!")
 ```
+
+### Internet Computerの停止
+
+以下のいずれかの方法でローカルPC上のICを停止できます。
+* dfx startを実行したターミナルでCtrl+Cを実行
+* dfx.jsonがあるディレクトリ上で以下のコマンドを実行
+  ```
+  dfx stop
+  ```
