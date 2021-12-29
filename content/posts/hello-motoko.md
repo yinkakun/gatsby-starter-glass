@@ -186,7 +186,7 @@ npm start
 
 Internet Computerの世界へようこそ
 
-つぎはチュートリアルに進んでください！
+公式のいろんなMotokoのTutorialを日本語で解説しています。
 
 * [Explore the default project](/blog/motoko-explore-hello)
 * [Query using an actor](/blog/motoko-actor-hello/)
