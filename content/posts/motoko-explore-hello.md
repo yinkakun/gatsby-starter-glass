@@ -6,7 +6,7 @@ tags:
   - motoko
   - JP
 description: |-
-  DFINITYのチュートリアルの日本語解説
+  DFINITYチュートリアル「Explore the default project」日本語解説
   Motokoの勉強をどうやって始めたらわからない人が最初にやること
 ---
 
@@ -29,7 +29,7 @@ description: |-
 ## 手順
 ### プロジェクトの作成
 
-新しいプロジェクトを作ります
+新しいプロジェクトを作ります。
 ```
 dfx new explore_hello
 ```
