@@ -71,7 +71,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       filter: { fields: { contentType: { eq: "posts" } } }
       sort: { order: DESC, fields: frontmatter___date }
-      limit: 15
+      limit: 9
     ) {
       nodes {
         fields {
