@@ -186,7 +186,7 @@ npm start
 
 Internet Computerの世界へようこそ
 
-公式のいろんなMotokoのTutorialを日本語で解説しています。
+公式のいろんなTutorialを日本語で解説しています。
 
 * [Explore the default project](/blog/motoko-explore-hello)
 * [Query using an actor](/blog/motoko-actor-hello/)
@@ -194,5 +194,5 @@ Internet Computerの世界へようこそ
 * [Use integers in calculator functions](/blog/motoko-calc)
 
 
-DFINITYやいろんなブロックチェーンを使った最新の開発情報をTwitterで発信しています。
+DFINITYやいろんなブロックチェーンを使った開発情報をTwitterで発信しています。
 [@motosakanosita](https://twitter.com/motosakanosita)
