@@ -2,8 +2,8 @@
 title: Internet Computer Roadmap
 date: 2021-12-27 23:38
 tags:
-  - ICP
   - Dfinity
+  - ICP
 description: |-
   The DFINITY Foundation’s contributions to the Internet Computer roadmap are subject to community discussion and voting.
 ---

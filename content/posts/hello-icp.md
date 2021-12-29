@@ -2,8 +2,8 @@
 title: 5ステップではじめるMotokoプログラミング【Dfinity開発】
 date: 2021-08-15 19:38
 tags:
-  - ICP
   - Dfinity
+  - ICP
   - motoko
   - beginner
   - jp

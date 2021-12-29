@@ -2,8 +2,8 @@
 title: Start Coding on the Internet Computer
 date: 2021-12-28 18:38
 tags:
-  - ICP
   - Dfinity
+  - ICP
   - motoko
 description: |-
   YOU ARE WELCOME TO START CODING ON THE INTERNET COMPUTER.

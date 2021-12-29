@@ -2,8 +2,8 @@
 title: Overview of the Internet Computer
 date: 2021-12-27 18:38
 tags:
-  - ICP
   - Dfinity
+  - ICP
 description: |-
   A Technical Overview of the Internet Computer
   How the Internet Computer Works
