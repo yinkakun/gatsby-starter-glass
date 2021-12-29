@@ -186,6 +186,6 @@ npm start
 
 ようこそ、Internet Computerの世界へ！
 
-DFINITY(Internet Computer)を使った最新の開発情報をTwitterで発信しています。
+DFINITYやいろんなブロックチェーンを使った最新の開発情報をTwitterで発信しています。
 
 [@motosakanosita](https://twitter.com/motosakanosita)
