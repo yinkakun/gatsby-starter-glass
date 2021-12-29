@@ -2,14 +2,14 @@ module.exports = {
   siteMetadata: {
     title: `smacon.dev`,
     author: {
-      name: `Yinka Adedire`,
-      summary: `Self-taught front-end web dev. JAMStack.`,
+      name: `Moto Sakanosita`,
+      summary: `Web3 Programmer, Edtech, Motoko, Rust, Solidity`,
     },
     openGraphImage: `open-graph-image.png`,
     description: `A minimal & beautiful gatsby personal blog starter with a nice glassmorphism UI.`,
     siteUrl: `https://gatsbyglass.netlify.app`,
     social: {
-      twitter: `yinkakun`,
+      twitter: `smacondev`,
     },
     socialLinks: [
       {
