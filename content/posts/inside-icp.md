@@ -2,7 +2,7 @@
 title: Inside the Internet Computer
 date: 2021-12-27 19:38
 tags:
-  - Dfinity
+  - DFINITY
 description: |-
   Internet Computer Technology
 ---

@@ -2,8 +2,10 @@
 title: Start Coding for Dfinity
 date: 2021-12-28 18:38
 tags:
-  - Dfinity
+  - DFINITY
   - motoko
+  - Rust
+  - beginner
 description: |-
   YOU ARE WELCOME TO START CODING ON THE INTERNET COMPUTER.
 ---

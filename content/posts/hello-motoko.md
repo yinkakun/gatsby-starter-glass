@@ -1,8 +1,8 @@
 ---
-title: 5ステップではじめるMotokoプログラミング【Dfinity開発】
+title: 5ステップではじめるMotokoプログラミング【DFINITY開発】
 date: 2021-08-15 19:38
 tags:
-  - Dfinity
+  - DFINITY
   - motoko
   - beginner
   - jp
