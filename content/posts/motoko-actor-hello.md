@@ -106,7 +106,7 @@ actor_hello % tree .dfx/local/canisters
 
 ### デプロイ
 
-ローカルのICを起動します。
+ローカルの実行環境を起動します。
 ```
 dfx start --background
 ```
@@ -145,7 +145,7 @@ dfx startを実行したウィンドウでは、以下のように出力され�
 ```
 
 ### 停止
-dfx.jsonがあるディレクトリで以下のコマンドを実行して、テスト用のInternet Computerを停止します。
+dfx.jsonがあるディレクトリで以下のコマンドを実行して、実行環境を停止します。
 ```
 dfx stop
 ```

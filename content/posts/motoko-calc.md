@@ -63,6 +63,7 @@ dfx.jsonにあるソースコードのファイル名を`src/calc/calc_main.mo`�
 cp src/calc/main.mo src/calc/calc_main.mo
 ```
 
+`src/calc/calc_main.mo`を以下のように編集して保存します。
 ```
 // This single-cell calculator defines one calculator instruction per
 // public entry point (add, sub, mul, div).
@@ -91,3 +92,9 @@ actor Calc {
   };
  };
  ```
+
+ ## デプロイ
+
+ローカルの実行環境を起動します。
+ ```
+ dfx start

@@ -54,8 +54,8 @@ actor {
 greet()という関数に文字列を渡すと `Hello, <文字列>!`を返す簡単なプログラムです。
 
 
-### テスト用のInternet Computerを起動
-以下のコマンドを実行して、ローカルPC上にテスト用のInternet Computerを起動します。
+### ローカル実行環境の起動
+以下のコマンドを実行して、ローカルPC上に実行環境を起動します。
 dfx.jsonファイルがあるディレクトリでdfxコマンドを実行してください。
 
 ```
@@ -87,7 +87,7 @@ Creating canister "explore_hello"...
 Creating canister "explore_hello_assets"...
 "explore_hello_assets" canister created with canister id: "ryjl3-tyaaa-aaaaa-aaaba-cai"
 ```
-最初に`dfx start`で`local`に起動したテスト用のInternet Computerに
+最初に`dfx start`で`local`に起動したローカル実行環境に
 `default`ユーザーによって
 2つのキャニスターが作られました。
 
@@ -122,7 +122,7 @@ Building frontend...
 ```
 
 ### デプロイ
-先ほどビルドして作成したWASMモジュールをInternet Computer上にデプロイします。
+先ほどビルドして作成したWASMモジュールを実行環境にデプロイします。
 ```
 dfx canister install --all
 ```
@@ -151,7 +151,7 @@ Staging contents of new and changed assets:
   /index.js.map (gzip) 1/1 (148954 bytes)
 Committing batch.
 ```
-最初に`dfx start`コマンドでローカルPC上に起動したICにキャニスターをデプロイしました。
+最初に`dfx start`コマンドでローカルの実行環境にキャニスターをデプロイしました。
 
 ### 実行
 キャニスターを実行してみましょう。
@@ -168,9 +168,9 @@ greet()という関数に`"everyone"`というtext型の文字列を渡してい
 ("Hello, everyone!")
 ```
 
-### Internet Computerの停止
+### ローカル実行環境の停止
 
-以下のいずれかの方法でローカルPC上のICを停止できます。
+以下のいずれかの方法でローカルPCの実行環境を停止できます。
 * dfx startを実行したターミナルでCtrl+Cを実行
 * dfx.jsonがあるディレクトリ上で以下のコマンドを実行
   ```

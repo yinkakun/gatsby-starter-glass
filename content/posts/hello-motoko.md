@@ -90,9 +90,9 @@ $ ls
 README.md dfx.json dist node_modules package-lock.json package.json src webpack.config.js
 ```
 
-## ステップ3: PC版のテスト用Internet Computerを起動する
+## ステップ3: ローカル実行環境を起動する
 
-helloディレクトリにいる状態で、ローカルPC上でテスト用のIC(Internet Computer)を起動します。
+helloディレクトリにいる状態で、ローカルPC上で実行環境を起動します。
 
 ```
 dfx start --background
@@ -127,7 +127,7 @@ npmを使ってJavaScriptのライブラリをインストールしています�
 
 フロントエンドのプログラムはChromeなどのブラウザで実行することになるので、DFINITYの場合でも、そうじゃなくても同じJavaScriptを使います。
 
-続いて、Hello WorldプログラムをビルドしてローカルPC上のICにデプロイします。
+続いて、Hello Worldプログラムをビルドしてローカル実行環境にデプロイします。
 
 ```
 dfx deploy
@@ -135,7 +135,7 @@ dfx deploy
 
 このコマンドでは、以下の3つのことをまとめてやってくれます。
 
-* テスト用Internet Computerにキャニスターを作る（IDを取得する）
+* ローカル実行環境にキャニスターを作る（IDを取得する）
 * Motokoで書いたソースコードをコンパイルして、WASM実行プログラムを作る
 * WAS実行プログラムをキャニスターにインストールする
 
@@ -180,7 +180,7 @@ npm start
 
 ![icp](/media/hello-icp-2.png)
 
-今は、ローカルPC上のテスト用のInternet Computerにデプロイしたプログラム（キャニスター）を呼び出しています。
+今は、ローカルPC上の実行環境にデプロイしたプログラム（キャニスター）を呼び出しています。
 
 これからICPトークンやCycleトークンを使って、インターネット上のInternet Computerにキャニスターをデプロイすることで、世界中のどこからでも自分の作るキャニスターを呼び出せるようになります。
 

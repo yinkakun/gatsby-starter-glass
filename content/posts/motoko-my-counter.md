@@ -89,7 +89,7 @@ actor Counter {
 `increment`は`currentValue`を+1します。
 
 ### 起動
-以下のどちらかのコマンドでローカルPC上にICを起動します。
+以下のどちらかのコマンドでローカルPCで実行環境を起動します。
 ```
 dfx start
 ```
@@ -230,8 +230,8 @@ GOをクリックすると以下のような画面表示に変わります。
 
 `QUERY`, `CALL`, `RANDOM` をクリックして自由に試してみましょう！
 
-### テスト用Internet Computerの停止
-終わったらローカルPC上のテスト用Internet Computerを停止します。
+### ローカル実行環境の停止
+終わったらローカルPC上の実行環境を停止します。
 ```
 dfx stop
 ```
