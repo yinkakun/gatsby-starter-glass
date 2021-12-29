@@ -37,7 +37,8 @@ description: |-
 新しいプロジェクトを作ります。
 
 ```
-dfx new actor_hello
+dfx new my_counter
+cd my_counter
 ```
 
 ### ソースファイル名の変更

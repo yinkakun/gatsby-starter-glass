@@ -38,6 +38,7 @@ description: |-
 
 ```
 dfx new actor_hello
+cd actor_hello
 ```
 
 ### 不要なコードの削除
