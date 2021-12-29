@@ -13,20 +13,20 @@ description: |-
 この記事はこんな人におすすめです
 
 * Motokoを使って開発を始めたい
-* Dfinity(Internet Computer)に興味がある
+* DFINITY(Internet Computer)に興味がある
 * はじめてDAppsやブロックチェーンで開発したい
 * 新しい技術好きのエンジニア
 * 将来Webエンジニアになりたい
 
 ぼくは2017年ごろからブロックチェーンを触り、2021年現在はWeb系のグローバルスタートアップで働く本業の傍らで、ブロックチェーンを使ったサービスを開発しています。
 
-Dfinity(Internet Computer)は2021年5月に開始したサービスで、これまでの一般的なWeb開発をもっとシンプルに変えてくれる、革新的な技術を使っています。インターネットそのものをTCP/IPのレイヤーから見直して再設計しており、裏側ではブロックチェーンの技術を使っています。
+DFINITY(Internet Computer)は2021年5月に開始したサービスで、これまでの一般的なWeb開発をもっとシンプルに変えてくれる、革新的な技術を使っています。インターネットそのものをTCP/IPのレイヤーから見直して再設計しており、裏側ではブロックチェーンの技術を使っています。
 
 誰でもパソコンさえあれば、無料で簡単に始めることができるので、まずは実際にやってみましょう。
 
 
 ## はじめに
-当記事で紹介する５つのステップは、Dfinityの公式ページに簡潔にまとまっています。
+当記事で紹介する５つのステップは、DFINITYの公式ページに簡潔にまとまっています。
 
 https://smartcontracts.org/
 
@@ -125,7 +125,7 @@ npm install
 
 npmを使ってJavaScriptのライブラリをインストールしています。
 
-フロントエンドのプログラムはChromeなどのブラウザで実行することになるので、Dfinityの場合でも、そうじゃなくても同じJavaScriptを使います。
+フロントエンドのプログラムはChromeなどのブラウザで実行することになるので、DFINITYの場合でも、そうじゃなくても同じJavaScriptを使います。
 
 続いて、Hello WorldプログラムをビルドしてローカルPC上のICにデプロイします。
 
@@ -186,6 +186,6 @@ npm start
 
 ようこそ、Internet Computerの世界へ！
 
-Dfinity(Internet Computer)を使った最新の開発情報をTwitterで発信しています。
+DFINITY(Internet Computer)を使った最新の開発情報をTwitterで発信しています。
 
 [@motosakanosita](https://twitter.com/motosakanosita)
