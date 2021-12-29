@@ -26,6 +26,7 @@ description: |-
 * macOS: 11.5.2
 * npm version: 8.1.3
 
+## 手順
 ### プロジェクトの作成
 
 新しいプロジェクトを作ります
@@ -108,7 +109,7 @@ cat .dfx/local/canister_ids.json
 }
 ```
 
-## ビルド
+### ビルド
 ソースコードをビルドします。
 ```
 dfx build
