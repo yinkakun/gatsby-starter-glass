@@ -96,5 +96,113 @@ actor Calc {
  ## デプロイ
 
 ローカルの実行環境を起動します。
- ```
- dfx start
+```
+dfx start
+```
+デプロイします。
+```
+dfx deploy
+```
+```
+出力
+Creating a wallet canister on the local network.
+The wallet canister on the "local" network for user "default" is "rwlgt-iiaaa-aaaaa-aaaaa-cai"
+
+<中略>
+
+Committing batch.
+Deployed canisters.
+```
+
+## 実行
+
+`add`関数に10を渡して実行します。
+```
+calc % dfx canister call calc add '(10)'
+```
+```
+出力
+(10 : int)
+```
+`mul`関数に3を渡して実行します。(10 x 3)
+```
+dfx canister call calc mul '(3)'
+```
+```
+出力
+(30 : int)
+```
+`sub`関数に5を渡して実行します。(30 - 5)
+```
+dfx canister call calc sub '(5)'
+```
+```
+出力
+(25 : int)
+```
+`div`関数に5を渡して実行します。(25 / 5)
+```
+dfx canister call calc div '(5)'
+```
+```
+出力
+(opt (5 : int))
+```
+`mul`関数に-4を渡して実行します。(5 x -4)
+```
+calc % dfx canister call calc mul '(-4)'
+```
+```
+出力
+(-20 : int)
+```
+`clearall`関数を実行してリセットします。
+```
+dfx canister call calc clearall
+```
+```
+出力
+(0 : int)
+```
+
+## Candid UIを使った実行
+
+ローカル実行環境のCandidキャニスターIDを確認します。
+```
+dfx canister id __Candid_UI
+```
+
+```
+出力
+r7inp-6aaaa-aaaaa-aaabq-cai
+```
+
+もし、実行環境が停止中なら起動します。
+```
+dfx start --background
+```
+
+先程のキャニスターIDに置き換えて、以下のURLにブラウザでアクセスします。
+```
+http://127.0.0.1:8000/?canisterId=<CANDID-UI-CANISTER-IDENTIFIER>
+```
+```
+http://127.0.0.1:8000/?canisterId=r7inp-6aaaa-aaaaa-aaabq-cai
+```
+`calc`キャニスターのIDを取得して、ブラウザの`Provide a canister ID`に入力します。
+```
+calc % dfx canister id calc
+```
+
+以下のような画面が表示されます。
+
+![Candid UI](/media/motoko-calc/2.png)
+
+それぞれの関数をいろいろ試してみましょう！
+
+## ローカル実行環境の停止
+
+終わったらローカルPC上の実行環境を停止します。
+```
+dfx stop
+```
