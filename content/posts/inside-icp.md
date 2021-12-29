@@ -3,7 +3,6 @@ title: Inside the Internet Computer
 date: 2021-12-27 19:38
 tags:
   - Dfinity
-  - ICP
 description: |-
   Internet Computer Technology
 ---
@@ -41,7 +40,7 @@ https://forum.dfinity.org/
 * [Consensus Overview](https://www.youtube.com/watch?v=vVLRRYh3JYo)
 
 ### In-site Pages
-* [Overview](/blog/icp-overview)
+* [Overview](/blog/dfinity-overview)
 * [Technology](/blog/inside-icp)
-* [Development](/blog/icp-roadmap)
-* [Roadmap](/blog/icp-roadmap)
+* [Development](/blog/dfinity-coding)
+* [Roadmap](/blog/dfinity-roadmap)

@@ -1,9 +1,8 @@
 ---
-title: Start Coding on the Internet Computer
+title: Start Coding for Dfinity
 date: 2021-12-28 18:38
 tags:
   - Dfinity
-  - ICP
   - motoko
 description: |-
   YOU ARE WELCOME TO START CODING ON THE INTERNET COMPUTER.
@@ -51,7 +50,7 @@ https://forum.dfinity.org/
 * [Telegram](https://t.me/dfinity/)
 
 ### In-site Pages
-* [Overview](/blog/icp-overview)
+* [Overview](/blog/dfinity-overview)
 * [Technology](/blog/inside-icp)
-* [Development](/blog/icp-roadmap)
-* [Roadmap](/blog/icp-roadmap)
+* [Development](/blog/dfinity-coding)
+* [Roadmap](/blog/dfinity-roadmap)

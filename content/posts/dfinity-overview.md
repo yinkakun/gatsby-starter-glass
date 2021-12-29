@@ -1,9 +1,8 @@
 ---
-title: Overview of the Internet Computer
+title: Overview of Dfinity (Internet Computer)
 date: 2021-12-27 18:38
 tags:
   - Dfinity
-  - ICP
 description: |-
   A Technical Overview of the Internet Computer
   How the Internet Computer Works
@@ -38,7 +37,7 @@ https://internetcomputer.org/education
 https://dashboard.internetcomputer.org/
 
 ### In-site Pages
-* [Overview](/blog/icp-overview)
+* [Overview](/blog/dfinity-overview)
 * [Technology](/blog/inside-icp)
-* [Development](/blog/icp-roadmap)
-* [Roadmap](/blog/icp-roadmap)
+* [Development](/blog/dfinity-coding)
+* [Roadmap](/blog/dfinity-roadmap)

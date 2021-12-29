@@ -1,9 +1,8 @@
 ---
-title: Internet Computer Roadmap
+title: Dfinity Roadmap
 date: 2021-12-27 23:38
 tags:
   - Dfinity
-  - ICP
 description: |-
   The DFINITY Foundation’s contributions to the Internet Computer roadmap are subject to community discussion and voting.
 ---
@@ -30,7 +29,7 @@ https://medium.com/dfinity/announcing-internet-computer-mainnet-and-a-20-year-ro
 - [Proposal](https://dashboard.internetcomputer.org/proposal/20586)
 
 ### In-site Pages
-* [Overview](/blog/icp-overview)
+* [Overview](/blog/dfinity-overview)
 * [Technology](/blog/inside-icp)
-* [Development](/blog/icp-roadmap)
-* [Roadmap](/blog/icp-roadmap)
+* [Development](/blog/dfinity-coding)
+* [Roadmap](/blog/dfinity-roadmap)
