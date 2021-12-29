@@ -1,5 +1,5 @@
 ---
-title: Start Coding for Dfinity
+title: Start Coding for DFINITY
 date: 2021-12-28 18:38
 tags:
   - DFINITY
