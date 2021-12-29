@@ -4,9 +4,9 @@ date: 2021-12-30 10:38
 tags:
   - DFINITY
   - motoko
-  - JP
 description: |-
-  Motoko Base Libraryの日本語解説
+  DFINITY (Internet Computer)
+  Motoko Base Library
 ---
 * [Array](https://smartcontracts.org/docs/base-libraries/Array.html)
 * [AssocList](https://smartcontracts.org/docs/base-libraries/AssocList.html)
