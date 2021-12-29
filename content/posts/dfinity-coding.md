@@ -32,6 +32,7 @@ https://forum.dfinity.org/
   * [ICPunks](https://github.com/stopak/ICPunks)
   * [DepartureLabs](https://github.com/DepartureLabsIC/non-fungible-token)
   * [DAB NFT List](https://github.com/Psychedelic/dab/blob/main/registries/nft/list.json)
+  * [DIP721 (Psychedelic)](https://github.com/Psychedelic/DIP721)
 * [Fungible Token Standard](https://forum.dfinity.org/t/fungible-token-standard-community-consideration/6158)
   * [DIP20 (Psychedelic)](https://github.com/Psychedelic/DIP20)
   * [DFT Standard (Deland Labs)](https://dft.delandlabs.com/)
