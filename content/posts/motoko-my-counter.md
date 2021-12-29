@@ -230,7 +230,7 @@ GOをクリックすると以下のような画面表示に変わります。
 
 `QUERY`, `CALL`, `RANDOM` をクリックして自由に試してみましょう！
 
-### 終了
+### テスト用Internet Computerの停止
 終わったらローカルPC上のテスト用Internet Computerを停止します。
 ```
 dfx stop
