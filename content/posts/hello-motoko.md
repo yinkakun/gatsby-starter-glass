@@ -184,8 +184,15 @@ npm start
 
 これからICPトークンやCycleトークンを使って、インターネット上のInternet Computerにキャニスターをデプロイすることで、世界中のどこからでも自分の作るキャニスターを呼び出せるようになります。
 
-ようこそ、Internet Computerの世界へ！
+Internet Computerの世界へようこそ
+
+つぎはチュートリアルに進んでください！
+
+* [Explore the default project](/blog/motoko-explore-hello)
+* [Query using an actor](/blog/motoko-actor-hello/)
+* [Increment a natural number](/blog/motoko-my-counter)
+* [Use integers in calculator functions](/blog/motoko-calc)
+
 
 DFINITYやいろんなブロックチェーンを使った最新の開発情報をTwitterで発信しています。
-
 [@motosakanosita](https://twitter.com/motosakanosita)
