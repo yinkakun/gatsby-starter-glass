@@ -1,13 +1,13 @@
 ---
-title: 【ERC20】オジリナル仮想通貨のつくり方
+title: 【コピペOK】オジリナル仮想通貨のつくり方（ERC20）
 date: 2021-06-03 00:00
 tags:
   - Solidity
   - beginner
   - jp
 description: |-
+  コピペでOK
   非エンジニアでもできるオリジナル仮想通貨の作り方
-  完全にコピペでOK
 
 ---
 

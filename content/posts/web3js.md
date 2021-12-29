@@ -8,8 +8,7 @@ tags:
   - jp
 social_image: /media/dfinity.jpeg
 description: |-
-  自分で作ったスマートコントラクトを実行
-  JavaScriptからスマコンを実行する方法
+  JavaScriptからスマートコントラクトを実行する方法
 
 ---
 
