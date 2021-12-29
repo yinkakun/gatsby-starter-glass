@@ -12,7 +12,7 @@ description: |-
 
 ## はじめに
 当記事は、DFINITYのMotokoのチュートリアルを日本語で解説しています。
-当記事で実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/motoko-tutorial/tree/main/01_explore_hello)で公開しています。
+当記事で実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/motoko-tutorial/tree/main/explore_hello)で公開しています。
 
 [Explore the default project](https://smartcontracts.org/docs/developers-guide/tutorials/explore-templates.html)
 
