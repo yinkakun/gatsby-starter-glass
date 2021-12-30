@@ -31,7 +31,7 @@ https://forum.dfinity.org/
 * [Canister Lifecycle / Bogdan Warinschi](https://www.youtube.com/watch?v=c5nv6vIG3OQ)
 * [Message Routing / David Derler](https://www.youtube.com/watch?v=YexfeByBXlo)
 * [Resumption / Manu Drijvers](https://www.youtube.com/watch?v=H7HCqonSMFU)
-* [Upgrades](https://www.youtube.com/watch?v=mPjiO2bk2lI)
+* [Upgrades / Stefan Kaestle](https://www.youtube.com/watch?v=mPjiO2bk2lI)
 * [Peer-to-Peer (P2P) / Yotam Harchol](https://www.youtube.com/watch?v=HOQb0lKIy9I)
 * [Identity and Authentication on the Internet Computer / Bjorn Tackmann](https://www.youtube.com/watch?v=9eUTcCP_ELM)
 * [Non-interactive Distributed Key Generation and Key Resharing / Jens Groth](https://www.youtube.com/watch?v=gKUi-2T7tdc)
