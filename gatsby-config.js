@@ -14,7 +14,7 @@ module.exports = {
     socialLinks: [
       {
         name: 'GitHub',
-        url: 'https://github.com/sakanosita/smacon-dev',
+        url: 'https://github.com/smacon-dev',
       },
       {
         name: 'Twitter',
