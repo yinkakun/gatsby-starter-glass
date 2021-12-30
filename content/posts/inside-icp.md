@@ -23,11 +23,11 @@ https://dfinity.org/conversations
 https://forum.dfinity.org/
 
 ## YouTube
-* [Execution](https://www.youtube.com/watch?v=UHA7W-8My_I)
+* [Execution / Akhi Singhania](https://www.youtube.com/watch?v=UHA7W-8My_I)
 * [Ingress Message Lifecycle / Yavonne-anne Pignolet](https://www.youtube.com/watch?v=FJE1s8ZkUyg)
 * [State Synchronization / Yavonne-anne Pignolet](https://www.youtube.com/watch?v=WaNJINjGleg)
 * [Certified Variables / Joachim Breitner](https://www.youtube.com/watch?v=mZbFhRIHIiY)
-* [Bootstrapping](https://www.youtube.com/watch?v=vGmlfLW3scA)
+* [Bootstrapping / Andrea Cerulli](https://www.youtube.com/watch?v=vGmlfLW3scA)
 * [Canister Lifecycle / Bogdan Warinschi](https://www.youtube.com/watch?v=c5nv6vIG3OQ)
 * [Message Routing / David Derler](https://www.youtube.com/watch?v=YexfeByBXlo)
 * [Resumption / Manu Drijvers](https://www.youtube.com/watch?v=H7HCqonSMFU)
