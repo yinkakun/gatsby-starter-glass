@@ -53,7 +53,8 @@ https://forum.dfinity.org/
   * [Deck](https://assets.ctfassets.net/ywqk17d3hsnp/2raWECOfhx8qZiJTS5QtlA/541072e45c1fc288f904e345703b72b1/Charging_canisters_cycles_on_the_IC.pdf)
 * [Randomness / Manu Drijvers](https://www.youtube.com/watch?v=nl5BuiWClD0)
 * [Overview of the Developer Grants Program](https://www.youtube.com/watch?v=hoYo-c9SMfQ)
-* [Threshold ECDSA Signing](https://www.youtube.com/watch?v=MulbKPwv6_s)
+* [Threshold ECDSA Signing / Victor Shoup](https://www.youtube.com/watch?v=MulbKPwv6_s)
+* [Increased Canister Storage](https://www.youtube.com/watch?v=YGG1s37juDY)
 * [Toniq Labs](https://www.youtube.com/watch?v=iGICt5NPADo)
 * [Departure Labs](https://www.youtube.com/watch?v=n9tU9VM-ZBs)
 
