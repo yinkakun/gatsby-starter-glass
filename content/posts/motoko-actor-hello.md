@@ -4,6 +4,7 @@ date: 2021-12-29 20:38
 tags:
   - DFINITY
   - motoko
+  - Tutorial
   - JP
 description: |-
   DFINITYチュートリアル「Query using an actor」の日本語解説

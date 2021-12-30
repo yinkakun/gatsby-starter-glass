@@ -188,10 +188,12 @@ Internet Computerの世界へようこそ
 公式のいろんなTutorialを日本語で解説しています。
 
 * [Explore the default project](/blog/motoko-explore-hello)
-* [Query using an actor](/blog/motoko-actor-hello/)
+* [Query using an actor](/blog/motoko-actor-hello)
+* [Pass text arguments](/blog/motoko-location-hello)
 * [Increment a natural number](/blog/motoko-my-counter)
 * [Use integers in calculator functions](/blog/motoko-calc)
-
+* [Import library modules](/blog/motoko-phonebook)
+* [Use multiple actors](/blog/motoko-multiple-actors)
 
 DFINITYやいろんなブロックチェーンを使った開発情報をTwitterで発信しています。
 [@motosakanosita](https://twitter.com/motosakanosita)

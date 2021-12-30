@@ -4,6 +4,7 @@ date: 2021-12-29 21:38
 tags:
   - DFINITY
   - motoko
+  - Tutorial
   - JP
 description: |-
   DFINITYチュートリアル「Increment a natural number」の日本語解説

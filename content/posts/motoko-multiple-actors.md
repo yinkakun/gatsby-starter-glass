@@ -4,6 +4,7 @@ date: 2021-12-30 15:38
 tags:
   - DFINITY
   - motoko
+  - Tutorial
   - JP
 description: |-
   DFINITYチュートリアル「Use multiple actors」の日本語解説

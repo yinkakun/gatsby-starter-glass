@@ -4,6 +4,7 @@ date: 2021-12-30 06:38
 tags:
   - DFINITY
   - motoko
+  - Tutorial
   - JP
 description: |-
   DFINITYチュートリアル「Import library modules」の日本語解説
