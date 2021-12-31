@@ -8,7 +8,7 @@ const Footer = () => {
     <StyledFooter>
       <FooterWrapper>
         <SocialLinks />
-        © Moto Sakanosita
+        © 2021 Moto Sakanosita
         {/* <FooterAttribution>
           Hand-crafted with love by{' '}
           <a href="https://twitter.com/yinkakun">Yinka Adedire</a>
