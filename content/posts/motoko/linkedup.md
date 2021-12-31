@@ -3,7 +3,6 @@ title: "Motoko Tutorial: Make inter-canister calls"
 date: 2021-12-30 21:00
 slug: /motoko-linkedup
 tags:
-  - DFINITY
   - motoko
   - Tutorial
   - jp

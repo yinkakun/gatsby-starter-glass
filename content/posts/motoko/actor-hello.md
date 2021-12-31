@@ -3,7 +3,6 @@ title: "Motoko Tutorial: Query using an actor"
 date: 2021-12-29 20:38
 slug: /motoko-actor-hello
 tags:
-  - DFINITY
   - motoko
   - Tutorial
   - jp

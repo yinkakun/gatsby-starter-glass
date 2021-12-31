@@ -3,7 +3,6 @@ title: "Motoko Tutorial: Explore the default project"
 date: 2021-12-29 19:38
 slug: /motoko-explore-hello
 tags:
-  - DFINITY
   - motoko
   - Tutorial
   - jp

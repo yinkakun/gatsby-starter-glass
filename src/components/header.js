@@ -34,6 +34,10 @@ const Header = () => {
           </HeaderNavListItem>
 
           <HeaderNavListItem>
+            <Link to="/tags/dfinity">DFINITY</Link>
+          </HeaderNavListItem>
+
+          <HeaderNavListItem>
             <Link to="/about">About</Link>
           </HeaderNavListItem>
 
