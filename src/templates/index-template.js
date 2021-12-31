@@ -17,7 +17,6 @@ const HomePage = ({ data }) => {
           __html: intro,
         }}
       />
-
       <PostList posts={posts} />
       <StyledLink
         css={`
