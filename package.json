@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-glass",
+  "name": "smacon-dev",
   "private": true,
   "description": "A minimal & beautiful gatsby personal blog starter with a nice glassmorphism UI.",
   "version": "1.0.0",
-  "author": "Yinka Adedire <yinkakun@gmail.com>",
+  "author": "Moto Sakanosita <moto@sakanosita.org>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.12.0",
     "env-cmd": "^10.1.0",
