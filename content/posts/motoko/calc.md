@@ -1,5 +1,5 @@
 ---
-title: "Motoko Tutorials: Use integers in calculator functions"
+title: "Motoko Tutorial: Use integers in calculator functions"
 date: 2021-12-29 22:38
 slug: /motoko-calc
 tags:

@@ -1,5 +1,5 @@
 ---
-title: "Motoko Tutorials: Make inter-canister calls"
+title: "Motoko Tutorial: Make inter-canister calls"
 date: 2021-12-30 21:00
 slug: /motoko-linkedup
 tags:

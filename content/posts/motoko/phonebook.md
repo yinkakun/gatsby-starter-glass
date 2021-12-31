@@ -1,5 +1,5 @@
 ---
-title: "Motoko Tutorials: Import library modules"
+title: "Motoko Tutorial: Import library modules"
 date: 2021-12-30 06:38
 tags:
   - DFINITY

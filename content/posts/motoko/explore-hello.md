@@ -1,5 +1,5 @@
 ---
-title: "Motoko Tutorials: Explore the default project"
+title: "Motoko Tutorial: Explore the default project"
 date: 2021-12-29 19:38
 slug: /motoko-explore-hello
 tags:

@@ -1,5 +1,5 @@
 ---
-title: "Motoko Tutorials: Increment a natural number"
+title: "Motoko Tutorial: Increment a natural number"
 date: 2021-12-29 21:38
 slug: /motoko-my-counter
 tags:

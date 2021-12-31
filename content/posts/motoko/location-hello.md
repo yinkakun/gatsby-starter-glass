@@ -1,5 +1,5 @@
 ---
-title: "Motoko Tutorials: Pass text arguments"
+title: "Motoko Tutorial: Pass text arguments"
 date: 2021-12-29 21:00
 slug: /motoko-location-hello
 tags:
