@@ -7,7 +7,7 @@ tags:
   - motoko
   - beginner
   - jp
-social_image: /media/dfinity.jpeg
+social_image: /media/dfinity/dfinity.jpeg
 description: |-
   The Quick start provided a simplified introduction to the basic work flow for creating and deploying a new project without exploring the contents of the project directory or sample code.
 ---
@@ -174,11 +174,11 @@ npm start
 
 <http://localhost:8080>
 
-![icp](/media/hello-icp-1.png)
+![icp](/media/hello-motoko/1.png)
 
 名前をいれてクリックしてみましょう、先程ローカルのICにデプロイしたキャニスターを実行して結果をブラウザで表示します。
 
-![icp](/media/hello-icp-2.png)
+![icp](/media/hello-motoko/2.png)
 
 今は、ローカルPC上の実行環境にデプロイしたプログラム（キャニスター）を呼び出しています。
 

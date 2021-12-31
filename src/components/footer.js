@@ -25,13 +25,13 @@ const StyledFooter = styled.footer`
   padding-bottom: var(--size-300);
 `;
 
-const FooterAttribution = styled.p`
-  font-size: var(--size-300);
+// const FooterAttribution = styled.p`
+//   font-size: var(--size-300);
 
-  & a {
-    color: inherit;
-  }
-`;
+//   & a {
+//     color: inherit;
+//   }
+// `;
 
 const FooterWrapper = styled(Container)`
   display: flex;

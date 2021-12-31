@@ -1,7 +1,7 @@
 ---
 title: About Me
 template: about-template
-profile_image: /media/profile.jpg
+profile_image: /media/profile/profile.jpg
 ---
 
 # Moto Sakanosita

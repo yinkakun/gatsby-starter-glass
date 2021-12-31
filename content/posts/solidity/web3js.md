@@ -7,7 +7,7 @@ tags:
   - beginner
   - JavaScript
   - jp
-social_image: /media/dfinity.jpeg
+social_image: /media/dfinity/dfinity.jpeg
 description: |-
   JavaScriptからスマートコントラクトを実行する方法
 
