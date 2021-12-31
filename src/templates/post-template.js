@@ -21,6 +21,7 @@ const PostTemplate = ({ data }) => {
         <article>
           <PostTitle>{frontmatter.title}</PostTitle>
           <PostDate>{frontmatter.date}</PostDate>
+          <Tags tags={frontmatter.tags} />
 
           <PostContent dangerouslySetInnerHTML={{ __html: html }} />
         </article>
@@ -40,7 +41,6 @@ const PostTemplate = ({ data }) => {
             </div>
           )}
         </PostPagination>
-        <Tags tags={frontmatter.tags} />
       </PostWrapper>
     </Layout>
   );
