@@ -1,11 +1,12 @@
 ---
 title: "Motoko Tutorials: Pass text arguments"
 date: 2021-12-29 21:00
+slug: /motoko-location-hello
 tags:
   - DFINITY
   - motoko
   - Tutorial
-  - JP
+  - jp
 description: |-
   DFINITYチュートリアル「Pass text arguments」の日本語解説
   実際に使ったコードをGitHubで公開
@@ -19,7 +20,7 @@ description: |-
 
 はじめての方は先にこちらをご覧ください。
 
-[5ステップではじめるMotokoプログラミング](/blog/hello-motoko)
+[5ステップではじめるMotokoプログラミング](/hello-motoko)
 
 ### 実行環境
 * dfx: 0.8.4

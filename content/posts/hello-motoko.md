@@ -1,6 +1,7 @@
 ---
 title: 5ステップではじめるMotokoプログラミング【初心者向け】
 date: 2021-08-15 19:38
+slug: /hello-motoko
 tags:
   - DFINITY
   - motoko
@@ -187,14 +188,14 @@ Internet Computerの世界へようこそ
 
 公式のチュートリアルやExamplesを日本語で解説しています。
 
-* [Explore the default project](/blog/motoko-explore-hello)
-* [Query using an actor](/blog/motoko-actor-hello)
-* [Pass text arguments](/blog/motoko-location-hello)
-* [Increment a natural number](/blog/motoko-my-counter)
-* [Use integers in calculator functions](/blog/motoko-calc)
-* [Import library modules](/blog/motoko-phonebook)
-* [Use multiple actors](/blog/motoko-multiple-actors)
-* [Make inter-canister calls](/blog/motoko-linkedup)
+* [Explore the default project](/motoko-explore-hello)
+* [Query using an actor](/motoko-actor-hello)
+* [Pass text arguments](/motoko-location-hello)
+* [Increment a natural number](/motoko-my-counter)
+* [Use integers in calculator functions](/motoko-calc)
+* [Import library modules](/motoko-phonebook)
+* [Use multiple actors](/motoko-multiple-actors)
+* [Make inter-canister calls](/motoko-linkedup)
 
 DFINITYやいろんなブロックチェーンを使った開発情報をTwitterで発信しています。
 [@motosakanosita](https://twitter.com/motosakanosita)

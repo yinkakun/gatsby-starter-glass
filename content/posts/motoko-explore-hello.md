@@ -1,11 +1,12 @@
 ---
 title: "Motoko Tutorials: Explore the default project"
 date: 2021-12-29 19:38
+slug: /motoko-explore-hello
 tags:
   - DFINITY
   - motoko
   - Tutorial
-  - JP
+  - jp
 description: |-
   DFINITYチュートリアル「Explore the default project」日本語解説
   Motokoの勉強をどうやって始めたらわからない人が最初にやること
@@ -20,7 +21,7 @@ description: |-
 
 はじめての方は先にこちらをご覧ください。
 
-[5ステップではじめるMotokoプログラミング](/blog/hello-motoko)
+[5ステップではじめるMotokoプログラミング](/hello-motoko)
 
 ### 実行環境
 * dfx: 0.8.4

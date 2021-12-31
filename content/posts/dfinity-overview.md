@@ -1,6 +1,7 @@
 ---
 title: Overview of DFINITY (Internet Computer)
 date: 2021-12-27 18:38
+slug: dfinity-overview
 tags:
   - DFINITY
 description: |-
@@ -37,7 +38,7 @@ https://internetcomputer.org/education
 https://dashboard.internetcomputer.org/
 
 ### In-site Pages
-* [Overview](/blog/dfinity-overview)
-* [Technology](/blog/inside-icp)
-* [Development](/blog/dfinity-coding)
-* [Roadmap](/blog/dfinity-roadmap)
+* [Overview](/dfinity-overview)
+* [Technology](/inside-icp)
+* [Development](/dfinity-coding)
+* [Roadmap](/dfinity-roadmap)

@@ -1,6 +1,7 @@
 ---
 title: Dom's Foresight
 date: 2021-12-26 19:38
+slug: /dom-foresight
 tags:
   - DFINITY
   - Dominic Williams
