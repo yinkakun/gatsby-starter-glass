@@ -1,6 +1,7 @@
 ---
 title: Inside the Internet Computer
 date: 2021-12-27 19:38
+slug: /inside-icp
 tags:
   - DFINITY
 description: |-
@@ -40,7 +41,7 @@ https://forum.dfinity.org/
 * [Consensus Overview / Manu Drijvers](https://www.youtube.com/watch?v=vVLRRYh3JYo)
 
 ### In-site Pages
-* [Overview](/blog/dfinity-overview)
-* [Technology](/blog/inside-icp)
-* [Development](/blog/dfinity-coding)
-* [Roadmap](/blog/dfinity-roadmap)
+* [Overview](/dfinity-overview)
+* [Technology](/inside-icp)
+* [Development](/dfinity-coding)
+* [Roadmap](/dfinity-roadmap)

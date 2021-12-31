@@ -6,6 +6,7 @@
   "author": "Yinka Adedire <yinkakun@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.12.0",
+    "env-cmd": "^10.1.0",
     "gatsby": "^3.0.1",
     "gatsby-plugin-feed": "^3.0.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
@@ -49,7 +50,7 @@
   },
   "scripts": {
     "build": "gatsby build",
-    "dev": "gatsby develop -p 3000",
+    "dev": "env-cmd -f .env.develop gatsby develop -p 3000",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run dev",
     "serve": "gatsby serve",
