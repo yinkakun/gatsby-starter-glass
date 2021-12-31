@@ -1,7 +1,7 @@
 ---
 title: Overview of DFINITY (Internet Computer)
 date: 2021-12-27 18:38
-slug: dfinity-overview
+slug: /dfinity-overview
 tags:
   - DFINITY
 description: |-
