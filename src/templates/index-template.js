@@ -71,10 +71,10 @@ export const pageQuery = graphql`
     }
     pinnedMarkdown: allMarkdownRemark(
       filter: {
-        frontmatter: { pinned: { eq: true }},
+        frontmatter: { pinned: { ne: null }},
         fields: { contentType: { eq: "posts" } } 
       }
-      sort: { order: DESC, fields: frontmatter___date }
+      sort: { order: DESC, fields: frontmatter___pinned }
       limit: 3
     ) {
       nodes {
@@ -93,7 +93,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       filter: {
-        frontmatter: { pinned: { ne: true }},
+        frontmatter: { pinned: { eq: null }},
         fields: { contentType: { eq: "posts" } }
       }
       sort: { order: DESC, fields: frontmatter___date }

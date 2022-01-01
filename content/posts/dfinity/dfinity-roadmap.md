@@ -2,7 +2,6 @@
 title: DFINITY Roadmap
 date: 2021-12-27 23:38
 permalink: /dfinity-roadmap
-pinned: true
 tags:
   - DFINITY
 description: |-
