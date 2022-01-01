@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import StyledLink from '../components/styled-link';
 
 const HomePage = ({ data }) => {
+  const pinned = data.pinnedMarkdown.nodes;
   const posts = data.allMarkdownRemark.nodes;
   const intro = data.markdownRemark.html;
   const title = data.markdownRemark.frontmatter.title;
@@ -17,6 +18,7 @@ const HomePage = ({ data }) => {
           __html: intro,
         }}
       />
+      <PostList posts={pinned} />
       <PostList posts={posts} />
       <StyledLink
         css={`
@@ -61,16 +63,41 @@ const Intro = styled.div`
 `;
 
 export const pageQuery = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     site {
       siteMetadata {
         title
       }
     }
-    allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "posts" } } }
+    pinnedMarkdown: allMarkdownRemark(
+      filter: {
+        frontmatter: { pinned: { eq: true }},
+        fields: { contentType: { eq: "posts" } } 
+      }
       sort: { order: DESC, fields: frontmatter___date }
-      limit: 9
+      limit: 3
+    ) {
+      nodes {
+        fields {
+          slug
+        }
+        excerpt
+        timeToRead
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          description
+          title
+          tags
+        }
+      }
+    }
+    allMarkdownRemark(
+      filter: {
+        frontmatter: { pinned: { ne: true }},
+        fields: { contentType: { eq: "posts" } }
+      }
+      sort: { order: DESC, fields: frontmatter___date }
+      limit: 6
     ) {
       nodes {
         fields {
