@@ -1,7 +1,7 @@
 ---
 title: "Motoko Tutorial: Use multiple actors"
 date: 2021-12-30 15:38
-slug: /motoko-multiple-actors
+permalink: /motoko-multiple-actors
 tags:
   - motoko
   - Tutorial

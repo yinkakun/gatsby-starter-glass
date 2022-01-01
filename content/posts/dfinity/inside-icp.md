@@ -1,7 +1,7 @@
 ---
 title: Inside the Internet Computer
 date: 2021-12-27 19:38
-slug: /inside-icp
+permalink: /inside-icp
 tags:
   - DFINITY
 description: |-

@@ -1,7 +1,7 @@
 ---
 title: web3.JSを使ってスマートコントラクトを実行する3つの方法
 date: 2021-06-06 19:38
-slug: /web3js
+permalink: /web3js
 tags:
   - Solidity
   - beginner

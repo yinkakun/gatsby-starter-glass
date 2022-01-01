@@ -1,7 +1,7 @@
 ---
 title: Motoko Base Library
 date: 2021-12-30 10:38
-slug: /motoko-base-library
+slpermalink: /motoko-base-library
 tags:
   - motoko
 description: |-

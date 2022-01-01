@@ -1,7 +1,7 @@
 ---
 title: ブラウザだけでブロックチェーンにスマートコントラクトをデプロイ
 date: 2021-07-06 00:00
-slug: /build-smart-contracts
+permalink: /build-smart-contracts
 tags:
   - Solidity
   - beginner

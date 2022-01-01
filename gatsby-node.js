@@ -132,7 +132,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       createNodeField({
         name: `slug`,
         node,
-        value: `${node.frontmatter.slug}`,
+        value: `${node.frontmatter.permalink}`,
       });
     }
 
