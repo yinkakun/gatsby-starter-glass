@@ -46,7 +46,7 @@ cd location_hello
 ```
 ### コーディング
 `src/location_hello/main.mo`
-```
+```ts
 actor {
   public func location(city : Text) : async Text {
     return "Hello, " # city # "!";

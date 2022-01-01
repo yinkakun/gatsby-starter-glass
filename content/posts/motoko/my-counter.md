@@ -60,7 +60,7 @@ mv src/my_counter/main.mo src/my_counter/increment_counter.mo
 
 ### コーディング
 `src/my_counter/increment_counter.mo`を以下のように編集して保存します。
-```
+```ts
 // Create a simple Counter actor.
 actor Counter {
   stable var currentValue : Nat = 0;
@@ -176,7 +176,7 @@ r7inp-6aaaa-aaaaa-aaabq-cai
 ローカルICにデプロイされたキャニスターの一覧は以下のファイルに保存されています。
 上のコマンドで表示された__Candid_UIというキャニスターもあります。
 
-```
+```ts
 my_counter % cat .dfx/local/canister_ids.json
 {
   "__Candid_UI": {
