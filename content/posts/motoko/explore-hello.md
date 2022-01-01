@@ -44,7 +44,7 @@ dfx.json                package-lock.json       src
 
 このプロジェクトで使うソースコードは`src/explore_hello/main.mo`に書かれています。
 
-```
+```ts
 actor {
     public func greet(name : Text) : async Text {
         return "Hello, " # name # "!";
@@ -81,7 +81,7 @@ dfx canister create --all
 ```
 
 以下のように出力されます。
-```
+```ts
 The wallet canister on the "local" network for user "default" is "rwlgt-iiaaa-aaaaa-aaaaa-cai"
 Creating canister "explore_hello"...
 "explore_hello" canister created with canister id: "rrkah-fqaaa-aaaaa-aaaaq-cai"
@@ -96,10 +96,10 @@ Creating canister "explore_hello_assets"...
 今後キャニスターを指定するときにはこのIDを使います。
 このIDは `.dfx/local/canister_ids.json` というファイルに保存されています。
 
-```
+```ts
 cat .dfx/local/canister_ids.json
 ```
-```
+```ts
 {
   "explore_hello": {
     "local": "rrkah-fqaaa-aaaaa-aaaaq-cai"
@@ -116,7 +116,7 @@ cat .dfx/local/canister_ids.json
 dfx build
 ```
 Motokoで書かれたソースコードをコンパイルしてWASMという実行モジュールをビルドしています。
-```
+```ts
 explore_hello % dfx build
 Building canisters...
 Building frontend...
@@ -129,7 +129,7 @@ dfx canister install --all
 ```
 Internet Computerに作った空き缶（キャニスター）の中に、WASMという実行プログラムを入れるイメージです。
 
-```
+```ts
 explore_hello % dfx canister install --all
 Creating UI canister on the local network.
 The UI canister on the "local" network is "r7inp-6aaaa-aaaaa-aaabq-cai"

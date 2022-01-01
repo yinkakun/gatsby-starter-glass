@@ -65,7 +65,7 @@ cp src/calc/main.mo src/calc/calc_main.mo
 ```
 
 `src/calc/calc_main.mo`を以下のように編集して保存します。
-```
+```ts
 // This single-cell calculator defines one calculator instruction per
 // public entry point (add, sub, mul, div).
 

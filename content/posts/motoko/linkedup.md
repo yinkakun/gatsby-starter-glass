@@ -112,7 +112,7 @@ Uploading assets to asset canister...
 もし記録していなくてものファイルを見ればわかります。
 
 `linkedup/.dfx/local/canister_ids.json`
-```
+```ts
 linkedup % cat .dfx/local/canister_ids.json
 {
   "connectd": {

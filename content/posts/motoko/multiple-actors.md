@@ -49,7 +49,7 @@ cd multiple_actors
 ### dfx.jsonの編集
 当プロジェクトでは、3つのキャニスターを作ります。
 dfx.jsonを以下のように書き換えます。
-```
+```ts
 {
   "canisters": {
     "assistant": {
@@ -91,7 +91,7 @@ cp -r src/assistant/ src/daemon/
 
 ### コーディング
 `src/assistant/motoko.mo`
-```
+```ts
 import Array "mo:base/Array";
 import Nat "mo:base/Nat";
 
@@ -141,7 +141,7 @@ actor Assistant {
 ```
 
 `src/rock_paper_scissors/motoko.mo`
-```
+```ts
 import I "mo:base/Iter"; 
 
 actor RockPaperScissors {
@@ -201,7 +201,7 @@ actor RockPaperScissors {
 ```
 
 `src/daemon/main.mo`
-```
+```ts
 actor Daemon {
   stable var running = false;
 

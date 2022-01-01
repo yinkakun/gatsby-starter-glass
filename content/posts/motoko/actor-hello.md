@@ -50,7 +50,7 @@ actor_hello % rm -r src/actor_hello_assets
 ```
 
 `dfx.json`から以下の部分を削除します
-```
+```ts
     "actor_hello_assets": {
       "dependencies": [
         "actor_hello"
@@ -69,7 +69,7 @@ actor_hello % rm -r src/actor_hello_assets
 ### コーディング
 エディタを使って、`src/actor_hello/main.mo` を編集します。
 
-```
+```ts
 import Debug "mo:base/Debug";
 actor HelloActor {
    public query func hello() : async () {

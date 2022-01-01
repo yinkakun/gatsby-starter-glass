@@ -49,7 +49,7 @@ cd phonebook
 ```
 
 ### コーディング
-```solidity
+```ts
 // Import standard library functions for lists
 
 import L "mo:base/List";
@@ -88,19 +88,19 @@ actor {
 ### コード解説
 
 本チュートリアルのタイトルにもあるようにこのプロジェクトではライブラリを使っています。
-```
+```ts
 import L "mo:base/List";
 import A "mo:base/AssocList";
 ```
 `Name`や`Phone`というオリジナルの型を定義しています。
 `Text`型の別名として考えることもできます。
-```
+```ts
     public type Name = Text;
     public type Phone = Text;
 ```
 
 Motokoのチュートリアルで最初にここで躓く人は多いかもしれません。
-```
+```ts
     flexible var book: A.AssocList<Name, Phone> = L.nil<(Name, Phone)>();
 ```
 この1行には、これまで登場しなかった要素がいくつも登場します。
@@ -194,7 +194,7 @@ dfx stop
 
 下記の例ではEmailというフィールドを追加してみました。
  `src/phonebook/main2.mo`
-```
+```ts
 // Import standard library functions for lists
 
 import L "mo:base/List";
