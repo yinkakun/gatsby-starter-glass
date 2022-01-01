@@ -114,7 +114,7 @@ const PostContent = styled.section`
   }
 
   code {
-    font-family: 'Source Sans Pro', monospace;
+    // font-family: 'Source Sans Pro', monospace;
     overflow-x: auto;
     white-space: pre-wrap;
   }
