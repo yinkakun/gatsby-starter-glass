@@ -2,6 +2,8 @@
 title: 5ステップではじめるMotokoプログラミング【初心者向け】
 date: 2021-08-15 19:38
 permalink: /hello-motoko
+redirect_from:
+  - /blog/hello-motoko
 pinned: 1
 tags:
   - DFINITY

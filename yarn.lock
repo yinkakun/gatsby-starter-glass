@@ -5864,6 +5864,15 @@
     "jsonfile" "^6.0.1"
     "universalify" "^2.0.0"
 
+"fs-extra@^7.0.0":
+  "integrity" "sha512-YJDaCJZEnBmcbw13fvdAM9AwNOJwOzrE4pqMqBq5nFiEqXUqHwlK4B+3pUw6JNvfSPtX05xFHtYy/1ni01eGCw=="
+  "resolved" "https://registry.npmjs.org/fs-extra/-/fs-extra-7.0.1.tgz"
+  "version" "7.0.1"
+  dependencies:
+    "graceful-fs" "^4.1.2"
+    "jsonfile" "^4.0.0"
+    "universalify" "^0.1.0"
+
 "fs-extra@^8.1.0":
   "integrity" "sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g=="
   "resolved" "https://registry.npmjs.org/fs-extra/-/fs-extra-8.1.0.tgz"
@@ -6050,6 +6059,13 @@
     "semver" "^7.3.5"
     "sharp" "^0.29.0"
 
+"gatsby-plugin-meta-redirect@^1.1.1", "gatsby-plugin-meta-redirect@>=1.1.0":
+  "integrity" "sha512-Oc4qgU3SlDUM9qoxIMKO+re2bdMs3/a2KXrfL65gb8XMLsHylBbveWtXZRhgjd2QDL/49RX4S9SEykuadRju2w=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-meta-redirect/-/gatsby-plugin-meta-redirect-1.1.1.tgz"
+  "version" "1.1.1"
+  dependencies:
+    "fs-extra" "^7.0.0"
+
 "gatsby-plugin-netlify-cms@^5.0.0":
   "integrity" "sha512-Yf7nDaEMuzE8dvWx6pmmLjuLHctb67CtaV297zbPFPg46Dg4rXOER+zZqzO9HCla2ylSiRc3h/KJy4B4Thhb0A=="
   "resolved" "https://registry.npmjs.org/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-5.14.0.tgz"
@@ -6214,6 +6230,11 @@
     "xstate" "^4.9.1"
     "yoga-layout-prebuilt" "^1.9.6"
 
+"gatsby-redirect-from@^0.4.3":
+  "integrity" "sha512-D51OXQ4gh4ASmoVAYo6jEgXtWvLNjwy8SjSwHU9lYitAXQgn2pJd2+4jpgHYjD0YvSf4s8VBACESJ7pJvN8vVQ=="
+  "resolved" "https://registry.npmjs.org/gatsby-redirect-from/-/gatsby-redirect-from-0.4.3.tgz"
+  "version" "0.4.3"
+
 "gatsby-remark-copy-linked-files@^3.0.0":
   "integrity" "sha512-pNKYR9Q3QuIZ3u5msW9dtqszOgKzRqDRtg3kXnqagCC8JbT2IVYI4IG3tP2tTG3CwEOjBtBI0YhUM2KGgzdJ5g=="
   "resolved" "https://registry.npmjs.org/gatsby-remark-copy-linked-files/-/gatsby-remark-copy-linked-files-3.2.0.tgz"
@@ -6373,7 +6394,7 @@
     "@babel/core" "^7.15.5"
     "@babel/runtime" "^7.15.4"
 
-"gatsby@^3.0.0-next.0", "gatsby@^3.0.1":
+"gatsby@^2.0.0 || ^3.0.0 || ^4.0.0", "gatsby@^3.0.0-next.0", "gatsby@^3.0.1":
   "integrity" "sha512-H9IOoqkyzu0gEDzLUcm7pGSgwJbR338z+fjp4NsLlE4DkkA2T4H6nWRXLYoDwtNC+X2wfWSrwX8ui2wosAmQOQ=="
   "resolved" "https://registry.npmjs.org/gatsby/-/gatsby-3.14.6.tgz"
   "version" "3.14.6"
