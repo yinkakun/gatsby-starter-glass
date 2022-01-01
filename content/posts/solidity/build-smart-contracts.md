@@ -87,7 +87,7 @@ Remixの使い方を全部理解する必要はありません。スマコンの
 ### コーディング（コピペOK）
 今回はもっともシンプルなコードを使います。おなじみのHello Worldです。
 
-```ts
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.22 <0.9.0;
 

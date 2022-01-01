@@ -49,7 +49,7 @@ cd phonebook
 ```
 
 ### コーディング
-```
+```solidity
 // Import standard library functions for lists
 
 import L "mo:base/List";

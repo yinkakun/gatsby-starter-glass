@@ -91,7 +91,7 @@ contractsというフォルダの下に、MyToken.solというファイルを作
 MyTokenというのがトークンの名前です。TKNが通貨の単位です。
 自分の好きな名前に置換すれば、オリジナルの名前で作れます。
 
-```ts
+```solidity
 // contracts/SimpleToken.sol
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.2;
