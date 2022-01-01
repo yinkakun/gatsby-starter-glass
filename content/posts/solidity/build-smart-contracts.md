@@ -87,7 +87,7 @@ Remixの使い方を全部理解する必要はありません。スマコンの
 ### コーディング（コピペOK）
 今回はもっともシンプルなコードを使います。おなじみのHello Worldです。
 
-```
+```ts
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.22 <0.9.0;
 
@@ -185,7 +185,7 @@ HELLOWORLDを開くと「get」というボタンが出てきます。
 今回使っているHelloWorldのコードをもう1回見てみましょう。
 コードの中でgetというファンクションを作っています。ファンクションとはスマートコントラクトに対する命令のことです。メソッドや関数とも言います。
 
-```
+```ts
  function get() public pure returns (string memory) {
    return "Hello World";
  }

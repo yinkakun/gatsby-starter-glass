@@ -6266,7 +6266,7 @@
     "unist-util-select" "^1.5.0"
     "unist-util-visit-parents" "^2.1.2"
 
-"gatsby-remark-prismjs@^4.0.0":
+"gatsby-remark-prismjs@^4.2.0":
   "integrity" "sha512-PTE4p/f+XosSt/VdHJr9U3ruZ3yhqtUpqDuifsVbOOsS6AyvmEY/7WPUThRC+nSVfueG1geVgxrWB0AoaUPKXQ=="
   "resolved" "https://registry.npmjs.org/gatsby-remark-prismjs/-/gatsby-remark-prismjs-4.2.0.tgz"
   "version" "4.2.0"
@@ -6346,7 +6346,7 @@
     "node-fetch" "^2.6.1"
     "uuid" "3.4.0"
 
-"gatsby-transformer-remark@^3.0.0":
+"gatsby-transformer-remark@^3.2.0":
   "integrity" "sha512-z/fykxLNbKTN9fzYypyMwJ09z5YDMgnEPPF1x+szyjvEJhjKF8rfSgP13iKeYuG04Pxrj8L+QKS6xL/+H2lJIA=="
   "resolved" "https://registry.npmjs.org/gatsby-transformer-remark/-/gatsby-transformer-remark-3.2.0.tgz"
   "version" "3.2.0"
@@ -11122,7 +11122,7 @@
     "ansi-styles" "^4.0.0"
     "react-is" "^16.12.0"
 
-"prismjs@^1.15.0", "prismjs@^1.23.0":
+"prismjs@^1.15.0", "prismjs@^1.25.0":
   "integrity" "sha512-WCjJHl1KEWbnkQom1+SzftbtXMKQoezOCYs5rECqMN+jP+apI7ftoflyqigqzopSO3hMhTEb0mFClA8lkolgEg=="
   "resolved" "https://registry.npmjs.org/prismjs/-/prismjs-1.25.0.tgz"
   "version" "1.25.0"

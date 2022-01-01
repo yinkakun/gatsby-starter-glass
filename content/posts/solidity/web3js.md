@@ -74,7 +74,7 @@ npm install web3 --save
 
 Truffleを使ってGanacheにコントラクトをデプロイした場合は、buildディレクトリの下にhelloWorld.jsonというファイルが作られて、中にコントラクトアドレスがかかれています。
 
-```
+```js
   "networks": {
     "5777": {
       "events": {},
@@ -91,7 +91,7 @@ Truffleを使ってGanacheにコントラクトをデプロイした場合は、
 
 Truffleでデプロイした場合は、コントラクトアドレスと同じくbuildディレクトリ配下のhelloWorld.jsonに書かれています。
 
-```
+```js
   "abi": [
     {
       "constant": true,
@@ -120,7 +120,7 @@ Truffleでデプロイした場合は、コントラクトアドレスと同じ�
 * helloWorld.js
 
 #### index.html
-```
+```html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -135,7 +135,7 @@ Truffleでデプロイした場合は、コントラクトアドレスと同じ�
 ```
 
 #### app.js
-```
+```js
 import helloWorld from './helloWorld.js';
 
 window.onload = function() {
@@ -143,7 +143,7 @@ window.onload = function() {
 }
 ```
 #### helloWorld.js
-```
+```js
 export default function () {
   var abi = [{
       "constant": true,
@@ -186,13 +186,13 @@ HTMLとJavaScriptを使った一番シンプルなやり方です。
 
 ここではインターネット上のweb3.jsをCDNからダウンロードして使っています。あとから紹介するNext.jsを使う2つのやり方では、Node.jsライブラリのweb3.jsを使います。
 
-```
+```html
   <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
 ```
 
 どのブロックチェーンに繋ぐかどうかは、helloWorld.jsの以下の行で指定しています。
 
-```
+```js
   const web3 = new Web3(Web3.givenProvider || "ws://localhost:7545");
 ```
 
@@ -209,7 +209,7 @@ Next.jsアプリケーションのpagesディレクトリの下にhello1.jsと�
 コントラクトアドレスやABIは自分の使うコントラクトに置き換えましょう。
 
 #### pages/hello1.js
-```
+```js
 import Web3 from 'web3'
 
 var abi = [{
@@ -275,7 +275,7 @@ HTMLに表示させるやり方は3番目で紹介します。
 
 取得したHello Worldという文字列を返して、HTMLに表示させようとしていますが、じつはこれはうまく動きません。
 
-```
+```js
 return "ret: " + ret;
 ```
 
@@ -288,7 +288,7 @@ Next.jsアプリケーションのpagesディレクトリの下にhello2.jsと�
 コントラクトアドレスやABIは自分の使うコントラクトに置き換えましょう。
 
 #### pages/hello2.js
-```
+```js
 import Web3 from 'web3'
 
 function Hello2({ message }) {
