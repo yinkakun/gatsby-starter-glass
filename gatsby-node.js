@@ -129,10 +129,11 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     });
 
     if (fileNode.sourceInstanceName === 'posts') {
+      const slug = node.frontmatter.permalink
       createNodeField({
         name: `slug`,
         node,
-        value: `${node.frontmatter.permalink}`,
+        value: slug,
       });
     }
 
