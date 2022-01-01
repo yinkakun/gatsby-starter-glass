@@ -1,7 +1,7 @@
 ---
 title: Solidity無料学習サイト4選【初心者向け】
 date: 2021-06-03 00:00
-permalink: /solidity-biginner
+permalink: /solidity-beginner
 tags:
   - Solidity
   - beginner
