@@ -54,10 +54,9 @@ CryptoZombiesのイマイチなところ
 
 ## Solidity by Example
 
-2つ目は、Solidity by Exampleです。
-
-Solidity by Example
 https://solidity-by-example.org/
+
+2つ目は、Solidity by Exampleです。
 
 Solidtyをある程度学んだら、次にやることは、それを自分でテストネットやメインネットにデプロイすることです。
 
@@ -83,9 +82,6 @@ https://ethereumnavi.com/
 
 ![Ethernaut](/media/solidity-beginner/3.png)
 
-3つ目は、Ethernautです。
-
-Ethernaut
 https://ethernaut.openzeppelin.com/
 
 Ethernautは中上級者向けで、ChromeのDeveloper ToolsのConsoleを使って、ゲーム感覚でSolidityを学ぶことができます。
