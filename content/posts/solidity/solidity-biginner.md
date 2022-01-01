@@ -1,5 +1,5 @@
 ---
-title: Solidity無料学習サイト3選【初心者向け】
+title: Solidity無料学習サイト4選【初心者向け】
 date: 2021-06-03 00:00
 permalink: /solidity-biginner
 tags:
@@ -54,8 +54,6 @@ CryptoZombiesのイマイチなところ
 
 ## Solidity by Example
 
-![Eample](/media/solidity-beginner/2.png)
-
 2つ目は、Solidity by Exampleです。
 
 Solidity by Example
@@ -69,6 +67,17 @@ Solidtyをある程度学んだら、次にやることは、それを自分で�
 デプロイにはRemixという無料サービスを使います。
 https://remix.ethereum.org/
 
+## イーサリアムnavi
+
+https://ethereumnavi.com/
+
+でりおてんちょーというエンジニア(NFTリサーチャー)さんが、運営されているサイトと無料のDiscordコミュニティです。
+
+でりおてんちょーさん自身がSolidityを学習しながら、みんなで一緒に成長しているぬくもりのあるコミュニティです。
+
+不定期で無料の勉強会なども開催していますので、Discordに参加したり、Twitterをフォローしましょう。
+
+日本のSolidityエンジニアはまだ数が少ないので、結構すごい人が勉強会に参加することもあるかも？
 
 ## Ethernaut
 
