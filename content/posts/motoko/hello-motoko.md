@@ -4,8 +4,9 @@ date: 2021-08-15 19:38
 permalink: /hello-motoko
 redirect_from:
   - /blog/hello-motoko
-  - /blog/hello-icp
+  - /blog/hello-motoko/
   - /hello-icp
+  - /hello-icp/
 pinned: 1
 tags:
   - DFINITY
