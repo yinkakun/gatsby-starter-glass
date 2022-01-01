@@ -6,7 +6,8 @@ pinned: 2
 tags:
   - DFINITY
 description: |-
-  Internet Computer Technology
+  How the internet computer works
+  Describing Internet Computer Technology
 ---
 
 ## Medium
