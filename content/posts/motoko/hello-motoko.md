@@ -61,14 +61,14 @@ npmがわからなくてもステップ4までは進めらるので、実際に�
 
 ターミナルソフトで以下のコマンドを実行します。
 
-```
+```sh
 sh -ci "$(curl -fsSL https://sdk.dfinity.org/install.sh)"
 ```
 
 これでSDKのインストールは完了です。
 dfxコマンドを実行できるようになります。
 
-```
+```sh
 $ dfx --version
 dfx 0.8.0
 ```
@@ -77,21 +77,21 @@ dfx 0.8.0
 
 自分の好きな作業用ディレクトリを作って移動します。ぼくはdfinityというディレクトリを作っています。
 
-```
+```sh
 mkdir dfinity
 cd dfinity
 ```
 
 dfinityディレクトリの中にhelloという名前のHello Worldプロジェクトを作ります。
 
-```
+```sh
 dfx new hello
 cd hello
 ```
 
 lsコマンドでどんなファイルがあるか見てみましょう。
 
-```
+```sh
 $ ls
 README.md dfx.json dist node_modules package-lock.json package.json src webpack.config.js
 ```
@@ -100,7 +100,7 @@ README.md dfx.json dist node_modules package-lock.json package.json src webpack.
 
 helloディレクトリにいる状態で、ローカルPC上で実行環境を起動します。
 
-```
+```sh
 dfx start --background
 ```
 
@@ -112,7 +112,7 @@ dfx start --background
 
 これであなたのPC上にテスト用のInternet Computerが起動できました。以下のようにdfx pingコマンドを打つと、つながるかどうか疎通確認できます。
 
-```
+```sh
 $ dfx ping
 {
   "ic_api_version": "0.18.0"  "impl_hash": "1d09d8fdb066fbcffb985723d80d1f5f9a9de13d96e5917bfe457f4137c0dff8"  "impl_version": "0.8.0"  "root_key": [48, 129, 130, 48, 29, 6, 13, 43, 6, 1, 4, 1, 130, 220, 124, 5, 3, 1, 2, 1, 6, 12, 43, 6, 1, 4, 1, 130, 220, 124, 5, 3, 2, 1, 3, 97, 0, 164, 194, 27, 103, 26, 186, 6, 75, 190, 145, 12, 226, 253, 93, 187, 228, 81, 124, 224, 79, 94, 196, 17, 45, 223, 7, 30, 230, 145, 43, 245, 255, 2, 2, 226, 148, 7, 241, 59, 108, 130, 103, 65, 134, 33, 88, 43, 10, 12, 123, 233, 74, 119, 101, 238, 144, 133, 101, 128, 190, 155, 19, 56, 154, 43, 253, 112, 146, 58, 236, 130, 163, 147, 61, 25, 163, 243, 23, 253, 84, 170, 3, 60, 72, 199, 18, 205, 111, 243, 90, 241, 137, 121, 21, 58, 168]
