@@ -15,12 +15,12 @@ tags:
   - jp
 social_image: /media/dfinity/dfinity.jpeg
 description: |-
-  DFINITY(Internet Compouter)プログラミング入門
+  ICP(Internet Computer Protocol)でMotokoを使ってDapps開発をはじめよう！
 ---
 この記事はこんな人におすすめです
 
 * Motokoでプログラミングを学びたい初心者
-* DFINITY(Internet Computer/ICP)に興味がある
+* DFINITY(Internet Computer)に興味がある
 * ブロックチェーンやDapps開発に興味がある
 * 将来Webエンジニアになりたい
 
