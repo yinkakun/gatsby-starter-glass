@@ -9,7 +9,7 @@ tags:
   - Rust
   - beginner
 description: |-
-  YOU ARE WELCOME TO START CODING ON THE INTERNET COMPUTER.
+  The Quick start provided a simplified introduction to the basic work flow for creating and deploying a new project without exploring the contents of the project directory or sample code.
 ---
 
 ## Developer Center

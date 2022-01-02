@@ -1,5 +1,5 @@
 ---
-title: 5ステップではじめるMotokoプログラミング【初心者向け】
+title: 5ステップではじめるMotokoプログラミング入門【初心者向け】
 date: 2021-08-15 19:38
 permalink: /hello-motoko
 redirect_from:
@@ -15,7 +15,7 @@ tags:
   - jp
 social_image: /media/dfinity/dfinity.jpeg
 description: |-
-  The Quick start provided a simplified introduction to the basic work flow for creating and deploying a new project without exploring the contents of the project directory or sample code.
+  DFINITY(Internet Compouter)プログラミング入門
 ---
 この記事はこんな人におすすめです
 
