@@ -7,8 +7,7 @@ tags:
   - Tutorial
   - jp
 description: |-
-  DFINITYチュートリアル「Add access control with identities」の日本語解説
-  実際に使ったコードをGitHubで公開
+  ICP & motokoでユーザーによって処理を変える方法を解説
 ---
 
 ## はじめに
