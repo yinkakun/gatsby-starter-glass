@@ -378,3 +378,17 @@ dfx --identity bob_standard canister call access_hello assign_role "(principal \
 出力
 The Replica returned an error: code 4, message: "unauthorized"
 ```
+
+ロールを与えられていない`bob_standard`でgreet関数を実行してみましょう。
+```
+access_hello % dfx --identity bob_standard canister call access_hello greet "Bob"
+("Greetings, Bob. Nice to meet you!")
+```
+このように与えられたロールによって実行できる関数と実行できない関数ができました。
+
+
+### 停止
+dfx.jsonがあるディレクトリで以下のコマンドを実行して、実行環境を停止します。
+```
+dfx stop
+```
