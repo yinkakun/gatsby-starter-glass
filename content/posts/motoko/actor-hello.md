@@ -19,7 +19,7 @@ description: |-
 
 はじめての方は先にこちらをご覧ください。
 
-[5ステップではじめるMotokoプログラミング](/hello-motoko)
+[5ステップではじめるMotokoプログラミング入門](/hello-motoko)
 
 ### 実行環境
 * dfx: 0.8.4
