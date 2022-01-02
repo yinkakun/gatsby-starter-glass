@@ -7,7 +7,7 @@ tags:
   - Tutorial
   - jp
 description: |-
-  DFINITYチュートリアル「Make inter-canister calls」日本語解説
+  Motokoチュートリアル: DFINITYでキャニスター間てcallを実行する
 ---
 
 ## はじめに
