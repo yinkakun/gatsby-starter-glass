@@ -18,8 +18,8 @@ const HomePage = ({ data }) => {
           __html: intro,
         }}
       />
-      <PostList posts={pinned} />
       <PostList posts={posts} />
+      <PostList posts={pinned} />
       <StyledLink
         css={`
           display: block;
