@@ -7,7 +7,7 @@ tags:
   - tutorial
   - jp
 description: |-
-  Motokoチュートリアル: DFINITYでキャニスター間てcallを実行する
+  DFINITYチュートリアル(Motoko): キャニスター間てcallを実行する
 ---
 
 ## はじめに
