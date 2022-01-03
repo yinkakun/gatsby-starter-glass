@@ -1,17 +1,15 @@
 ---
-title: ブラウザだけでブロックチェーンにスマートコントラクトをデプロイ【Remixガイド】
+title: "Remixの使い方: ブラウザだけでスマートコントラクトをデプロイ"
 date: 2021-07-06 00:00
 permalink: /build-smart-contracts
 tags:
   - solidity
   - beginner
+  - remix
   - jp
 description: |-
   ブラウザを使ってスマートコントラクトをブロックチェーンに作る方法
   初心者向け
-  環境構築は不要
-  
-
 ---
 
 この記事はこんな人におすすめ
