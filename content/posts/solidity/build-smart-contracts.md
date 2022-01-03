@@ -1,5 +1,5 @@
 ---
-title: ブラウザだけでブロックチェーンにスマートコントラクトをデプロイ
+title: ブラウザだけでブロックチェーンにスマートコントラクトをデプロイ【Solidity入門】
 date: 2021-07-06 00:00
 permalink: /build-smart-contracts
 tags:
@@ -7,9 +7,9 @@ tags:
   - beginner
   - jp
 description: |-
-  コピペでOK
-  環境構築は不要
   ブラウザを使ってスマートコントラクトをブロックチェーンに作る方法
+  初心者向け
+  環境構築は不要
   
 
 ---
