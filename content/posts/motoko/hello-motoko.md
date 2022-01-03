@@ -10,7 +10,7 @@ redirect_from:
 pinned: 1
 tags:
   - DFINITY
-  - motoko
+  - Motoko
   - beginner
   - jp
 social_image: /media/dfinity/dfinity.jpeg

@@ -1,9 +1,9 @@
 ---
-title: "Motoko Tutorial: Query using an actor"
+title: "Motoko入門: Query using an actor"
 date: 2021-12-29 20:38
 permalink: /motoko-actor-hello
 tags:
-  - motoko
+  - Motoko
   - Tutorial
   - jp
 description: |-

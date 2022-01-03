@@ -1,9 +1,9 @@
 ---
-title: "Motoko Tutorial: Add access control with identities"
+title: "Motoko入門: Add access control with identities"
 date: 2022-01-02 20:38
 permalink: /access-hello
 tags:
-  - motoko
+  - Motoko
   - Tutorial
   - jp
 description: |-
