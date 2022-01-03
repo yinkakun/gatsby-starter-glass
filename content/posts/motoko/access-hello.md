@@ -177,7 +177,7 @@ dfx start --background
 `--background`オプションをつけることで、後続のコマンドを同じウィンドウで実行できます。
 
 ```
-dfx deploy
+dfx deploy access_hello
 ```
 
 ```
@@ -219,10 +219,7 @@ zr2yi-7hrww-jgne7-j4gbs-2xu5a-ms3wg-ixp3t-4azyp-ifmeb-yxym6-sqe
 
 my_role関数で実行者のPrincipal IDに紐づくroleを表示させてみます。
 ```
-# DFINITYのTutorialのページには、--walletオプションが書かれています。
-# 以前は必要だったようですが、新しいバージョンでは--walletオプションは必要ありません。
-
-dfx canister call access_hello my_role
+dfx canister --wallet=$(dfx identity get-wallet) call access_hello my_role
 ```
 ```
 出力
@@ -276,7 +273,7 @@ dfx identity use default
 `default`の権限を使って`ic_admin`に`admin`ロールをアサインします。
 アサインするときは、先ほど表示させた`admin`のPrincipal IDを渡します。
 ```
-dfx canister call access_hello assign_role '((principal "ptgej-o2oox-uin5n-64lps-ouln7-e677b-jwi75-ije6c-x3awj-o6yw7-mae"),opt variant{admin})'
+dfx canister --wallet=$(dfx identity get-wallet) call access_hello assign_role '((principal "ptgej-o2oox-uin5n-64lps-ouln7-e677b-jwi75-ije6c-x3awj-o6yw7-mae"),opt variant{admin})'
 ```
 
 再び`ic_admin`のidentityでmy_roleを実行してみます。
@@ -291,7 +288,7 @@ dfx --identity ic_admin canister call access_hello my_role
 
 `ic_admin`を使ってgreet関数を実行してみましょう。
 ```
- dfx --identity ic_admin canister call access_hello greet "Internet Computer Admin"
+dfx --identity ic_admin canister call access_hello greet "Internet Computer Admin"
 (
   "Hello, Internet Computer Admin. You have a role with administrative privileges.",
 )
@@ -363,6 +360,7 @@ dfx identity new bob_standard
 Creating identity: "bob_standard".
 Created identity: "bob_standard".
 ```
+
 ```
 BOB_ID=$(dfx --identity bob_standard identity get-principal)
 ```
@@ -378,12 +376,23 @@ dfx --identity bob_standard canister call access_hello assign_role "(principal \
 The Replica returned an error: code 4, message: "unauthorized"
 ```
 
+owner権限を持つdefaultのidentityを使って、bob_standardにowner権限をアサインしてみましょう。
+```
+dfx --identity default canister --wallet=$(dfx --identity default identity get-wallet) call access_hello assign_role "(principal \"$BOB_ID\", opt variant{owner})"
+```
+このコマンドは以下のようにエラーを出力します。
+ユーザーをownerにすることはできません。
+```
+出力
+An error happened during the call: 4: Cannot assign anyone to be the owner
+```
+
 ロールを与えられていない`bob_standard`でgreet関数を実行してみましょう。
 ```
-access_hello % dfx --identity bob_standard canister call access_hello greet "Bob"
+dfx --identity bob_standard canister --no-wallet call access_hello greet "Bob"
 ("Greetings, Bob. Nice to meet you!")
 ```
-このように与えられたロールによって実行できる関数と実行できない関数ができました。
+このように与えられたロールによって実行できる関数と実行できない関数をできました。
 
 
 ### 停止
