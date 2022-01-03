@@ -85,6 +85,10 @@ https://remix.ethereum.org/
 Remixはブラウザでコードを編集したり、Metamaskウォレットを使ってテストネットやメインネットに
 スマートコントラクトをデプロイできる無料サービスです。
 
+Remixの使い方はこちらのページにまとめてあります。（画像多め）
+
+[ブラウザだけでブロックチェーンにスマートコントラクトをデプロイ【Remixガイド】](/build-smart-contracts)
+
 ### Hardhat
 https://hardhat.org/
 
