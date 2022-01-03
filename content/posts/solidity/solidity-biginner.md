@@ -34,9 +34,6 @@ description: |-
 
 ![CryptoZombies](/media/solidity-beginner/1.png)
 
-1つ目はクリプトゾンビです。
-
-### CryptoZombies
 https://cryptozombies.io/
 
 ゲーム感覚で１つずつ課題をクリアしながらSolidityを学んでいきます。
