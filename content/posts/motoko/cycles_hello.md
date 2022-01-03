@@ -1,5 +1,5 @@
 ---
-title: "DFINITY入門: Accept cycles from a wallet"
+title: "WIP: DFINITY入門: Accept cycles from a wallet"
 date: 2022-01-03 20:38
 permalink: /cycles-hello
 tags:
@@ -13,6 +13,11 @@ description: |-
   ICPをCYCLEに変える、ウォレットにCYCLEをチャージ
 
 ---
+
+# 当記事は執筆の途中です
+
+プレビューに便利なので公開状態にしています
+完成までもうしばらくお待ち下さい笑
 
 ## はじめに
 この記事では、DFINITYのチュートリアル
