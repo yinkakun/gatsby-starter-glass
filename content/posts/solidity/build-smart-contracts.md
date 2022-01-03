@@ -3,7 +3,7 @@ title: ブラウザだけでブロックチェーンにスマートコントラ�
 date: 2021-07-06 00:00
 permalink: /build-smart-contracts
 tags:
-  - Solidity
+  - solidity
   - beginner
   - jp
 description: |-

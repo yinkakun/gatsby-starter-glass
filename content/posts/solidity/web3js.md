@@ -3,7 +3,7 @@ title: web3.JSを使ってスマートコントラクトを実行する3つの�
 date: 2021-06-06 19:38
 permalink: /web3js
 tags:
-  - Solidity
+  - solidity
   - beginner
   - JavaScript
   - jp
