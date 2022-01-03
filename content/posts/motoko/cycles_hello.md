@@ -98,7 +98,7 @@ shared(msg) actor class HelloCycles (
 };
 ```
 
-## 実行
+### 起動＆デプロイ
 
 ローカル実行環境を起動
 ```
@@ -111,10 +111,18 @@ dfx deploy --argument '(360000000000)'
 ```
 ```
 出力
+cycles_hello % dfx deploy --argument '(360000000000)'
+Creating a wallet canister on the local network.
+The wallet canister on the "local" network for user "default" is "rwlgt-iiaaa-aaaaa-aaaaa-cai"
 Deploying all canisters.
+Creating canisters...
+Creating canister "cycles_hello"...
+"cycles_hello" canister created with canister id: "rrkah-fqaaa-aaaaa-aaaaq-cai"
+Creating canister "cycles_hello_assets"...
+"cycles_hello_assets" canister created with canister id: "ryjl3-tyaaa-aaaaa-aaaba-cai"
+Building canisters...
 （中略）
-Installing code for canister cycles_hello_assets, with canister_id rrkah-fqaaa-aaaaa-aaaaq-cai
-Uploading assets to asset canister...
+Committing batch.
 Deployed canisters.
 ```
 
@@ -129,4 +137,67 @@ dfx canister call cycles_hello owner
 このPrincipal IDはデプロイしたIdentityのPrincipal IDで以下のコマンドの結果と一致します。
 ```
 dfx identity get-principal
+```
+
+## 動作確認
+### CYCLESの確認
+CYCLEはWalletキャニスターが管理しています。
+このプロジェクトに登場するウォレットは2つあります。
+
+* dfxの実行ユーザー用のウォレット
+* cycles_helloキャニスター用のウォレット
+
+cycles_helloキャニスターのウォレットの初期残高を表示
+```
+dfx canister call cycles_hello wallet_balance
+(0 : nat)
+```
+
+dfxの実行ユーザーのウォレットからcycles_helloキャニスターのウォレットに256,000,000,000CYCLEを移動
+```
+dfx canister call rwlgt-iiaaa-aaaaa-aaaaa-cai wallet_send '(record { canister = principal "rrkah-fqaaa-aaaaa-aaaaq-cai"; amount = (256000000000:nat64); } )'
+```
+```
+出力
+(variant { 17_724 })
+```
+
+cycles_helloキャニスターのウォレットの残高を表示
+```
+dfx canister call cycles_hello wallet_balance
+(256_000_000_000 : nat)
+```
+
+dfx実行ユーザーのwallet残高を表示
+```
+dfx canister call rwlgt-iiaaa-aaaaa-aaaaa-cai wallet_balance
+```
+```
+出力
+(record { 3_573_748_184 = 91_744_000_000_000 : nat64 })
+```
+
+### キャニスターを実行したらどのウォレットからCYCLEが消費されるか
+```
+dfx canister call cycles_hello greet '("from DFINITY")'
+("Hello, from DFINITY!")
+```
+```
+dfx canister call rwlgt-iiaaa-aaaaa-aaaaa-cai wallet_balance
+```
+```
+出力
+(record { 3_573_748_184 = 91_744_000_000_000 : nat64 })
+```
+
+DFINITYのDocumentでは、このときにdfx実行ユーザーのwalletのCYCLE残高が減少してますが
+筆者の環境では、どちらのウォレットのCYCLEも減りませんでした。
+
+詳しく調べて、また後日、更新したいと思います。
+
+
+### 停止
+dfx.jsonがあるディレクトリで以下のコマンドを実行して、実行環境を停止します。
+```
+dfx stop
 ```
