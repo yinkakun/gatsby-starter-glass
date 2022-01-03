@@ -87,7 +87,7 @@ Remixはブラウザでコードを編集したり、Metamaskウォレットを�
 
 Remixの使い方はこちらのページにまとめてあります。（画像多め）
 
-[ブラウザだけでブロックチェーンにスマートコントラクトをデプロイ【Remixガイド】](/build-smart-contracts)
+[Remixの使い方: ブラウザだけでスマートコントラクトをデプロイ](/build-smart-contracts)
 
 ### Hardhat
 https://hardhat.org/
