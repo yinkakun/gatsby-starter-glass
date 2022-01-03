@@ -3,7 +3,7 @@ title: Motoko Base Library
 date: 2021-12-30 10:38
 permalink: /motoko-base-library
 tags:
-  - Motoko
+  - motoko
 description: |-
   DFINITY (Internet Computer)
   Motoko Base Library

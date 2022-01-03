@@ -3,8 +3,8 @@ title: "Motoko入門: Make inter-canister calls"
 date: 2021-12-30 21:00
 permalink: /motoko-linkedup
 tags:
-  - Motoko
-  - Tutorial
+  - motoko
+  - tutorial
   - jp
 description: |-
   Motokoチュートリアル: DFINITYでキャニスター間てcallを実行する

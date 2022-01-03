@@ -3,8 +3,8 @@ title: "Motoko入門: Increment a natural number"
 date: 2021-12-29 21:38
 permalink: /motoko-my-counter
 tags:
-  - Motoko
-  - Tutorial
+  - motoko
+  - tutorial
   - jp
 description: |-
   DFINITYチュートリアル「Increment a natural number」の日本語解説

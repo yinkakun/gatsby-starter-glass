@@ -3,8 +3,8 @@ title: "Motoko入門: Explore the default project"
 date: 2021-12-29 19:38
 permalink: /motoko-explore-hello
 tags:
-  - Motoko
-  - Tutorial
+  - motoko
+  - tutorial
   - jp
 description: |-
   DFINITYチュートリアル「Explore the default project」日本語解説

@@ -3,8 +3,8 @@ title: "Motoko入門: Use multiple actors"
 date: 2021-12-30 15:38
 permalink: /motoko-multiple-actors
 tags:
-  - Motoko
-  - Tutorial
+  - motoko
+  - tutorial
   - jp
 description: |-
   DFINITYチュートリアル「Use multiple actors」の日本語解説

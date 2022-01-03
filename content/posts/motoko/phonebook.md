@@ -3,8 +3,8 @@ title: "Motoko入門: Import library modules"
 date: 2021-12-30 06:38
 permalink: /motoko-phonebook
 tags:
-  - Motoko
-  - Tutorial
+  - motoko
+  - tutorial
   - jp
 description: |-
   DFINITYチュートリアル「Import library modules」の日本語解説

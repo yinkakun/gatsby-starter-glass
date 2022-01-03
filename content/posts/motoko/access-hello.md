@@ -3,8 +3,8 @@ title: "Motoko入門: Add access control with identities"
 date: 2022-01-02 20:38
 permalink: /access-hello
 tags:
-  - Motoko
-  - Tutorial
+  - motoko
+  - tutorial
   - jp
 description: |-
   ICP & motokoでユーザーによって処理を変える方法を解説

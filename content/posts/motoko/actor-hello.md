@@ -3,8 +3,8 @@ title: "Motoko入門: Query using an actor"
 date: 2021-12-29 20:38
 permalink: /motoko-actor-hello
 tags:
-  - Motoko
-  - Tutorial
+  - motoko
+  - tutorial
   - jp
 description: |-
   DFINITYチュートリアル「Query using an actor」の日本語解説

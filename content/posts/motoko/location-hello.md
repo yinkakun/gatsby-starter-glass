@@ -3,8 +3,8 @@ title: "Motoko入門: Pass text arguments"
 date: 2021-12-29 21:00
 permalink: /motoko-location-hello
 tags:
-  - Motoko
-  - Tutorial
+  - motoko
+  - tutorial
   - jp
 description: |-
   DFINITYチュートリアル「Pass text arguments」の日本語解説
