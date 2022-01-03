@@ -1,5 +1,5 @@
 ---
-title: Solidity無料学習サイト4選【初心者向け】
+title: Solidity無料学習サイト4選【初心者向け入門】
 date: 2021-06-03 00:00
 permalink: /solidity-beginner
 tags:

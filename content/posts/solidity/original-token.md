@@ -1,5 +1,5 @@
 ---
-title: 【コピペOK】オジリナル仮想通貨のつくり方（ERC20）
+title: 【コピペでOK】オジリナル仮想通貨のつくり方（ERC20）
 date: 2021-06-03 00:00
 permalink: /original-token
 tags:
