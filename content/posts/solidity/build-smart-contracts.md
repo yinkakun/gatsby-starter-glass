@@ -1,7 +1,10 @@
 ---
 title: "Remixの使い方【Solidity入門】~ブラウザだけでスマートコントラクトをデプロイ"
 date: 2021-07-06 00:00
-permalink: /build-smart-contracts
+permalink: /remix-tutorial
+redirect_from:
+  - /build-smart-contracts
+  - /build-smart-contracts/
 tags:
   - solidity
   - beginner
