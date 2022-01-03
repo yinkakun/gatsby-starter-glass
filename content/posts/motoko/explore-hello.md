@@ -152,7 +152,7 @@ Staging contents of new and changed assets:
   /index.js.map (gzip) 1/1 (148954 bytes)
 Committing batch.
 ```
-最初に`dfx start`コマンドでローカルの実行環境にキャニスターをデプロイしました。
+ローカルの実行環境にキャニスターをデプロイしました。
 
 ### 実行
 キャニスターを実行してみましょう。
