@@ -5,7 +5,7 @@ permalink: /dfinity-coding
 pinned: 3
 tags:
   - DFINITY
-  - motoko
+  - Motoko
   - Rust
   - beginner
 description: |-
