@@ -3,7 +3,7 @@ title: DFINITY Roadmap
 date: 2021-12-27 23:38
 permalink: /dfinity-roadmap
 tags:
-  - DFINITY
+  - dfinity
 description: |-
   The DFINITY Foundation’s contributions to the Internet Computer roadmap are subject to community discussion and voting.
 ---

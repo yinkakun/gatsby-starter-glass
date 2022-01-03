@@ -3,7 +3,7 @@ title: DFINITY(Internet Computer)入門
 date: 2023-01-02 19:38
 permalink: /hello-dfinity
 tags:
-  - DFINITY
+  - dfinity
   - ICP
   - beginner
 description: |-

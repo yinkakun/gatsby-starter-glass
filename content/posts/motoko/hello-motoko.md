@@ -9,7 +9,7 @@ redirect_from:
   - /hello-icp/
 pinned: 1
 tags:
-  - DFINITY
+  - dfinity
   - motoko
   - beginner
   - jp
