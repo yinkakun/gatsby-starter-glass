@@ -1,5 +1,5 @@
 ---
-title: "Remixの使い方【Solidity入門】~ブラウザだけでスマートコントラクトをデプロイ"
+title: "Solidity入門: Remixの使い方 ~ ブラウザだけでスマートコントラクトをデプロイ"
 date: 2021-07-06 00:00
 permalink: /remix-tutorial
 redirect_from:
