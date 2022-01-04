@@ -26,7 +26,7 @@ Hatdhatは2022年現在、Solidityエンジニアの間でもっともよく使�
 
 Hardhat以外によく使われるツールとしてTruffleがありますが、Truffleより新しく、ビルドやテストがより使いやすくなっています。
 
-
+チュートリアルは少し長いので、テストネットで実行するまでに必要な部分を抜粋しています。
 
 ## インストール
 
@@ -80,7 +80,7 @@ module.exports = {
 
 ```
 
-## コーディング
+### コーディング
 プロジェクトにcontractsというディレクトリを作ります。
 contractsディレクトリの中にToken.solというファイルを作り、下のコードを書きます。
 ```solidity
@@ -146,7 +146,7 @@ contract Token {
 }
 ```
 
-## ビルド
+### コンパイル
 ```
 npx hardhat compile
 ```
@@ -158,4 +158,36 @@ contracts/Token.sol: Warning: SPDX license identifier not provided in source fil
 
 Compilation finished successfully
 
+```
+### テスト
+プロジェクトの直下にtestというディレクトリを作ります。
+testディレクトリの中にToken.jsというファイルを作り、以下のコードを書きます。
+
+```js
+const { expect } = require("chai");
+
+describe("Token contract", function () {
+  it("Deployment should assign the total supply of tokens to the owner", async function () {
+    const [owner] = await ethers.getSigners();
+
+    const Token = await ethers.getContractFactory("Token");
+
+    const hardhatToken = await Token.deploy();
+
+    const ownerBalance = await hardhatToken.balanceOf(owner.address);
+    expect(await hardhatToken.totalSupply()).to.equal(ownerBalance);
+  });
+});
+```
+
+コンパイル済みのスマートコントラクトに対して上のテストコードを使ってテストを実行します。
+```
+npx hardhat test
+```
+```
+  Token contract
+    ✓ Deployment should assign the total supply of tokens to the owner (565ms)
+
+
+  1 passing (569ms)
 ```
