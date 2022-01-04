@@ -224,8 +224,8 @@ MetamaskのNetworkの設定を開くとRopstenのエンドポイントの設定�
 
 #### GitにCommitしないように環境変数を使おう
 以下の2つの環境変数をエクスポートしてhardhat実行時に使えるようにします。
-* ROPSTEN_PRIVATE_KEY
-* ROPSTEN_RPC_URLには
+* `ROPSTEN_PRIVATE_KEY`
+* `ROPSTEN_RPC_URL`
 
 ```
 export ROPSTEN_PRIVATE_KEY="<RopstenのアカウントのPrivate Key>"
@@ -250,6 +250,8 @@ module.exports = {
   }
 };
 ```
+
+以下のコマンドでデプロイスクリプトを実行します。
 ```
 npx hardhat run scripts/deploy.js --network ropsten
 ```
