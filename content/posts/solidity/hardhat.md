@@ -268,7 +268,18 @@ https://ropsten.etherscan.io/address/0xfa9D0729c104841668E0DDeb433Cbc6107AB59C1
 
 Ropstenにスマートコントラクトをデプロイできました。
 
+#### Metamaskに追加
+これはHardhatのチュートリアルには載っていませんが、せっかくトークンを作ったのでMetamaskに登録してみましょう。
+deploy.jsを実行した際に出力された`Token address`をMetamaskに登録してみましょう。
+
+![Metamask](/media/hardhat/1.png)
+
+1,000,000 MHTが見えるようになりました。
+これはToken.solというサンプルコードで作った'My Hardhat Token'です。
+
+ほかのアドレスに送ることもできます。自由に試してください。
+
 メインネット用のETHとRPCを使えば同じやり方でメインネットにデプロイすることもできます。
 
-これで今日からSolidityエンジニア
+今日からきみもSolidityエンジニア
 さあ、Web3へ飛び出そう！
