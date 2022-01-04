@@ -9,6 +9,7 @@ tags:
   - jp
 description: |-
   Hardhatのチュートリアルを日本語で解説
+  スマートコントラクトをテストネット(Ropsten)にデプロイする方法
 
 ---
 
