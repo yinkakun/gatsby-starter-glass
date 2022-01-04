@@ -18,23 +18,27 @@ description: |-
 * ブロックチェーン上でDapps開発したい
 * オリジナルのNFTをコードから書きたい
 
-## Hardhatについて
-本記事では、Hardhatのチュートリアルを日本語で解説しています。
-https://hardhat.org/tutorial/
+## はじめに
 
 Hatdhatは2022年現在、Solidityエンジニアの間でもっともよく使われている開発ツールの１つです。
 
-Hardhat以外によく使われるツールとしてTruffleがありますが、Truffleより新しく、ビルドやテストがより使いやすくなっています。
+Hardhat以外によく使われるツールとしてTruffleがありますが、Hardhatの方が新しくビルドやテストでより使いやすくなっています。
 
-チュートリアルは少し長いので、テストネットで実行するまでに必要な部分を抜粋しています。
+本記事では、Hardhatのチュートリアルを日本語で解説しています。
+チュートリアルの中で、テストネットで実行するまでに必要な部分を抜粋しています。
+
+https://hardhat.org/tutorial/
+
+当記事で実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/solidity-example/tree/main/hardhat-tutorial)で公開しています。
+
 
 ## インストール
 
 HardhatのDocumentにしたがいインストールを進めます。
-hardhatのプロジェクトを使うには、Nodejsのパッケージマネージャnpmを使います。
 
 https://hardhat.org/tutorial/setting-up-the-environment.html
 
+Hardhatを使うには、Nodejsのパッケージマネージャnpmを使います。
 PCのターミナルでnpmコマンドを実行できれば環境構築は完了です。
 
 ## 手順
@@ -191,3 +195,77 @@ npx hardhat test
 
   1 passing (569ms)
 ```
+
+## テストネット(Ropsten)へのデプロイ
+Ethereumのテストネット(Ropsten)にデプロイします。
+チュートリアルでオススメされているRopstenを使って説明します。
+テストネットのデプロイには以下の3つが必要です。
+
+* Ropstenのアカウントの秘密鍵
+* RopstenのETHトークン
+* RPCエンドポイントのURL
+
+#### Ropstenのアカウントの秘密鍵
+Metamaskでアカウントを作ってPrivate Keyをエクスポートすれば取得できます。
+念のため、本番で使っているアカウントと分けることをおすすめします。
+
+#### RopstenのETHトークン
+0.01ETHぐらいあればデプロイには足りると思います。
+テストネットはFaucetという無料でトークンをもらえるサイトが存在するのでググって入手してください。
+
+#### RPCエンドポイントのURL
+HardhatではAlckemyというノードプロバイダーを使っています。
+無料で使えるのでAlchemyはオススメです。
+Alchemyでユーザー登録すれば、API KEYとRPCサーバのURLを取得できるのでそれを使います。
+
+もう1つの簡単な方法はMetamaskで使われているINFURAというノードプロバイダーのRPCサーバです。
+こちらはAPI Keyは不要なので、ここではこちらを使って説明します。
+MetamaskのNetworkの設定を開くとRopstenのエンドポイントの設定内容がみれます。
+
+#### GitにCommitしないように環境変数を使おう
+以下の2つの環境変数をエクスポートしてhardhat実行時に使えるようにします。
+* ROPSTEN_PRIVATE_KEY
+* ROPSTEN_RPC_URLには
+
+```
+export ROPSTEN_PRIVATE_KEY="<RopstenのアカウントのPrivate Key>"
+export ROPSTEN_RPC_URL="https://ropsten.infura.io/v3/xxxxxxxx"
+```
+
+hatdhat.config.jsを以下のように編集します。
+#### hardhat.config.js
+```js
+require("@nomiclabs/hardhat-waffle");
+
+const ROPSTEN_PRIVATE_KEY = process.env.ROPSTEN_PRIVATE_KEY;
+const ROPSTEN_RPC_URL = process.env.ROPSTEN_RPC_URL;
+
+module.exports = {
+  solidity: "0.7.3",
+  networks: {
+    ropsten: {
+      url: `${ROPSTEN_RPC_URL}`,
+      accounts: [`${ROPSTEN_PRIVATE_KEY}`]
+    }
+  }
+};
+```
+```
+npx hardhat run scripts/deploy.js --network ropsten
+```
+```
+Deploying contracts with the account: 0x470815ee5b366755284C9e85f0D636F1e046d013
+Account balance: 1288845007486614009
+Token address: 0xfa9D0729c104841668E0DDeb433Cbc6107AB59C1
+```
+
+Etherscan(Ropsten)でコントラクトアドレスやトランザクションを確認してみましょう。
+
+https://ropsten.etherscan.io/address/0xfa9D0729c104841668E0DDeb433Cbc6107AB59C1
+
+Ropstenにスマートコントラクトをデプロイできました。
+
+メインネット用のETHとRPCを使えば同じやり方でメインネットにデプロイすることもできます。
+
+これで今日からSolidityエンジニア
+さあ、Web3へ飛び出そう！
