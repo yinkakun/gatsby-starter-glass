@@ -17,10 +17,6 @@ description: |-
 
 [Hello, World! Rust CDK Quick Start](https://smartcontracts.org/docs/rust-guide/rust-quickstart.html)
 
-はじめての方は先にこちらをご覧ください。
-
-[5ステップではじめるMotokoプログラミング入門](/hello-motoko)
-
 ### 実行環境
 * dfx: 0.8.4
 * macOS: 11.5.2
