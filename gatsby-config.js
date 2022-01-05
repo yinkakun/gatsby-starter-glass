@@ -3,11 +3,11 @@ module.exports = {
     title: `smacon dev`,
     author: {
       name: `Moto Sakanosita`,
-      summary: `Web3 Programmer, Edtech, Motoko, Rust, Solidity`,
+      summary: `A Programmer at Edtech`,
     },
-    openGraphImage: `open-graph-image.png`,
-    description: `A minimal & beautiful gatsby personal blog starter with a nice glassmorphism UI.`,
-    siteUrl: `https://gatsbyglass.netlify.app`,
+    openGraphImage: `mda.png`,
+    description: `Develop Smart Contracts in Solidity, Motoko and Rust on Ethereum, NEAR, Solana and DFINITY`,
+    siteUrl: `https://www.smacon.dev`,
     social: {
       twitter: `smacondev`,
     },
