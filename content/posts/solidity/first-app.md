@@ -1,6 +1,6 @@
 ---
 title: "Solidity入門: First Application"
-date: 2022-01-04 23:00
+date: 2022-01-05 21:00
 permalink: /first-app
 tags:
   - solidity
@@ -11,18 +11,19 @@ description: |-
   Solidity by ExmaplesのFirst ApplicationをHardhatで作ります
 ---
 
-# 当記事は執筆の途中です
+このページはこんな人におすすめ
 
-プレビューに便利なので公開状態にしています
-完成までもうしばらくお待ち下さい笑
+* Solidityを学びたい
+* 簡単なスマートコントラクトの作り方を知りたい
+* Hardhatを使ったSolidityのテスト方法を知りたい
 
 ## はじめに
 
-当記事は、Solidity by Exampleのサンプルコードを使ってスマートコントラクトを作る方法を解説します。
+Solidity by Exampleのサンプルコードを使ってスマートコントラクトを作る方法を解説します。
 
 https://solidity-by-example.org/first-app/
 
-Hardhatを使ったことがない場合は、こちらをどうぞ
+Hardhatを使ったことがない方はこちらからどうぞ
 
 [Hardhatでスマートコントラクトを作ろう！](/hardhat)
 
@@ -90,32 +91,70 @@ module.exports = {
 };
 ```
 
-### デプロイ
-#### ローカル実行環境を起動
-ターミナルウィンドウを2つ開いて、片方でnodeを起動します
-```
-npx hardhat node
-```
-
-デプロイスクリプトは以下のように編集します
-#### scripts/sample-script.js
+### テスト
+HardhatではJavaScriptのテストツールのchaiを使っています。
+以下のファイルを編集します。
+#### test/sample-test.js
 ```js
-const hre = require("hardhat");
+const { expect } = require("chai");
+const { ethers } = require("hardhat");
 
-async function main() {
-  const Counter = await hre.ethers.getContractFactory("Counter");
-  const counter = await Counter.deploy();
+describe("Counter", function () {
+  let Factory;
+  let contract;
 
-  await counter.deployed();
+  // 各テストの前に毎回デプロイ処理が走ります
+  beforeEach(async function () {
+    Factory = await ethers.getContractFactory("Counter");
+    contract = await Factory.deploy();
+  })
 
-  console.log("Counter deployed to:", counter.address);
-}
-
-main()
-  .then(() => process.exit(0))
-  .catch((error) => {
-    console.error(error);
-    process.exit(1);
+  // 初期状態でget()の戻り値が0であること
+  it("Should be 0", async function () {
+    expect(await contract.get()).to.equal(0);
   });
 
+  // inc()を実行すると+1されること
+  it("Should be 1 after inc()", async function () {
+    const Tx = await contract.inc();
+    await Tx.wait();
+    expect(await contract.get()).to.equal(1);
+  });
+
+  // dec()を実行すると-1されること
+  it("Should be 0 after inc() and dec()", async function () {
+    const Tx1 = await contract.inc();
+    await Tx1.wait();
+    expect(await contract.get()).to.equal(1);
+    const Tx2 = await contract.dec();
+    await Tx2.wait();
+    expect(await contract.get()).to.equal(0);
+  });
+
+});
+
 ```
+
+### テスト実行
+以下のコマンドを実行するとtestディレクトリ配下にあるテストが実行されます。
+```
+npx hardhat test
+```
+```
+出力
+  Counter
+    ✓ Should be 0
+    ✓ Should be 1 after inc()
+    ✓ Should be 0 after inc() and dec()
+
+
+  3 passing (406ms)
+```
+3つのテストがすべてPass(成功)となりました。
+
+## デプロイ
+自分で作ったスマートコントラクトをテストネットやメインネットにデプロイする方法はいろいろありますが、
+その中で以下の2つを紹介します。
+
+* [Hardhatでスマートコントラクトを作ろう！](/hardhat)
+* [emixの使い方](/remix-tutorial)
