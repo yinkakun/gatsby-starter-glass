@@ -27,6 +27,9 @@ Hardhatを使ったことがない方はこちらからどうぞ
 
 [Hardhatでスマートコントラクトを作ろう！](/hardhat)
 
+このページで実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/solidity-example/tree/main/first-app)からダウンロードできます。
+
+
 ## 手順
 ### 新しいHatdhatプロジェクトを作る
 first-appというディレクトリを作り
@@ -53,7 +56,7 @@ npx hardhat
 これでhardhat.config.jsの初期設定やether.jsなどプラグインを追加した状態になります。
 
 ### コーディング
-contracts/Greeter.solとhardhat.config.jsを編集します。
+contracts/Counter.solとhardhat.config.jsを編集します。
 2つのSolidityバージョンが一致するようにしましょう。
 
 #### contracts/Counter.sol
@@ -93,7 +96,7 @@ module.exports = {
 
 ### テスト
 HardhatではJavaScriptのテストツールのchaiを使っています。
-以下のファイルを編集します。
+sample-test.jsを以下のように編集します。
 #### test/sample-test.js
 ```js
 const { expect } = require("chai");
