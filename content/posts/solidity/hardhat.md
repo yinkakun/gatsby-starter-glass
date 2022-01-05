@@ -13,7 +13,7 @@ description: |-
 
 ---
 
-この記事はこんな人におすすめ
+このページはこんな人におすすめ
 
 * Solidityを学習したい
 * テストネットやメインネットにスマートコントラクトを作りたい
@@ -23,14 +23,15 @@ description: |-
 
 Hatdhatは2022年現在、Solidityエンジニアの間でもっともよく使われている開発ツールの１つです。
 
-Hardhat以外によく使われるツールとしてTruffleがありますが、Hardhatの方が新しくビルドやテストでより使いやすくなっています。
+Hardhat以外によく使われるツールとしてはTruffleがあります。
+Hardhatの方が新しくビルドやテストでより使いやすくなっています。
 
-本記事では、Hardhatのチュートリアルを日本語で解説しています。
-チュートリアルの中で、テストネットで実行するまでに必要な部分を抜粋しています。
+このページでは、Hardhatのチュートリアルを日本語で解説しています。
+チュートリアルの中からテストネットでの実行に必要な部分を抜粋しています。
 
 https://hardhat.org/tutorial/
 
-当記事で実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/solidity-example/tree/main/hardhat-tutorial)で公開しています。
+このページで実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/solidity-example/tree/main/hardhat-tutorial)からダウンロードできます。
 
 
 ## インストール
@@ -40,10 +41,10 @@ HardhatのDocumentにしたがいインストールを進めます。
 https://hardhat.org/tutorial/setting-up-the-environment.html
 
 Hardhatを使うには、Nodejsのパッケージマネージャnpmを使います。
-PCのターミナルでnpmコマンドを実行できれば環境構築は完了です。
 
-## 手順
+Hardhatはプロジェクトごとにインストールするので、この時点ではPCのターミナルでnpmコマンドを実行できれば環境構築は完了です。
 
+### Hardhatプロジェクトの作成
 hardhat-tutorialというnpm用のプロジェクトを作り、hardhatをインストールします。
 ```
 mkdir hardhat-tutorial
@@ -51,14 +52,15 @@ cd hardhat-tutorial
 npm init --yes
 npm install --save-dev hardhat
 ```
-
+新しいプロジェクトにHardhatをインストールできました。
 hardhatコマンドを実行して、hardhatの設定ファイルを作ります。
 ```
 npx hardhat
 ```
+npxというコマンドはnpmによってインストールしたコマンドを実行するためのコマンドです。
+npmでインストールしたコマンドをそのまま入力しても見つけられないのでnpxを使います。
 
 選択肢が表示されたら、`Create an empty hardhat.config.js`を選びます。
-
 ```
 ? What do you want to do? …
   Create a sample project
@@ -66,13 +68,22 @@ npx hardhat
   Quit
 ```
 
+プロジェクトディレクトリにHardhatの設定ファイル`hardhat.config.js`が作られます。
+
+`Create a sample project`を選択すれば、このあとの作業をもっと簡単にすすめることができます。
+
+ここではプロジェクトの構成を理解するために、1つ1つ自分で作っていきましょう。
+
 ### プラグインの追加
 ether.jsやwaffleといったHardhatのプラグインを追加します。
 ```
 npm install --save-dev @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
 ```
 
+## スマートコントラクトの作成
+### コーディング
 hatdhat.config.jsを以下のように編集します。
+
 ```js
 require("@nomiclabs/hardhat-waffle");
 
@@ -84,10 +95,12 @@ module.exports = {
 };
 
 ```
+執筆時点でのHardhatのドキュメントのコードをそのまま使っています。
+Solidityのバージョンが少し古いので、バージョン番号は適宜更新してください。
 
-### コーディング
-プロジェクトにcontractsというディレクトリを作ります。
+プロジェクトにcontractsというディレクトリを作りましょう。
 contractsディレクトリの中にToken.solというファイルを作り、下のコードを書きます。
+#### contracts/Token.sol
 ```solidity
 // Solidity files have to start with this pragma.
 // It will be used by the Solidity compiler to validate its version.
@@ -152,6 +165,7 @@ contract Token {
 ```
 
 ### コンパイル
+hardhatコマンドを実行します。
 ```
 npx hardhat compile
 ```
