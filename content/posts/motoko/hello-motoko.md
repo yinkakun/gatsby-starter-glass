@@ -13,7 +13,7 @@ tags:
   - motoko
   - beginner
   - jp
-social_image: mda.png
+social_image: /media/mda.png
 description: |-
   ICP(Internet Computer Protocol)でMotokoを使ってDapps開発をはじめよう！
 ---
