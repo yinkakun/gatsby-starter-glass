@@ -1,5 +1,5 @@
 ---
-title: "Rust入門: DFINITYでHello, World!"
+title: "Rust入門: DFINITYでHello, World!【初心者向け】"
 date: 2022-01-04 19:38
 permalink: /rust-hello
 tags:
@@ -11,11 +11,17 @@ description: |-
   ICP(Internet Computer Protocol)でRustを使ってDapps開発をはじめよう！
 ---
 
+このページはこんな人におすすめ
+
+* Rustを勉強したい
+* DFINITYの開発に興味がある
+
 ## はじめに
-当記事は、DFINITYのRustのチュートリアルを日本語で解説しています。
-当記事で実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/rust-tutorial/tree/main/rust_hello)で公開しています。
+このページは、以下のDFINITYのRustのチュートリアルを日本語で解説しています。
 
 [Hello, World! Rust CDK Quick Start](https://smartcontracts.org/docs/rust-guide/rust-quickstart.html)
+
+このページで実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/rust-tutorial/tree/main/rust_hello)からダウンロードできます。
 
 ### 実行環境
 * dfx: 0.8.4
@@ -23,15 +29,18 @@ description: |-
 * rustup: 1.24.3
 * rustc: 1.57.0
 * cargo: 1.57.0
-* 任意のターミナル
-* 任意のテキストエディタ
-
-ターミナルとテキストエディタは好きなソフトウェアを使えば大丈夫です。
-
-はじめはMac標準のターミナルでよいと思います。テキストエディタは筆者はVisual Studio Codeを使っています。
 
 ## 環境準備
-DFINITYのツールdfx以外にRust用のコンパイラやツール群をローカル環境にインストールする必要があります。
+### dfxのインストール
+dfxコマンドはDFINITYのキャニスターをビルドしたりデプロイしたりするためのツールです。
+
+[dfxのインストールガイド](https://smartcontracts.org/docs/developers-guide/install-upgrade-remove.html)
+
+以下のコマンドでdfxをインストールします。
+```
+sh -ci "$(curl -fsSL https://sdk.dfinity.org/install.sh)"
+```
+### rustup (Rust Toolchain)
 以下のコマンドによってRust系のツールをまとめてインストールします。
 ```
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
@@ -41,12 +50,12 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 * cargo: Rustのパッケージマネージャ
 * rustup: Rustのビルドツール全体を管理
 
-以下のコマンドでcmakeというツールも入れる必要があるようです。
+### CMakeのインストール
+以下のコマンドでcmakeをインストールします。
 ```
 brew install cmake
 ```
 
-## 手順
 ### プロジェクトの作成
 DFINITYのデフォルトの開発言語はMotokoです。
 `--type=rust`をつけてRust用のプロジェクトを作成します。
@@ -56,6 +65,7 @@ cd rust_hello
 ```
 dfx.jsonというファイルを見てみましょう。
 dfxコマンドでビルドするときにはこのファイルの設定が使われます。
+#### dfx.json
 ```js
 {
   "canisters": {
@@ -93,19 +103,21 @@ dfxコマンドでビルドするときにはこのファイルの設定が使�
   "version": 1
 }
 ```
+
+## キャニスター(スマートコントラクト)の作成
 ### ソースコード
 cargoはRustのビルドに使うツールです。
 Cargo.tomlには、cargoで使う設定が書かれています。
 rust_helloプロジェクトには、2つのCargo.tomlがあります。
-#### root直下のCargo.toml
-```
+#### Cargo.toml
+```toml
 [workspace]
 members = [
     "src/rust_hello",
 ]
 ```
 #### src/rust_hello/Cargo.toml
-```
+```toml
 [package]
 name = "rust_hello"
 version = "0.1.0"
@@ -122,8 +134,9 @@ ic-cdk = "0.3"
 ic-cdk-macros = "0.3"
 ```
 #### src/rust_hello/lib.rs
-greetというシンプルな関数が書かれています。
-```
+スマートコントラクト本体のソースコードです。
+今回はgreetというシンプルな関数だけが書かれています。
+```rust
 #[ic_cdk_macros::query]
 fn greet(name: String) -> String {
     format!("Hello, {}!", name)
@@ -133,14 +146,14 @@ fn greet(name: String) -> String {
 #### Candid
 Candidはキャニスターのインターフェースの情報が書かれており、
 フロントエンドからキャニスターを実行するときにはこのインターフェースの情報を利用します。
-```
+```rust
 service : {
     "greet": (text) -> (text) query;
 }
 ```
 この場合は、greetというqueryがあり、引数と戻りはtextです。
 
-## ビルド＆デプロイ
+### ビルド&デプロイ
 PC上にローカル実行環境を起動します。
 ```
 dfx start --background
@@ -168,7 +181,7 @@ Committing batch.
 Deployed canisters.
 ```
 
-## 実行
+## キャニスターの実行
 rust_helloというキャニスターのgreet()という関数にworldという引数を渡して実行します。
 ```
 dfx canister call rust_hello greet world
@@ -195,3 +208,6 @@ http://localhost:8080
 ```
 dfx stop
 ```
+
+Rustエンジニアへの第一歩を踏み出しました！
+ソースコードを変えていろんなキャニスターを作ってみましょう。
