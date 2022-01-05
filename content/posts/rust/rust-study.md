@@ -10,3 +10,24 @@ tags:
 description: |-
   Rust学習サイトの紹介
 ---
+
+Reference to the tweet by @ocrybit
+https://twitter.com/ocrybit/status/1478206583993774081
+
+## Introduction to Rust
+https://serokell.io/blog/rust-guide
+
+## Tour of Rust
+https://tourofrust.com/
+
+## Rust by Example
+https://doc.rust-lang.org/rust-by-example/index.html
+
+## rustlings
+https://github.com/rust-lang/rustlings/
+
+## exercism
+https://exercism.org/tracks/rust
+
+## A half-hour to learn Rust
+https://fasterthanli.me/articles/a-half-hour-to-learn-rust
