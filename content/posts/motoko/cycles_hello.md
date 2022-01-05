@@ -14,11 +14,6 @@ description: |-
 
 ---
 
-# 当記事は執筆の途中です
-
-プレビューに便利なので公開状態にしています
-完成までもうしばらくお待ち下さい笑
-
 ## はじめに
 この記事では、DFINITYのチュートリアル
 [「Accept cycles from a wallet」](https://smartcontracts.org/docs/developers-guide/tutorials/simple-cycles.html)
