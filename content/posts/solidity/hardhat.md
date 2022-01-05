@@ -82,8 +82,8 @@ npm install --save-dev @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffl
 
 ## スマートコントラクトの作成
 ### コーディング
-hatdhat.config.jsを以下のように編集します。
-
+hardhat.config.jsを以下のように編集します。
+#### hardhat.config.js
 ```js
 require("@nomiclabs/hardhat-waffle");
 
@@ -182,6 +182,7 @@ Compilation finished successfully
 プロジェクトの直下にtestというディレクトリを作ります。
 testディレクトリの中にToken.jsというファイルを作り、以下のコードを書きます。
 
+#### test/Token.js
 ```js
 const { expect } = require("chai");
 
@@ -237,15 +238,11 @@ Alchemyでユーザー登録すれば、API KEYとRPCサーバのURLを取得で
 こちらはAPI Keyは不要なので、ここではこちらを使って説明します。
 MetamaskのNetworkの設定を開くとRopstenのエンドポイントの設定内容がみれます。
 
-#### GitにCommitしないように環境変数を使おう
-以下の2つの環境変数をエクスポートしてhardhat実行時に使えるようにします。
+### 環境変数
+秘密鍵やAPI KeyなどのクレデンシャルはGitにcommitしないようにする必要があります。
+そこで、以下の2つの環境変数をエクスポートしてhardhat実行時に使えるようにします。
 * `ROPSTEN_PRIVATE_KEY`
 * `ROPSTEN_RPC_URL`
-
-```
-export ROPSTEN_PRIVATE_KEY="<RopstenのアカウントのPrivate Key>"
-export ROPSTEN_RPC_URL="https://ropsten.infura.io/v3/xxxxxxxx"
-```
 
 hatdhat.config.jsを以下のように編集します。
 #### hardhat.config.js
@@ -266,7 +263,21 @@ module.exports = {
 };
 ```
 
-以下のコマンドでデプロイスクリプトを実行します。
+
+ターミナルで以下のコマンドを実行します。
+```
+export ROPSTEN_PRIVATE_KEY="<RopstenのアカウントのPrivate Key>"
+export ROPSTEN_RPC_URL="https://ropsten.infura.io/v3/xxxxxxxx"
+```
+設定した値を確認してみましょう。
+```
+echo "ROPSTEN_PRIVATE_KEY: $ROPSTEN_PRIVATE_KEY"
+echo "ROPSTEN_RPC_URL: $ROPSTEN_RPC_URL"
+```
+このときにエクスポートした環境変数は、このコマンドを実行したターミナルウィンドウだけ使えるようになります。
+
+
+環境変数を設定したターミナルウィンドウで以下のコマンドを実行します。
 ```
 npx hardhat run scripts/deploy.js --network ropsten
 ```
@@ -275,21 +286,21 @@ Deploying contracts with the account: 0x470815ee5b366755284C9e85f0D636F1e046d013
 Account balance: 1288845007486614009
 Token address: 0xfa9D0729c104841668E0DDeb433Cbc6107AB59C1
 ```
+このようなログが表示されたらテストネットへのデプロイが正常に実行されています。
 
 Etherscan(Ropsten)でコントラクトアドレスやトランザクションを確認してみましょう。
 
 https://ropsten.etherscan.io/address/0xfa9D0729c104841668E0DDeb433Cbc6107AB59C1
 
-Ropstenにスマートコントラクトをデプロイできました。
+### Metamaskで確認
+Hardhatのチュートリアルには載っていませんが、せっかくトークンを作ったのでMetamaskに登録してみましょう。
 
-#### Metamaskに追加
-これはHardhatのチュートリアルには載っていませんが、せっかくトークンを作ったのでMetamaskに登録してみましょう。
-deploy.jsを実行した際に出力された`Token address`をMetamaskに登録してみましょう。
-
+deploy.jsを実行した際に出力された`Token address`をMetamaskに登録します。
 ![Metamask](/media/hardhat/1.png)
 
-1,000,000 MHTが見えるようになりました。
-これはToken.solというサンプルコードで作った'My Hardhat Token'です。
+これで1,000,000 MHTが見えるようになります。
+
+これはToken.solというサンプルコードであなたが作った'My Hardhat Token'です。
 
 ほかのアドレスに送ることもできます。自由に試してください。
 
