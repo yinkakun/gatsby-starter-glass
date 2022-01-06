@@ -17,8 +17,6 @@ description: |-
 * 簡単なスマートコントラクトの作り方を知りたい
 * Hardhatを使ったSolidityのテスト方法を知りたい
 
-## はじめに
-
 Solidity by Exampleのサンプルコードを使ってスマートコントラクトを作る方法を解説します。
 
 https://solidity-by-example.org/first-app/
@@ -156,7 +154,7 @@ npx hardhat test
 3つのテストがすべてPass(成功)となりました。
 
 ## デプロイ
-自分で作ったスマートコントラクトをテストネットやメインネットにデプロイするいろんなやり方の中で以下の2つを紹介します。
+スマートコントラクトをテストネットやメインネットにデプロイする方法を2つ紹介します。
 
 * [Hardhatでスマートコントラクトを作ろう！](/hardhat)
 * [Remixの使い方](/remix-tutorial)
