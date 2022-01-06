@@ -1,5 +1,5 @@
 ---
-title: Overview of DFINITY (Internet Computer)
+title: Overview of DFINITY/ICP (Internet Computer Protocol)
 date: 2021-12-27 18:38
 permalink: /dfinity-overview
 tags:

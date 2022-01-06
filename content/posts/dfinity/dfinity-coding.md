@@ -1,5 +1,5 @@
 ---
-title: Start Coding for DFINITY
+title: Start Coding for DFINITY/ICP
 date: 2021-12-28 18:38
 permalink: /dfinity-coding
 pinned: 3
