@@ -1,7 +1,7 @@
 ---
 title: "Introducing Rust free learning sites"
 date: 2022-01-04 19:38
-permalink: /rust-study
+permalink: /rust-learning
 tags:
   - rust
   - beginner
