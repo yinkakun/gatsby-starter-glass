@@ -1,17 +1,14 @@
 ---
-title: "Rust入門: 無料学習サイトの紹介"
+title: "Introducing Rust free learning sites"
 date: 2022-01-01 19:38
 permalink: /rust-study
 tags:
-  - dfinity
-  - rust
-  - beginner
-  - jp
 description: |-
-  Rust学習サイトの紹介
+  Reference to the tweet by @ocrybit
+  https://twitter.com/ocrybit/status/1478206583993774081
 ---
 
-Reference to the tweet by @ocrybit
+Thank you for your nice tweet, @ocrybit
 https://twitter.com/ocrybit/status/1478206583993774081
 
 ## Introduction to Rust
