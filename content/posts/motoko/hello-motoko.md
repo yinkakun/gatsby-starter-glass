@@ -202,6 +202,8 @@ Internet Computerの世界へようこそ
 * [Import library modules](/motoko-phonebook)
 * [Use multiple actors](/motoko-multiple-actors)
 * [Make inter-canister calls](/motoko-linkedup)
+* [Add access control with identities](/access-hello)
+* [Accept cycles from a wallet](/cycles-hello)
 
 DFINITYやいろんなブロックチェーンを使った開発情報をTwitterで発信しています。
 [@motosakanosita](https://twitter.com/motosakanosita)
