@@ -10,13 +10,11 @@ description: |-
   DFINITYチュートリアル(Motoko): キャニスター間てcallを実行する
 ---
 
-## はじめに
-当記事は、DFINITYのMotokoのチュートリアルを日本語で解説しています。
+このページは、DFINITYのMotokoのチュートリアルを日本語で解説しています。
 
 [Make inter-canister calls](https://smartcontracts.org/docs/developers-guide/tutorials/intercanister-calls.html)
 
-
-はじめての方は先にこちらをご覧ください。
+はじめての方はこちらをご覧ください。
 
 [5ステップではじめるMotokoプログラミング入門](/hello-motoko)
 

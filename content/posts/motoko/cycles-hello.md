@@ -14,9 +14,9 @@ description: |-
 
 ---
 
-このページは、DFINITYのチュートリアル
+このページは、DFINITYのチュートリアルを日本語で解説しています。
+
 [「Accept cycles from a wallet」](https://smartcontracts.org/docs/developers-guide/tutorials/simple-cycles.html)
-を日本語で解説しています。
 
 実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/motoko-tutorial/tree/main/cycles_hello)からダウンロードできます。
 

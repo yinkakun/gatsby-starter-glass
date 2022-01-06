@@ -12,9 +12,9 @@ description: |-
 
 このページではDFINITYのMotokoのチュートリアルを日本語で解説しています。
 
-実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/motoko-tutorial/tree/main/access_hello)からダウンロードできます。
-
 [Add access control with identities](https://smartcontracts.org/docs/developers-guide/tutorials/access-control.html)
+
+実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/motoko-tutorial/tree/main/access_hello)からダウンロードできます。
 
 はじめての方はこちらをご覧ください。
 
