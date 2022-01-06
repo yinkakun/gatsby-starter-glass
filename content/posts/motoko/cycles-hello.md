@@ -14,12 +14,11 @@ description: |-
 
 ---
 
-## はじめに
-この記事では、DFINITYのチュートリアル
+このページは、DFINITYのチュートリアル
 [「Accept cycles from a wallet」](https://smartcontracts.org/docs/developers-guide/tutorials/simple-cycles.html)
 を日本語で解説しています。
 
-実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/motoko-tutorial/tree/main/cycles_hello)で公開しています。
+実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/motoko-tutorial/tree/main/cycles_hello)からダウンロードできます。
 
 ### 実行環境
 * dfx: 0.8.4

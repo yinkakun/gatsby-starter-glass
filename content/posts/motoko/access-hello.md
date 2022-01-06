@@ -10,13 +10,13 @@ description: |-
   ICP & motokoでユーザーによって処理を変える方法を解説
 ---
 
-## はじめに
-当記事は、DFINITYのMotokoのチュートリアルを日本語で解説しています。
-当記事で実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/motoko-tutorial/tree/main/access_hello)で公開しています。
+このページではDFINITYのMotokoのチュートリアルを日本語で解説しています。
+
+実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/motoko-tutorial/tree/main/access_hello)からダウンロードできます。
 
 [Add access control with identities](https://smartcontracts.org/docs/developers-guide/tutorials/access-control.html)
 
-はじめての方は先にこちらをご覧ください。
+はじめての方はこちらをご覧ください。
 
 [5ステップではじめるMotokoプログラミング入門](/hello-motoko)
 
