@@ -11,6 +11,9 @@ description: |-
   Solidity by ExmaplesのVariablesをHardhatで作ります
 ---
 
+# この記事は執筆の途中です、
+完成までしばらくお待ち下さい
+
 このページはこんな人におすすめ
 
 * Solidityを学びたい
