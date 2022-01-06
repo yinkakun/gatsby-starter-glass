@@ -14,6 +14,8 @@ description: |-
 
 [Make inter-canister calls](https://smartcontracts.org/docs/developers-guide/tutorials/intercanister-calls.html)
 
+実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/motoko-tutorial/tree/main/linkedup)からダウンロードできます。
+
 はじめての方はこちらをご覧ください。
 
 [5ステップではじめるMotokoプログラミング入門](/hello-motoko)

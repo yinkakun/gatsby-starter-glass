@@ -11,11 +11,11 @@ description: |-
   実際に使ったコードをGitHubで公開
 ---
 
-## はじめに
-当記事は、DFINITYのMotokoのチュートリアルを日本語で解説しています。
-当記事で実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/motoko-tutorial/tree/main/phonebook)で公開しています。
+このページではDFINITYのMotokoのチュートリアルを日本語で解説しています。
 
 [Import library modules](https://smartcontracts.org/docs/developers-guide/tutorials/phonebook.html)
+
+実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/motoko-tutorial/tree/main/phonebook)からダウンロードできます。
 
 はじめての方は先にこちらをご覧ください。
 
