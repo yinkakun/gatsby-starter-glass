@@ -1,15 +1,19 @@
 ---
 title: "Introducing Rust free learning sites"
-date: 2022-01-01 19:38
+date: 2022-01-04 19:38
 permalink: /rust-study
 tags:
+  - rust
+  - beginner
 description: |-
-  Reference to the tweet by @ocrybit
-  https://twitter.com/ocrybit/status/1478206583993774081
 ---
 
-Thank you for your nice tweet, @ocrybit
-https://twitter.com/ocrybit/status/1478206583993774081
+## Learn Rust 
+https://www.rust-lang.org/learn
+
+* [The Book](https://doc.rust-lang.org/book/)
+
+* [Playground](https://play.rust-lang.org/)
 
 ## Introduction to Rust
 https://serokell.io/blog/rust-guide
@@ -28,3 +32,6 @@ https://exercism.org/tracks/rust
 
 ## A half-hour to learn Rust
 https://fasterthanli.me/articles/a-half-hour-to-learn-rust
+
+Thank you for your [nice tweet](https://twitter.com/ocrybit/status/1478206583993774081), @ocrybit
+
