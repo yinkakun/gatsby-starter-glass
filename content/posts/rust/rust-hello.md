@@ -16,7 +16,6 @@ description: |-
 * Rustを勉強したい
 * DFINITYの開発に興味がある
 
-## はじめに
 このページは、以下のDFINITYのRustのチュートリアルを日本語で解説しています。
 
 [Hello, World! Rust CDK Quick Start](https://smartcontracts.org/docs/rust-guide/rust-quickstart.html)
@@ -30,7 +29,7 @@ description: |-
 * rustc: 1.57.0
 * cargo: 1.57.0
 
-## 環境準備
+## インストール
 ### dfxのインストール
 dfxコマンドはDFINITYのキャニスターをビルドしたりデプロイしたりするためのツールです。
 
@@ -203,7 +202,7 @@ http://localhost:8080
 
 ![Rust](/media/rust-hello/1.png)
 
-## 停止
+### 停止
 ローカル実行環境を停止します。
 ```
 dfx stop

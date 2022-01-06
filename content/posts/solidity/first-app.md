@@ -28,8 +28,7 @@ Hardhatを使ったことがない方はこちらからどうぞ
 このページで実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/solidity-example/tree/main/first-app)からダウンロードできます。
 
 
-## 手順
-### 新しいHatdhatプロジェクトを作る
+## 新しいHatdhatプロジェクトを作る
 first-appというディレクトリを作り
 npmパッケージのhardhatをインストールします。
 ```
@@ -53,7 +52,7 @@ npx hardhat
 
 これでhardhat.config.jsの初期設定やether.jsなどプラグインを追加した状態になります。
 
-### コーディング
+## コーディング
 contracts/Counter.solとhardhat.config.jsを編集します。
 2つのSolidityバージョンが一致するようにしましょう。
 
@@ -92,7 +91,7 @@ module.exports = {
 };
 ```
 
-### テスト
+## テスト
 HardhatではJavaScriptのテストツールのchaiを使っています。
 sample-test.jsを以下のように編集します。
 #### test/sample-test.js
