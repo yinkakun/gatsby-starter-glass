@@ -1,5 +1,5 @@
 ---
-title: "Rust入門: DFINITY/ICPでHello, World!【初心者向け】"
+title: "Rust入門: DFINITYでHello, World!【初心者向け】"
 date: 2022-01-04 19:38
 permalink: /rust-hello
 tags:
@@ -8,15 +8,15 @@ tags:
   - beginner
   - jp
 description: |-
-  ICP(Internet Computer Protocol)でRustを使ってDapps開発をはじめよう！
+  DFINITY/ICP(Internet Computer Protocol)でRustを使ってDapps開発をはじめよう！
 ---
 
 このページはこんな人におすすめ
 
 * Rustを勉強したい
-* DFINITYの開発に興味がある
+* DFINITY/ICPの開発に興味がある
 
-このページは、以下のDFINITYのRustのチュートリアルを日本語で解説しています。
+このページは、以下のDFINITY/ICPのRustのチュートリアルを日本語で解説しています。
 
 [Hello, World! Rust CDK Quick Start](https://smartcontracts.org/docs/rust-guide/rust-quickstart.html)
 
@@ -31,7 +31,7 @@ description: |-
 
 ## インストール
 ### dfxのインストール
-dfxコマンドはDFINITYのキャニスターをビルドしたりデプロイしたりするためのツールです。
+dfxコマンドはDFINITY/ICPのキャニスターをビルドしたりデプロイしたりするためのツールです。
 
 [dfxのインストールガイド](https://smartcontracts.org/docs/developers-guide/install-upgrade-remove.html)
 
@@ -56,7 +56,7 @@ brew install cmake
 ```
 
 ### プロジェクトの作成
-DFINITYのデフォルトの開発言語はMotokoです。
+DFINITY/ICPのデフォルトの開発言語はMotokoです。
 `--type=rust`をつけてRust用のプロジェクトを作成します。
 ```
 dfx new --type=rust rust_hello
