@@ -1,5 +1,5 @@
 ---
-title: Overview of DFINITY/ICP (Internet Computer Protocol)
+title: Overview of DFINITY (Internet Computer)
 date: 2021-12-27 18:38
 permalink: /dfinity-overview
 tags:
@@ -10,7 +10,7 @@ description: |-
   Disentangling DFINITY and Ethereum
 ---
 
-## DFINITY
+## DFINITY/ICP
 https://dfinity.org/
 
 ## Internet Computer Association
