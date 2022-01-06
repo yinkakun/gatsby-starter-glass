@@ -1,5 +1,5 @@
 ---
-title: 5ステップではじめるMotokoプログラミング入門【初心者向け】
+title: 5ステップではじめるMotokoプログラミング入門（DFINITY/ICP）【初心者向け】
 date: 2021-08-15 19:38
 permalink: /hello-motoko
 redirect_from:
@@ -20,19 +20,19 @@ description: |-
 この記事はこんな人におすすめです
 
 * Motokoでプログラミングを学びたい初心者
-* DFINITY(Internet Computer)に興味がある
+* DFINITY/ICP(Internet Computer Procotol)に興味がある
 * ブロックチェーンやDapps開発に興味がある
 * 将来Webエンジニアになりたい
 
 ぼくは2017年ごろからブロックチェーンを触り、2021年現在はWeb系のグローバルスタートアップで働く本業の傍らで、ブロックチェーンを使ったサービスを開発しています。
 
-DFINITY(Internet Computer)は2021年5月に開始したサービスで、これまでの一般的なWeb開発をもっとシンプルに変えてくれる、革新的な技術を使っています。インターネットそのものをTCP/IPのレイヤーから見直して再設計しており、裏側ではブロックチェーンの技術を使っています。
+DFINITY/ICP(Internet Computer Protocol)は2021年5月に開始したサービスで、これまでの一般的なWeb開発をもっとシンプルに変えてくれる、革新的な技術を使っています。インターネットそのものをTCP/IPのレイヤーから見直して再設計しており、裏側ではブロックチェーンの技術を使っています。
 
 誰でもパソコンさえあれば、無料で簡単に始めることができるので、まずは実際にやってみましょう。
 
 
 ## はじめに
-当記事で紹介する５つのステップは、DFINITYの公式ページに簡潔にまとまっています。
+当記事で紹介する５つのステップは、DFINITY/ICPの公式ページに簡潔にまとまっています。
 
 https://smartcontracts.org/
 
@@ -131,7 +131,7 @@ npm install
 
 npmを使ってJavaScriptのライブラリをインストールしています。
 
-フロントエンドのプログラムはChromeなどのブラウザで実行することになるので、DFINITYの場合でも、そうじゃなくても同じJavaScriptを使います。
+フロントエンドのプログラムはChromeなどのブラウザで実行することになるので、DFINITY/ICPの場合でも、そうじゃなくても同じJavaScriptを使います。
 
 続いて、Hello Worldプログラムをビルドしてローカル実行環境にデプロイします。
 
@@ -190,7 +190,7 @@ npm start
 
 これからICPトークンやCycleトークンを使って、インターネット上のInternet Computerにキャニスターをデプロイすることで、世界中のどこからでも自分の作るキャニスターを呼び出せるようになります。
 
-Internet Computerの世界へようこそ
+ICP(Internet Computer Protocol)の世界へようこそ
 
 公式のチュートリアルやExamplesを日本語で解説しています。
 
@@ -205,5 +205,5 @@ Internet Computerの世界へようこそ
 * [Add access control with identities](/access-hello)
 * [Accept cycles from a wallet](/cycles-hello)
 
-DFINITYやいろんなブロックチェーンを使った開発情報をTwitterで発信しています。
+DFINITY/ICPやいろんなブロックチェーンを使った開発情報をTwitterで発信しています。
 [@motosakanosita](https://twitter.com/motosakanosita)
