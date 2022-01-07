@@ -1,5 +1,5 @@
 ---
-title: "NFTエンジニア入門: 独自コントラクトのNFTを作る方法（ノーコード含む）"
+title: "NFTエンジニアを目指そう！独自コントラクトのNFTを作る方法"
 date: 2022-01-07 21:00
 permalink: /original-nft
 tags:
