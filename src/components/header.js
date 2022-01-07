@@ -76,7 +76,7 @@ const HeaderWrapper = styled(Container)`
 
 const HeaderTitle = styled.div`
   & a {
-    text-transform: uppercase;
+    font-weight: bold;
     text-decoration: none;
     font-size: var(--size-400);
     color: inherit;

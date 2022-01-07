@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `smacon dev`,
+    title: `smacon.dev`,
     author: {
       name: `Moto Sakanosita`,
       summary: `A Programmer at Edtech`,
