@@ -46,7 +46,7 @@ NFTの種類は無数に存在しますが、ここでは2021~2022年に開発�
 
 EVMで発行されるNFTは、ERC721またはERC1155のスマートコントラクトと言い換えることができます。
 
-つまりジェネラティブ, Loot, フルオンチェーンもERC721またはERC1155です。
+あとから紹介するジェネラティブ, Loot, フルオンチェーンもERC721またはERC1155です。
 
 #### [【2021年版】NFTを発行してほしいという問い合わせが多いので発行方法とサンプルコードを公開します](https://www.blockchainengineer.tokyo/entry/2021-issue-nft-code)
 #### [NFT完全に理解した！！になるために独自コントラクトでNFTを発行してみる方法の解説](https://zenn.dev/razokulover/articles/7db2340f14c2cd)
