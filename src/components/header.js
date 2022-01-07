@@ -79,6 +79,7 @@ const HeaderTitle = styled.div`
     font-weight: bold;
     text-decoration: none;
     font-size: var(--size-400);
+    margin-right: 20px;
     color: inherit;
   }
 `;
