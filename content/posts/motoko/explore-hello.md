@@ -11,12 +11,11 @@ description: |-
   Motokoの勉強をどうやって始めたらわからない人が最初にやること
 ---
 
-## はじめに
-当記事は、DFINITYのMotokoのチュートリアルを日本語で解説しています。
-当記事で実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/motoko-tutorial/tree/main/explore_hello)で公開しています。
+このページは、DFINITY/ICPのMotokoチュートリアルを日本語で解説しています。
 
 [Explore the default project](https://smartcontracts.org/docs/developers-guide/tutorials/explore-templates.html)
 
+実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/motoko-tutorial/tree/main/explore_hello)からダウンロードできます。
 
 はじめての方は先にこちらをご覧ください。
 

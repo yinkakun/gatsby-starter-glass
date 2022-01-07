@@ -11,11 +11,11 @@ description: |-
   実際に使ったコードをGitHubで公開
 ---
 
-## はじめに
-当記事は、DFINITYのMotokoのチュートリアルを日本語で解説しています。
-当記事で実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/motoko-tutorial/tree/main/actor_hello)で公開しています。
+このページは、DFINITY/ICPのMotokoチュートリアルを日本語で解説しています。
 
 [Query using an actor](https://smartcontracts.org/docs/developers-guide/tutorials/define-an-actor.html)
+
+実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/motoko-tutorial/tree/main/actor_hello)からダウンロードできます。
 
 はじめての方は先にこちらをご覧ください。
 
@@ -32,7 +32,6 @@ description: |-
 
 はじめはMac標準のターミナルでよいと思います。テキストエディタは筆者はVisual Studio Codeを使っています。
 
-## 手順
 ### プロジェクトの作成
 
 新しいプロジェクトを作ります。
