@@ -7,10 +7,10 @@ tags:
   - tutorial
   - jp
 description: |-
-  ICP & motokoでユーザーによって処理を変える方法を解説
+  Motokoでユーザーによって処理を変える方法を解説【DFINITY/ICP】
 ---
 
-このページではDFINITYのMotokoのチュートリアルを日本語で解説しています。
+このページではDFINITY/ICPのMotokoのチュートリアルを日本語で解説しています。
 
 [Add access control with identities](https://smartcontracts.org/docs/developers-guide/tutorials/access-control.html)
 
