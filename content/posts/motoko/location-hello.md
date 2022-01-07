@@ -11,11 +11,11 @@ description: |-
   実際に使ったコードをGitHubで公開
 ---
 
-## はじめに
-当記事は、DFINITYのMotokoのチュートリアルを日本語で解説しています。
-当記事で実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/motoko-tutorial/tree/main/location_hello)で公開しています。
+このページは、DFINITYのMotokoのチュートリアルを日本語で解説しています。
 
 [Pass text arguments](https://smartcontracts.org/docs/developers-guide/tutorials/hello-location.html)
+
+実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/motoko-tutorial/tree/main/location_hello)からダウンロードできます。
 
 はじめての方は先にこちらをご覧ください。
 
@@ -32,10 +32,6 @@ description: |-
 
 はじめはMac標準のターミナルでよいと思います。テキストエディタは筆者はVisual Studio Codeを使っています。
 
-## 本プロジェクトで学ぶこと
-
-
-## 手順
 ### プロジェクトの作成
 
 新しいプロジェクトを作ります。

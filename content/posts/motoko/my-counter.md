@@ -11,11 +11,12 @@ description: |-
   実際に使ったコードをGitHubで公開
 ---
 
-## はじめに
-当記事は、DFINITYのMotokoのチュートリアルを日本語で解説しています。
-当記事で実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/motoko-tutorial/tree/main/my_counter)で公開しています。
+このページは、DFINITY/ICPのMotokoのチュートリアルを日本語で解説しています。
 
 [Increment a natural number](https://smartcontracts.org/docs/developers-guide/tutorials/counter-tutorial.html)
+
+
+実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/motoko-tutorial/tree/main/my_counter)からダウンロードできます。
 
 はじめての方は先にこちらをご覧ください。
 
