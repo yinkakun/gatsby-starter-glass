@@ -5,7 +5,7 @@ module.exports = {
       name: `Moto Sakanosita`,
       summary: `A Programmer at Edtech`,
     },
-    openGraphImage: `maa-color.png`,
+    openGraphImage: `maa-mono.png`,
     description: `Develop Smart Contracts in Solidity, Motoko and Rust on Ethereum, NEAR, Solana and DFINITY`,
     siteUrl: `https://www.smacon.dev`,
     social: {
