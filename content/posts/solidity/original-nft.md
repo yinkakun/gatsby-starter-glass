@@ -1,5 +1,5 @@
 ---
-title: "NFTエンジニアを目指そう！独自コントラクトのNFTを作る方法"
+title: "NFTエンジニアを目指そう！独自コントラクトのNFTを作るページの紹介"
 date: 2022-01-07 21:00
 permalink: /original-nft
 tags:
