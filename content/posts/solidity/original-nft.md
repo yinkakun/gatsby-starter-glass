@@ -34,18 +34,25 @@ OpenSeaで作る場合は、スマートコントラクトの所有者はOpenSea
 独自コントラクトでもERC721やERC1155のフォーマットに合わせていればOpenSeaや他のマーケットプレイスで売買することができます。
 
 ## どのブロックチェーンがいいの？
-NFTの発行目的がビジネスの場合は、その目的に合わせてブロックチェーンを選ぶ必要があります。
-
 どのブロックチェーンを使うか決まっていないのなら、まずはEVM(Ethereum Virtual Machine)から取り組むのが良いでしょう。
 
 理由は、開発者もユーザー数も最大で技術と市場が一番成長しているからです。
 
 EVMのチェーンはたくさんありますが、学習目的の場合にオススメなのはEthereumのテストネット(Rinkeby)です。
 
-テストネット用のETHは無料で入手できます。テスト用のOpenSeaがあるため、発行したNFTをOpenSeaで見ることができます。
+テスト用のOpenSeaがあるため、発行したNFTをOpenSeaで見ることができます。
 
 ### OpenSea (Testnet)
 https://testnets.opensea.io/
+
+テストネット用のETHは無料で入手できますが、不安定なので動いているときと動いていないときがあります。
+#### Faucet (Rinkeby)
+https://faucet.rinkeby.io/
+
+ChainLinkのFaucetからでもRinkebyのETHをもらうことができます。
+
+#### Faucet ChainLink
+https://faucets.chain.link/rinkeby
 
 ## NFTの分類
 NFTの種類は無数に存在しますが、ここでは2021~2022年に開発が活発になっているNFTについて紹介します。
