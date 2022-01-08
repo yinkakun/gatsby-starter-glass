@@ -37,9 +37,9 @@ const Header = () => {
             <Link to="/tags/dfinity">DFINITY</Link>
           </HeaderNavListItem>
 
-          <HeaderNavListItem>
+          {/* <HeaderNavListItem>
             <Link to="/about">About</Link>
-          </HeaderNavListItem>
+          </HeaderNavListItem> */}
 
           {/* <HeaderNavListItem>
             <Link to="/contact">Contact</Link>

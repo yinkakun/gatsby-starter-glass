@@ -2,17 +2,14 @@ import React from 'react';
 import Container from './container';
 import styled from 'styled-components';
 import SocialLinks from './social-links';
+import { Link } from 'gatsby';
 
 const Footer = () => {
   return (
     <StyledFooter>
       <FooterWrapper>
         <SocialLinks />
-        © 2021 Sakanosita ICP Labs
-        {/* <FooterAttribution>
-          Hand-crafted with love by{' '}
-          <a href="https://twitter.com/yinkakun">Yinka Adedire</a>
-        </FooterAttribution> */}
+        <Link to="/about">© 2021 Moto Sakanosita</Link>
       </FooterWrapper>
     </StyledFooter>
   );
@@ -38,4 +35,10 @@ const FooterWrapper = styled(Container)`
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  & a {
+    color: inherit;
+    font-size: var(--size-300);
+    text-decoration: none;
+  }
 `;
