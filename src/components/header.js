@@ -27,11 +27,11 @@ const Header = () => {
         <HeaderNavList>
 
           <HeaderNavListItem>
-            <Link to="/tags/solidity">Solidity</Link>
+            <Link to="/tags/motoko">Motoko</Link>
           </HeaderNavListItem>
 
           <HeaderNavListItem>
-            <Link to="/tags/motoko">Motoko</Link>
+            <Link to="/tags/solidity">Solidity</Link>
           </HeaderNavListItem>
 
           <HeaderNavListItem>
