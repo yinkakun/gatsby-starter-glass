@@ -6,7 +6,7 @@ tags:
   - ethereum
   - nft
   - loot
-  - jp
+  - solidity
 description: |-
   ERC721, Loot, フルオンチェーン、ジェネラティブNFTの作り方
 ---
