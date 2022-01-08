@@ -49,9 +49,9 @@ https://testnets.opensea.io/
 #### Faucet (Rinkeby)
 https://faucet.rinkeby.io/
 
-ChainLinkのFaucetからでもRinkebyのETHをもらうことができます。
+ChainlinkのFaucetからでもRinkebyのETHをもらうことができます。
 
-#### Faucet ChainLink
+#### Faucet Chainlink
 https://faucets.chain.link/rinkeby
 
 ## NFTの分類
