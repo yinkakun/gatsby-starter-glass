@@ -1,5 +1,5 @@
 ---
-title: "NFTエンジニアを目指そう！EVM独自コントラクトの作り方9選"
+title: "NFTエンジニア入門: EVM独自コントラクトの作り方9選"
 date: 2022-01-07 21:00
 permalink: /original-nft
 tags:
