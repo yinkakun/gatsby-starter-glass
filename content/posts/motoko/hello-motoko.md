@@ -12,7 +12,7 @@ tags:
   - dfinity
   - motoko
   - beginner
-  - jp
+  - icp
 social_image: /media/labs.png
 description: |-
   ICP(Internet Computer Protocol)でMotokoを使ってDapps開発をはじめよう！
