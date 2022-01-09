@@ -1,7 +1,7 @@
 ---
 title: "イーサリアム入門: はじめてのスマートコントラクト開発【ブロックチェーン】"
 date: 2022-01-09 21:00
-permalink: /hello
+permalink: /smart-contracts
 tags:
   - solidity
   - Ethereum
