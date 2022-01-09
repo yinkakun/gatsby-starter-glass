@@ -19,7 +19,8 @@ description: |-
 
 Solidity by Exampleのサンプルコードを使ってスマートコントラクトを作る方法を解説します。
 
-https://solidity-by-example.org/first-app/
+
+[First Application (Solidity by Examples)](https://solidity-by-example.org/first-app/)
 
 Hardhatを使ったことがない方はこちらからどうぞ
 
@@ -152,8 +153,59 @@ npx hardhat test
 ```
 3つのテストがすべてPass(成功)となりました。
 
-## デプロイ
+## デプロイ（ローカル実行環境）
+scripts/deploy.jsというファイルを作ります。
+このファイルはローカル実行環境あるいはパブリックブロックチェーンにデプロイしたり、
+スマートコントラクトの関数を実行したりする処理を記述します。
+
+#### scripts/deploy.js
+
+```js
+const hre = require("hardhat");
+
+async function main() {
+
+  const Factory = await hre.ethers.getContractFactory("Counter");
+  const contract = await Factory.deploy();
+  await contract.deployed();
+
+  console.log("Contract deployed to:", contract.address);
+}
+
+main()
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
+
+```
+
+以下のコマンドでデプロイを実行します。
+```
+npx run scripts/deploy.js
+```
+```
+出力
+Contract deployed to: 0x5FbDB2315678afecb367f032d93F642f64180aa3
+```
+これでローカル実行環境にデプロイできました。
+
+ローカル実行県境で試したら、つぎはパブリックテストネットにデプロイしてみましょう。
+
+## デプロイ（テストネット）
+ブロックチェーンには本番用のメインネットと検証用のテストネットがあります。
+
+Ethereumには複数のテストネットがあり、誰でもトークンをもらうことができます。
+* Ropsten
+* Rinkeby
+* Kovan
+* Goerli
+
 スマートコントラクトをテストネットやメインネットにデプロイする方法を2つ紹介します。
 
 * [Hardhatでスマートコントラクトを作ろう！](/hardhat)
 * [Remixの使い方](/remix-tutorial)
+
+メインネットとテストネットのデプロイ方法は基本的に同じです。
+接続先のエンドポイントと使うトークンが変わります。
