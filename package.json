@@ -52,7 +52,7 @@
   },
   "scripts": {
     "build": "gatsby build",
-    "dev": "env-cmd -f .env.develop gatsby develop -p 3000",
+    "dev": "env-cmd -f .env.develop gatsby develop -p 3080",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run dev",
     "serve": "gatsby serve",
