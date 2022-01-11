@@ -38,21 +38,25 @@ const PostListItem = ({
 }) => {
   return (
     <StyledPostListItem>
-      <Tags tags={tags} />
 
       <PostListTitle>
         <Link to={slug}>{title}</Link>
       </PostListTitle>
+
+      <Tags tags={tags} />
+
       <PostListExcerpt
         dangerouslySetInnerHTML={{
           __html: description || excerpt,
         }}
       />
+
       <PostListMeta>
         <span>{date}</span>
 
         <span>{timeToRead} mins</span>
       </PostListMeta>
+
     </StyledPostListItem>
   );
 };
@@ -95,7 +99,7 @@ const StyledPostListItem = styled.li`
 
 const PostListTitle = styled.h2`
   line-height: 1.2;
-  margin-top: 1rem;
+  margin-top: 0rem;
   margin-bottom: 1rem;
   text-transform: capitalize;
   font-size: var(--size-600);
@@ -117,7 +121,7 @@ const PostListTitle = styled.h2`
 `;
 
 const PostListExcerpt = styled.p`
-  margin-top: auto;
+  margin-top: 1rem;
   font-size: var(--size-400);
 `;
 
