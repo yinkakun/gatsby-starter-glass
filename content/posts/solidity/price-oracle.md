@@ -21,7 +21,7 @@ Solidity by Example のサンプルコードを使ってスマートコントラ
 
 [Price Oracle (Solidity by Examples)](https://solidity-by-example.org/defi/chainlink-price-oracle/)
 
-このページで実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/solidity-example/tree/main/price-feed)からダウンロードできます。
+このページで実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/solidity-example/tree/main/price-oracle)からダウンロードできます。
 
 ## 新しい Hatdhat プロジェクトを作る
 
