@@ -1,5 +1,5 @@
 ---
-title: "Solidity入門: オラクルを使う（Chainlink)"
+title: "Solidity入門: オラクルを使う（Chainlink Price Feed)"
 date: 2022-01-13 21:00
 permalink: /price-oracle
 tags:
@@ -181,9 +181,6 @@ Contract deployed to: 0xc701F8eaeF74f3DE1FEe8613855884d02CfE9517
 
 ### 実行
 
-実際に Rinkeby にデプロイしたコントラクトはこちらです。
-https://rinkeby.etherscan.io/address/0xc701F8eaeF74f3DE1FEe8613855884d02CfE9517
-
 Rinkeby の Etherscan を使って getLatestPrice 関数を実行してみましょう。
 
 - Rinkeby の Etherscan を開く
@@ -196,8 +193,26 @@ Rinkeby の Etherscan を使って getLatestPrice 関数を実行してみまし
 
 現在の Chainlink の PriceFeed コントラクト(ETH/USD)から取得した値が表示されます。
 
+もし、自分のコントラクトがうまくいかない場合は、筆者がデプロイしたコントラクトで試してみましょう。
+https://rinkeby.etherscan.io/address/0xc701F8eaeF74f3DE1FEe8613855884d02CfE9517
+
 ### 解説
 
+デプロイしたコントラクトの中では Chainlink の PriceFeed のコントラクトを実行しています。
+そのコントラクトは同じネットワーク(Rinkeby)上にデプロイされたコントラクトです。
+
+https://rinkeby.etherscan.io/address/0x8A753747A1Fa494EC906cE90E9f37563A8AF630e
+
+PriceFeed コントラクトの`latestRoundData()`というコントラクトは手動でも実行できます。
+
+この関数の戻り値の中の 2 番目の answer が ETH/USD の価格を表しています。
+
+ただし、以下の 2 つの結果は単位が違います。
+
+- PriceFeed コントラクトの latestRoundData(): 321770736905
+- 自分が作ったコントラクトの getLatestPrice(): 3217
+
+PriceFeed コントラクトの結果を 10 の 8 乗で除しています。
 今回デプロイしたコードは以下のようになっています。
 
 ```
@@ -206,27 +221,6 @@ Rinkeby の Etherscan を使って getLatestPrice 関数を実行してみまし
         return price / 1e8;
 ```
 
-これは、Chainlink のコントラクトの latestRoundData()という関数を実行しています。
+getLatestPrice()の戻り値は、int256 型なので小数点以下は切り捨てられます。
 
-デプロイしたコントラクトの中では Chainlink の PriceFeed のコントラクトを実行しています。
-そのコントラクトは同じネットワーク上にデプロイされたコントラクトです。このページでは Rinkeby を使っています。
-
-https://rinkeby.etherscan.io/address/0x8A753747A1Fa494EC906cE90E9f37563A8AF630e
-
-PriceFeed コントラクトの`latestRoundData()`というコントラクトは手動で実行できます。
-
-この関数の戻り値は 5 つあり、その中の 2 番目の answer が ETH/USD の価格を表しています。
-
-ただし、以下の 2 つの結果は単位が違います。
-
-- PriceFeed コントラクトの latestRoundData(): 321770736905
-- 自分が作ったコントラクトの getLatestPrice(): 3217
-
-PriceFeed コントラクトの結果を 10 の 8 乗で除しています。
-
-```
-        // for ETH / USD price is scaled up by 10 ** 8
-        return price / 1e8;
-```
-
-なお、getLatestPrice()の戻り値は、int256 型なので小数点以下は切り捨てられます。
+321,770,736,905 / 100,000,000 = 3,217(int256)
