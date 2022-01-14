@@ -13,25 +13,25 @@ description: |-
 
 このページはこんな人におすすめ
 
-* Solidityを学びたい
-* 簡単なスマートコントラクトの作り方を知りたい
-* Hardhatを使ったSolidityのテスト方法を知りたい
+- Solidity を学びたい
+- 簡単なスマートコントラクトの作り方を知りたい
+- Hardhat を使った Solidity のテスト方法を知りたい
 
-Solidity by Exampleのサンプルコードを使ってスマートコントラクトを作る方法を解説します。
-
+Solidity by Example のサンプルコードを使ってスマートコントラクトを作る方法を解説します。
 
 [First Application (Solidity by Examples)](https://solidity-by-example.org/first-app/)
 
-Hardhatを使ったことがない方はこちらからどうぞ
+Hardhat を使ったことがない方はこちらからどうぞ
 
-[Hardhatでスマートコントラクトを作ろう！](/hardhat)
+[Hardhat でスマートコントラクトを作ろう！](/hardhat)
 
 このページで実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/solidity-example/tree/main/first-app)からダウンロードできます。
 
+## 新しい Hardhat プロジェクトを作る
 
-## 新しいHatdhatプロジェクトを作る
-first-appというディレクトリを作り
-npmパッケージのhardhatをインストールします。
+first-app というディレクトリを作り
+npm パッケージの hardhat をインストールします。
+
 ```
 mkdir first-app
 cd first-app
@@ -39,11 +39,14 @@ npm init -y
 npm i --save-dev hardhat
 ```
 
-Hardhatのサンプルプロジェクトを作ります。
+Hardhat のサンプルプロジェクトを作ります。
+
 ```
 npx hardhat
 ```
-`Create a sample project`を選択して、すべてYesで回答します。
+
+`Create a sample project`を選択して、すべて Yes で回答します。
+
 ```
 ? What do you want to do? …
 ❯ Create a sample project
@@ -51,13 +54,15 @@ npx hardhat
   Quit
 ```
 
-これでhardhat.config.jsの初期設定やether.jsなどプラグインを追加した状態になります。
+これで hardhat.config.js の初期設定や ether.js などプラグインを追加した状態になります。
 
 ## コーディング
-contracts/Counter.solとhardhat.config.jsを編集します。
-2つのSolidityバージョンが一致するようにしましょう。
+
+contracts/Counter.sol と hardhat.config.js を編集します。
+2 つの Solidity バージョンが一致するようにしましょう。
 
 #### contracts/Counter.sol
+
 ```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
@@ -82,10 +87,11 @@ contract Counter {
 }
 ```
 
-2022年1月現在、サンプルコードのバージョンは0.8.10になっており、
-Hardhat側は0.8.9まで対応中なので、0.8.9に合わせます。
+2022 年 1 月現在、サンプルコードのバージョンは 0.8.10 になっており、
+Hardhat 側は 0.8.9 まで対応中なので、0.8.9 に合わせます。
 
-#### hardhat.config.jsの一部
+#### hardhat.config.js の一部
+
 ```js
 module.exports = {
   solidity: "0.8.9",
@@ -93,9 +99,12 @@ module.exports = {
 ```
 
 ## テスト
-HardhatではJavaScriptのテストツールのchaiを使っています。
-sample-test.jsを以下のように編集します。
+
+Hardhat では JavaScript のテストツールの chai を使っています。
+sample-test.js を以下のように編集します。
+
 #### test/sample-test.js
+
 ```js
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
@@ -108,7 +117,7 @@ describe("Counter", function () {
   beforeEach(async function () {
     Factory = await ethers.getContractFactory("Counter");
     contract = await Factory.deploy();
-  })
+  });
 
   // 初期状態でget()の戻り値が0であること
   it("Should be 0", async function () {
@@ -131,16 +140,17 @@ describe("Counter", function () {
     await Tx2.wait();
     expect(await contract.get()).to.equal(0);
   });
-
 });
-
 ```
 
 ### テスト実行
-以下のコマンドを実行するとtestディレクトリ配下にあるテストが実行されます。
+
+以下のコマンドを実行すると test ディレクトリ配下にあるテストが実行されます。
+
 ```
 npx hardhat test
 ```
+
 ```
 出力
   Counter
@@ -151,10 +161,12 @@ npx hardhat test
 
   3 passing (406ms)
 ```
-3つのテストがすべてPass(成功)となりました。
+
+3 つのテストがすべて Pass(成功)となりました。
 
 ## デプロイ（ローカル実行環境）
-scripts/deploy.jsというファイルを作ります。
+
+scripts/deploy.js というファイルを作ります。
 このファイルはローカル実行環境あるいはパブリックブロックチェーンにデプロイしたり、
 スマートコントラクトの関数を実行したりする処理を記述します。
 
@@ -164,7 +176,6 @@ scripts/deploy.jsというファイルを作ります。
 const hre = require("hardhat");
 
 async function main() {
-
   const Factory = await hre.ethers.getContractFactory("Counter");
   const contract = await Factory.deploy();
   await contract.deployed();
@@ -178,34 +189,38 @@ main()
     console.error(error);
     process.exit(1);
   });
-
 ```
 
 以下のコマンドでデプロイを実行します。
+
 ```
 npx run scripts/deploy.js
 ```
+
 ```
 出力
 Contract deployed to: 0x5FbDB2315678afecb367f032d93F642f64180aa3
 ```
+
 これでローカル実行環境にデプロイできました。
 
 ローカル実行県境で試したら、つぎはパブリックテストネットにデプロイしてみましょう。
 
 ## デプロイ（テストネット）
+
 ブロックチェーンには本番用のメインネットと検証用のテストネットがあります。
 
-Ethereumには複数のテストネットがあり、誰でもトークンをもらうことができます。
-* Ropsten
-* Rinkeby
-* Kovan
-* Goerli
+Ethereum には複数のテストネットがあり、誰でもトークンをもらうことができます。
 
-スマートコントラクトをテストネットやメインネットにデプロイする方法を2つ紹介します。
+- Ropsten
+- Rinkeby
+- Kovan
+- Goerli
 
-* [Hardhatでスマートコントラクトを作ろう！](/hardhat)
-* [Remixの使い方](/remix-tutorial)
+スマートコントラクトをテストネットやメインネットにデプロイする方法を 2 つ紹介します。
+
+- [Hardhat でスマートコントラクトを作ろう！](/hardhat)
+- [Remix の使い方](/remix-tutorial)
 
 メインネットとテストネットのデプロイ方法は基本的に同じです。
 接続先のエンドポイントと使うトークンが変わります。

@@ -13,43 +13,47 @@ description: |-
 
 このページはこんな人におすすめ
 
-* スマートコントラクト開発を始める
-* ブロックチェーン開発に興味がある
-* DappsやWeb3に興味がある
+- スマートコントラクト開発を始める
+- ブロックチェーン開発に興味がある
+- Dapps や Web3 に興味がある
 
 ブロックチェーンを使った開発をまったくやったことがない方に向けて書いています。
 
 ## 本記事で学べること
-Solidityという言語を使ってHello Worldのスマートコントラクトを作ります。
+
+Solidity という言語を使って Hello World のスマートコントラクトを作ります。
 ローカル実行環境に作るところから始めましょう。
-ローカル実行環境にはHardhatという開発ツールを使います。
+ローカル実行環境には Hardhat という開発ツールを使います。
 
 スマートコントラクトの開発は、ブロックチェーンと開発言語を選ぶことになります。
-2022年現在、もっとも開発が活発に進んでいるのはEthereumです。
+2022 年現在、もっとも開発が活発に進んでいるのは Ethereum です。
 
-EthereumのスマートコントラクトはEVM（Ethereum Virtual Machine）で実行されます。
+Ethereum のスマートコントラクトは EVM（Ethereum Virtual Machine）で実行されます。
 
-### EVMとWASM
-スマートコントラクトの実行形式は大まかにEVMとWASM(WebAssembly)の２つに分類できます。
+### EVM と WASM
 
-EVMのスマートコントラクトの開発言語はSolidityです。
+スマートコントラクトの実行形式は大まかに EVM と WASM(WebAssembly)の２つに分類できます。
 
-EVM対応のブロックチェーンは互換性があり、別のチェーンでも同じソースコードを使えます。
-例えば、Ethereum用のスマートコントラクトのソースコードをPolygonでそのまま使うことができます。
+EVM のスマートコントラクトの開発言語は Solidity です。
 
-WASM対応のブロックチェーンは、チェーンごとにそれぞれの特徴があるので、スマートコントラクトのソースコードを使い回すことはできません。
+EVM 対応のブロックチェーンは互換性があり、別のチェーンでも同じソースコードを使えます。
+例えば、Ethereum 用のスマートコントラクトのソースコードを Polygon でそのまま使うことができます。
 
-現在はWASMにコンパイルする開発言語はRustが主流ですが、技術的にはWASMにコンパイルできればどんな言語も使えます。
+WASM 対応のブロックチェーンは、チェーンごとにそれぞれの特徴があるので、スマートコントラクトのソースコードを使い回すことはできません。
+
+現在は WASM にコンパイルする開発言語は Rust が主流ですが、技術的には WASM にコンパイルできればどんな言語も使えます。
 
 ### 必要なもの
 
-* npm & npxコマンド
-* 好みのテキストエディタ
-* 好みのターミナルソフト
+- npm & npx コマンド
+- 好みのテキストエディタ
+- 好みのターミナルソフト
 
-## 新しいHatdhatプロジェクトを作る
-helloというディレクトリを作り
-npmパッケージのhardhatをインストールします。
+## 新しい Hardhat プロジェクトを作る
+
+hello というディレクトリを作り
+npm パッケージの hardhat をインストールします。
+
 ```
 mkdir hello
 cd hello
@@ -57,11 +61,14 @@ npm init -y
 npm i --save-dev hardhat
 ```
 
-Hardhatのサンプルプロジェクトを作ります。
+Hardhat のサンプルプロジェクトを作ります。
+
 ```
 npx hardhat
 ```
-`Create a sample project`を選択して、すべてYesで回答します。
+
+`Create a sample project`を選択して、すべて Yes で回答します。
+
 ```
 ? What do you want to do? …
 ❯ Create a sample project
@@ -69,12 +76,14 @@ npx hardhat
   Quit
 ```
 
-これでhardhat.config.jsの初期設定やether.jsなどプラグインを追加した状態になります。
+これで hardhat.config.js の初期設定や ether.js などプラグインを追加した状態になります。
 
 ## コーディング
-contracts/Greeter.solを以下のように編集します。
+
+contracts/Greeter.sol を以下のように編集します。
 
 #### contracts/Greeter.sol
+
 ```solidity
 // SPDX-License-Identifier: MIT
 // compiler version must be greater than or equal to 0.8.10 and less than 0.9.0
@@ -90,11 +99,14 @@ contract Greeter {
 ```
 
 ## コンパイル
-SolidityのソースコードをHardhatのコンパイラでコンパイルします。
+
+Solidity のソースコードを Hardhat のコンパイラでコンパイルします。
 以下のコマンドを実行します。
+
 ```
 npx hardhat compile
 ```
+
 ```
 出力
 Compiling 1 file with 0.8.9
@@ -102,9 +114,11 @@ Compilation finished successfully
 ```
 
 ## デプロイ
-script/sample-script.jsを以下のように編集します。
+
+script/sample-script.js を以下のように編集します。
 
 #### script/sample-script.js
+
 ```js
 const hre = require("hardhat");
 
@@ -126,10 +140,13 @@ main()
     process.exit(1);
   });
 ```
-このスクリプトでは、ローカル実行環境にデプロイしたあとにスマートコントラクトのhello()という関数を実行します。
+
+このスクリプトでは、ローカル実行環境にデプロイしたあとにスマートコントラクトの hello()という関数を実行します。
 
 ### 実行
+
 以下のコマンドで実行します。
+
 ```
  % npx hardhat run scripts/sample-script.js
 ```
@@ -144,11 +161,10 @@ hello()関数を実行して、受け取った文字列`Hello World!`をログ�
 
 これでスマートコントラクトエンジニアです！
 
-
 次はスマートコントラクトをブロックチェーンにデプロイして実行してみよう。
 
-スマートコントラクトをテストネットやメインネットにデプロイする方法を2つ紹介します。
+スマートコントラクトをテストネットやメインネットにデプロイする方法を 2 つ紹介します。
 自分にあったやり方を見つけてください。
 
-* [Hardhatでスマートコントラクトを作ろう！](/hardhat)
-* [Remixの使い方](/remix-tutorial)
+- [Hardhat でスマートコントラクトを作ろう！](/hardhat)
+- [Remix の使い方](/remix-tutorial)

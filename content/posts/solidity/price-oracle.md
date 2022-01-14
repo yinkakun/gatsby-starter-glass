@@ -23,7 +23,7 @@ Solidity by Example のサンプルコードを使ってスマートコントラ
 
 このページで実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/solidity-example/tree/main/price-oracle)からダウンロードできます。
 
-## 新しい Hatdhat プロジェクトを作る
+## 新しい Hardhat プロジェクトを作る
 
 first-app というディレクトリを作り
 npm パッケージの hardhat をインストールします。
