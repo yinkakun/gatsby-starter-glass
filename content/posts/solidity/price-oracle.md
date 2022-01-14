@@ -13,9 +13,9 @@ description: |-
 
 このページはこんな人におすすめ
 
-- Solidity を学びたい
+- イーサリアム上で価格情報を使いたい
 - スマートコントラクトのオラクルについて知りたい
-- Chainlink の PriceFeed の使い方を知りたい
+- Chainlink の Ethereum Data Feed を使いたい
 
 Solidity by Example のサンプルコードを使ってスマートコントラクトを作る方法を解説します。
 
