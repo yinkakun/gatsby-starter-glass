@@ -8,7 +8,7 @@ tags:
   - chainlink
   - jp
 description: |-
-  Chainlinkを使ってSolidityでオラクルを利用
+  イーサリアムでChainlinkオラクルを使う方法を解説
 ---
 
 このページはこんな人におすすめ
