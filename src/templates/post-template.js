@@ -66,6 +66,7 @@ const PostTitle = styled.h1`
 const PostDate = styled.span`
   font-size: var(--size-400);
   padding-top: 1rem;
+  float: right;
   text-transform: uppercase;
 `;
 
@@ -184,7 +185,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         tags
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MMM DD, YYYY")
         description
         social_image {
           absolutePath
