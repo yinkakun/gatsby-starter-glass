@@ -203,7 +203,7 @@ https://rinkeby.etherscan.io/address/0xc701F8eaeF74f3DE1FEe8613855884d02CfE9517
 
 https://rinkeby.etherscan.io/address/0x8A753747A1Fa494EC906cE90E9f37563A8AF630e
 
-PriceFeed コントラクトの`latestRoundData()`というコントラクトは手動でも実行できます。
+PriceFeed コントラクトの latestRoundData()は手動でも実行できます。
 
 この関数の戻り値の中の 2 番目の answer が ETH/USD の価格を表しています。
 
