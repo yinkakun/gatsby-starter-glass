@@ -252,12 +252,18 @@ Metamask でアカウントを作って Private Key をエクスポートすれ�
 
 #### RPC エンドポイントの URL
 
-Hardhat では Alckemy というノードプロバイダーを使っています。
-無料で使えるので Alchemy はオススメです。
-Alchemy でユーザー登録すれば、API KEY と RPC サーバの URL を取得できるのでそれを使います。
+ブロックチェーンのネットワークにアクセスするためのエンドポイントです。
+代表的なノードプロバイダーを紹介します。
 
-もう 1 つの簡単な方法は Metamask で使われている INFURA というノードプロバイダーの RPC サーバです。
-こちらは API Key は不要なので、ここではこちらを使って説明します。
+- INFURA
+- Alchemy
+- QuickNode
+
+Alchemy はある程度まで無料プランで利用できるのでオススメです。
+Alchemy にユーザー登録すれば、RPC サーバの URL を取得できます。
+
+もう 1 つの簡単な方法は Metamask で使われている RPC エンドポイントです。
+Metamask に指定されている RPC エンドポイントは INFURA というノードプロバイダーの RPC サーバです。(2022 年 1 月現在)
 Metamask の Network の設定を開くと Ropsten のエンドポイントの設定内容がみれます。
 
 ### 環境変数

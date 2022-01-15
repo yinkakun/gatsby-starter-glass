@@ -109,9 +109,15 @@ Rinkeby Testnet (ETH / USD)
 
 - 0x8A753747A1Fa494EC906cE90E9f37563A8AF630e
 
-### デプロイ (Rinkeby テストネット)
+## デプロイ (Rinkeby テストネット)
 
-Hardhat で rinkeby にデプロイする方法の詳細は[こちら](/hardhat)
+必要なもの
+
+- Rinkeby のアカウント（秘密鍵）
+- Rinkeby の RPC エンドポイント（Alchemy を利用）
+- Rinkeby の ETH 少量
+
+Hardhat でデプロイする方法の詳細は[こちら](/hardhat)
 
 Hardhat の設定ファイルを作ります。
 
@@ -179,7 +185,7 @@ Contract deployed to: 0xc701F8eaeF74f3DE1FEe8613855884d02CfE9517
 
 デプロイが成功すると上記のようにコントラクトアドレスが表示されます。
 
-### 実行
+## 実行
 
 Rinkeby の Etherscan を使って getLatestPrice 関数を実行してみましょう。
 
@@ -212,7 +218,6 @@ PriceFeed コントラクトの latestRoundData()は手動でも実行できま�
 - PriceFeed コントラクトの latestRoundData(): 321770736905
 - 自分が作ったコントラクトの getLatestPrice(): 3217
 
-PriceFeed コントラクトの結果を 10 の 8 乗で除しています。
 今回デプロイしたコードは以下のようになっています。
 
 ```
@@ -221,6 +226,7 @@ PriceFeed コントラクトの結果を 10 の 8 乗で除しています。
         return price / 1e8;
 ```
 
+PriceFeed コントラクトの結果を 10 の 8 乗で除しています。
 getLatestPrice()の戻り値は、int256 型なので小数点以下は切り捨てられます。
 
 321,770,736,905 / 100,000,000 = 3,217(int256)
