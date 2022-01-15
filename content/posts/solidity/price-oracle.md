@@ -118,6 +118,7 @@ Rinkeby Testnet (ETH / USD)
 - Rinkeby の ETH 少量
 
 Hardhat でデプロイする方法の詳細は[こちら](/hardhat)
+参照先は Ropsten 用に書かれているので、Rinkeby に読み替えてください。
 
 Hardhat の設定ファイルを作ります。
 
