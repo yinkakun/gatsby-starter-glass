@@ -117,12 +117,22 @@ Rinkeby Testnet (ETH / USD)
 - Rinkeby の RPC エンドポイント（Alchemy を利用）
 - Rinkeby の ETH 少量
 
-Hardhat でデプロイする方法の詳細は[こちら](/hardhat)
-参照先は Ropsten 用に書かれているので、Rinkeby に読み替えてください。
+Hardhat でデプロイする方法の詳細は[こちら](/hardhat)に書かれています。
+参照先はテストネットが Ropsten になっているので、Rinkeby に読み替えてください。
 
-Hardhat の設定ファイルを作ります。
+#### 環境変数
+
+以下の環境変数を設定します。デプロイのコマンドを実行するターミナルで実行するかログインシェル用の設定ファイルに追加してください。
+
+```
+RINKEBY_PRIVATE_KEY=<Rinkebyのアカウント秘密鍵>
+RINKEBY_RPC_URL=<RinkebyのRPCエンドポイント>
+export RINKEBY_PRIVATE_KEY RINKEBY_RPC_URL
+```
 
 #### hardhat.config.js
+
+Hardhat の設定ファイルを作ります。
 
 ```js
 require("@nomiclabs/hardhat-waffle");
