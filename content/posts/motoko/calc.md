@@ -1,5 +1,5 @@
 ---
-title: "Motoko入門: Use integers in calculator functions"
+title: "Motoko入門: Use integers in calculator functions【DFINITY/ICP】"
 date: 2021-12-29 22:38
 permalink: /motoko-calc
 tags:
@@ -7,11 +7,11 @@ tags:
   - tutorial
   - jp
 description: |-
-  DFINITYチュートリアル「Use integers in calculator functions」の日本語解説
+  DFINITY/ICPプログラミング「Use integers in calculator functions」の日本語解説
   実際に使ったコードをGitHubで公開
 ---
 
-このページは、DFINITYのMotokoのチュートリアルを日本語で解説しています。
+このページは、DFINITY の Motoko のチュートリアルを日本語で解説しています。
 
 [Use integers in calculator functions](https://smartcontracts.org/docs/developers-guide/tutorials/calculator.html)
 
@@ -19,32 +19,35 @@ description: |-
 
 はじめての方は先にこちらをご覧ください。
 
-[5ステップではじめるMotokoプログラミング入門](/hello-motoko)
+[5 ステップではじめる Motoko プログラミング入門](/hello-motoko)
 
 ### 実行環境
-* dfx: 0.8.4
-* macOS: 11.5.2
-* npm version: 8.1.3
-* 任意のターミナル
-* 任意のテキストエディタ
+
+- dfx: 0.8.4
+- macOS: 11.5.2
+- npm version: 8.1.3
+- 任意のターミナル
+- 任意のテキストエディタ
 
 ターミナルとテキストエディタは好きなソフトウェアを使えば大丈夫です。
 
-はじめはMac標準のターミナルでよいと思います。テキストエディタは筆者はVisual Studio Codeを使っています。
+はじめは Mac 標準のターミナルでよいと思います。テキストエディタは筆者は Visual Studio Code を使っています。
 
 ## 本プロジェクトで学ぶこと
-calcというプロジェクトでcalcキャニスターを作ります。
-calcキャニスターは以下の関数を持ち、四則演算を実行します。
 
-* `add`
-* `sub`
-* `mul`
-* `div`
-* `clearall`
+calc というプロジェクトで calc キャニスターを作ります。
+calc キャニスターは以下の関数を持ち、四則演算を実行します。
+
+- `add`
+- `sub`
+- `mul`
+- `div`
+- `clearall`
 
 `clearall`では結果のリセットを行います。
 
 ## 手順
+
 ### プロジェクトの作成
 
 新しいプロジェクトを作ります。
@@ -55,16 +58,21 @@ cd calc
 ```
 
 ### プロジェクトの構成変更
-dfx.jsonにあるソースコードのファイル名を`src/calc/calc_main.mo`に変更します。
+
+dfx.json にあるソースコードのファイル名を`src/calc/calc_main.mo`に変更します。
+
 ```
 "main": "src/calc/calc_main.mo",
 ```
+
 デフォルトの`src/calc/main.mo`を`src/calc/calc_main.mo`にコピーします。
+
 ```
 cp src/calc/main.mo src/calc/calc_main.mo
 ```
 
 `src/calc/calc_main.mo`を以下のように編集して保存します。
+
 ```ts
 // This single-cell calculator defines one calculator instruction per
 // public entry point (add, sub, mul, div).
@@ -92,18 +100,22 @@ actor Calc {
     return cell
   };
  };
- ```
+```
 
- ## デプロイ
+## デプロイ
 
 ローカルの実行環境を起動します。
+
 ```
 dfx start
 ```
+
 デプロイします。
+
 ```
 dfx deploy
 ```
+
 ```
 出力
 Creating a wallet canister on the local network.
@@ -117,58 +129,76 @@ Deployed canisters.
 
 ## 実行
 
-`add`関数に10を渡して実行します。
+`add`関数に 10 を渡して実行します。
+
 ```
 calc % dfx canister call calc add '(10)'
 ```
+
 ```
 出力
 (10 : int)
 ```
-`mul`関数に3を渡して実行します。(10 x 3)
+
+`mul`関数に 3 を渡して実行します。(10 x 3)
+
 ```
 dfx canister call calc mul '(3)'
 ```
+
 ```
 出力
 (30 : int)
 ```
-`sub`関数に5を渡して実行します。(30 - 5)
+
+`sub`関数に 5 を渡して実行します。(30 - 5)
+
 ```
 dfx canister call calc sub '(5)'
 ```
+
 ```
 出力
 (25 : int)
 ```
-`div`関数に5を渡して実行します。(25 / 5)
+
+`div`関数に 5 を渡して実行します。(25 / 5)
+
 ```
 dfx canister call calc div '(5)'
 ```
+
 ```
 出力
 (opt (5 : int))
 ```
-`mul`関数に-4を渡して実行します。(5 x -4)
+
+`mul`関数に-4 を渡して実行します。(5 x -4)
+
 ```
 calc % dfx canister call calc mul '(-4)'
 ```
+
 ```
 出力
 (-20 : int)
 ```
+
 `clearall`関数を実行してリセットします。
+
 ```
 dfx canister call calc clearall
 ```
+
 ```
 出力
 (0 : int)
 ```
 
-## Candid UIを使った実行
+## Candid UI を使った実行
 
-ローカル実行環境のCandidキャニスターIDを確認します。
+ローカル実行環境の Candid キャニスター ID を確認します。
+
 ```
 dfx canister id __Candid_UI
 ```
@@ -179,18 +209,23 @@ r7inp-6aaaa-aaaaa-aaabq-cai
 ```
 
 もし、実行環境が停止中なら起動します。
+
 ```
 dfx start --background
 ```
 
-先程のキャニスターIDに置き換えて、以下のURLにブラウザでアクセスします。
+先程のキャニスター ID に置き換えて、以下の URL にブラウザでアクセスします。
+
 ```
 http://127.0.0.1:8000/?canisterId=<CANDID-UI-CANISTER-IDENTIFIER>
 ```
+
 ```
 http://127.0.0.1:8000/?canisterId=r7inp-6aaaa-aaaaa-aaabq-cai
 ```
-`calc`キャニスターのIDを取得して、ブラウザの`Provide a canister ID`に入力します。
+
+`calc`キャニスターの ID を取得して、ブラウザの`Provide a canister ID`に入力します。
+
 ```
 calc % dfx canister id calc
 ```
@@ -203,7 +238,8 @@ calc % dfx canister id calc
 
 ## 実行環境の停止
 
-終わったらローカルPC上の実行環境を停止します。
+終わったらローカル PC 上の実行環境を停止します。
+
 ```
 dfx stop
 ```

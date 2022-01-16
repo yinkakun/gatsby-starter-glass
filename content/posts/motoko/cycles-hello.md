@@ -9,32 +9,33 @@ tags:
   - icp
   - jp
 description: |-
-  DFINITY(Internet Computer)でキャニスターを動かす際に必要になるCycle Cost
+  DFINITY/ICPプログラミングでキャニスターを動かす際に必要になるCycle Cost
   ICPをCYCLEに変える、ウォレットにCYCLEをチャージ
-
 ---
 
-このページは、DFINITYのチュートリアルを日本語で解説しています。
+このページは、DFINITY のチュートリアルを日本語で解説しています。
 
 [「Accept cycles from a wallet」](https://smartcontracts.org/docs/developers-guide/tutorials/simple-cycles.html)
 
 実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/motoko-tutorial/tree/main/cycles_hello)からダウンロードできます。
 
 ### 実行環境
-* dfx: 0.8.4
-* macOS: 11.5.2
-* npm version: 8.1.3
-* 任意のターミナル
-* 任意のテキストエディタ
 
-dfxについて知りたい方はこちらをどうぞ
+- dfx: 0.8.4
+- macOS: 11.5.2
+- npm version: 8.1.3
+- 任意のターミナル
+- 任意のテキストエディタ
 
-[5ステップではじめるMotokoプログラミング入門](/hello-motoko)
+dfx について知りたい方はこちらをどうぞ
 
-ターミナルは、なんでもよいのでMac標準のターミナルで大丈夫です。
-テキストエディタはVisual Studio Codeを筆者は使っています。
+[5 ステップではじめる Motoko プログラミング入門](/hello-motoko)
+
+ターミナルは、なんでもよいので Mac 標準のターミナルで大丈夫です。
+テキストエディタは Visual Studio Code を筆者は使っています。
 
 ## 手順
+
 ### プロジェクトの作成
 
 新しいプロジェクトを作ります。
@@ -47,6 +48,7 @@ cd cycles_hello
 ### コーディング
 
 #### src/cycles_hello/main.mo
+
 ```ts
 import Nat64 "mo:base/Nat64";
 import Cycles "mo:base/ExperimentalCycles";
@@ -92,14 +94,17 @@ shared(msg) actor class HelloCycles (
 ### 起動＆デプロイ
 
 ローカル実行環境を起動
+
 ```
 dfx start --clean --background
 ```
 
 キャニスターのビルド＆デプロイ
+
 ```
 dfx deploy --argument '(360000000000)'
 ```
+
 ```
 出力
 cycles_hello % dfx deploy --argument '(360000000000)'
@@ -117,78 +122,94 @@ Committing batch.
 Deployed canisters.
 ```
 
-キャニスターのownerのPrincipal IDを表示させます
+キャニスターの owner の Principal ID を表示させます
+
 ```
 dfx canister call cycles_hello owner
 ```
+
 ```
 出力
 (principal "zr2yi-7hrww-jgne7-j4gbs-2xu5a-ms3wg-ixp3t-4azyp-ifmeb-yxym6-sqe")
 ```
-このPrincipal IDはデプロイしたIdentityのPrincipal IDで以下のコマンドの結果と一致します。
+
+この Principal ID はデプロイした Identity の Principal ID で以下のコマンドの結果と一致します。
+
 ```
 dfx identity get-principal
 ```
 
 ## 動作確認
-### CYCLESの確認
-CYCLEはWalletキャニスターが管理しています。
-このプロジェクトに登場するウォレットは2つあります。
 
-* dfxの実行ユーザー用のウォレット
-* cycles_helloキャニスター用のウォレット
+### CYCLES の確認
 
-cycles_helloキャニスターのウォレットの初期残高を表示
+CYCLE は Wallet キャニスターが管理しています。
+このプロジェクトに登場するウォレットは 2 つあります。
+
+- dfx の実行ユーザー用のウォレット
+- cycles_hello キャニスター用のウォレット
+
+cycles_hello キャニスターのウォレットの初期残高を表示
+
 ```
 dfx canister call cycles_hello wallet_balance
 (0 : nat)
 ```
 
-dfxの実行ユーザーのウォレットからcycles_helloキャニスターのウォレットに256,000,000,000CYCLEを移動
+dfx の実行ユーザーのウォレットから cycles_hello キャニスターのウォレットに 256,000,000,000CYCLE を移動
+
 ```
 dfx canister call rwlgt-iiaaa-aaaaa-aaaaa-cai wallet_send '(record { canister = principal "rrkah-fqaaa-aaaaa-aaaaq-cai"; amount = (256000000000:nat64); } )'
 ```
+
 ```
 出力
 (variant { 17_724 })
 ```
 
-cycles_helloキャニスターのウォレットの残高を表示
+cycles_hello キャニスターのウォレットの残高を表示
+
 ```
 dfx canister call cycles_hello wallet_balance
 (256_000_000_000 : nat)
 ```
 
-dfx実行ユーザーのwallet残高を表示
+dfx 実行ユーザーの wallet 残高を表示
+
 ```
 dfx canister call rwlgt-iiaaa-aaaaa-aaaaa-cai wallet_balance
 ```
+
 ```
 出力
 (record { 3_573_748_184 = 91_744_000_000_000 : nat64 })
 ```
 
-### キャニスターを実行したらどのウォレットからCYCLEが消費されるか
+### キャニスターを実行したらどのウォレットから CYCLE が消費されるか
+
 ```
 dfx canister call cycles_hello greet '("from DFINITY")'
 ("Hello, from DFINITY!")
 ```
+
 ```
 dfx canister call rwlgt-iiaaa-aaaaa-aaaaa-cai wallet_balance
 ```
+
 ```
 出力
 (record { 3_573_748_184 = 91_744_000_000_000 : nat64 })
 ```
 
-DFINITYのDocumentでは、このときにdfx実行ユーザーのwalletのCYCLE残高が減少してますが
-筆者の環境では、どちらのウォレットのCYCLEも減りませんでした。
+DFINITY の Document では、このときに dfx 実行ユーザーの wallet の CYCLE 残高が減少してますが
+筆者の環境では、どちらのウォレットの CYCLE も減りませんでした。
 
 詳しく調べて、また後日、更新したいと思います。
 
-
 ### 停止
-dfx.jsonがあるディレクトリで以下のコマンドを実行して、実行環境を停止します。
+
+dfx.json があるディレクトリで以下のコマンドを実行して、実行環境を停止します。
+
 ```
 dfx stop
 ```

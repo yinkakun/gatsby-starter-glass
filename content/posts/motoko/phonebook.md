@@ -1,5 +1,5 @@
 ---
-title: "Motoko入門: Import library modules"
+title: "Motoko入門: Import library modules【DFINITY/ICP】"
 date: 2021-12-30 06:38
 permalink: /motoko-phonebook
 tags:
@@ -7,11 +7,11 @@ tags:
   - tutorial
   - jp
 description: |-
-  DFINITYチュートリアル「Import library modules」の日本語解説
+  DFINITY/ICPプログラミング「Import library modules」の日本語解説
   実際に使ったコードをGitHubで公開
 ---
 
-このページではDFINITYのMotokoのチュートリアルを日本語で解説しています。
+このページでは DFINITY の Motoko のチュートリアルを日本語で解説しています。
 
 [Import library modules](https://smartcontracts.org/docs/developers-guide/tutorials/phonebook.html)
 
@@ -19,26 +19,30 @@ description: |-
 
 はじめての方は先にこちらをご覧ください。
 
-[5ステップではじめるMotokoプログラミング入門](/hello-motoko)
+[5 ステップではじめる Motoko プログラミング入門](/hello-motoko)
 
 ### 実行環境
-* dfx: 0.8.4
-* macOS: 11.5.2
-* npm version: 8.1.3
-* 任意のターミナル
-* 任意のテキストエディタ
+
+- dfx: 0.8.4
+- macOS: 11.5.2
+- npm version: 8.1.3
+- 任意のターミナル
+- 任意のテキストエディタ
 
 ターミナルとテキストエディタは好きなソフトウェアを使えば大丈夫です。
 
-はじめはMac標準のターミナルでよいと思います。テキストエディタは筆者はVisual Studio Codeを使っています。
+はじめは Mac 標準のターミナルでよいと思います。テキストエディタは筆者は Visual Studio Code を使っています。
 
 ## 本プロジェクトで学ぶこと
-phonebookというプロジェクトでphonebookというキャニスターを作ります。
-phonebookでは以下の機能を実装します。
-* `insert`関数では、`name`と`phone`をKey-Valueとして`book`変数に格納します。
-* `lookup`関数は、指定された`name`キーを入力として、関連する`phone`を検索します。
+
+phonebook というプロジェクトで phonebook というキャニスターを作ります。
+phonebook では以下の機能を実装します。
+
+- `insert`関数では、`name`と`phone`を Key-Value として`book`変数に格納します。
+- `lookup`関数は、指定された`name`キーを入力として、関連する`phone`を検索します。
 
 ## 手順
+
 ### プロジェクトの作成
 
 新しいプロジェクトを作ります。
@@ -49,6 +53,7 @@ cd phonebook
 ```
 
 ### コーディング
+
 ```ts
 // Import standard library functions for lists
 
@@ -88,112 +93,145 @@ actor {
 ### コード解説
 
 本チュートリアルのタイトルにもあるようにこのプロジェクトではライブラリを使っています。
+
 ```ts
 import L "mo:base/List";
 import A "mo:base/AssocList";
 ```
+
 `Name`や`Phone`というオリジナルの型を定義しています。
 `Text`型の別名として考えることもできます。
+
 ```ts
-    public type Name = Text;
-    public type Phone = Text;
+type Name = Text;
+type Phone = Text;
 ```
 
-Motokoのチュートリアルで最初にここで躓く人は多いかもしれません。
+Motoko のチュートリアルで最初にここで躓く人は多いかもしれません。
+
 ```ts
     flexible var book: A.AssocList<Name, Phone> = L.nil<(Name, Phone)>();
 ```
-この1行には、これまで登場しなかった要素がいくつも登場します。
-* flexible var
-* A.AssocList
-* <Name, Phone>
-* L.nil<(Name, Phone)>()
 
-1つずつ見ていきましょう！
+この 1 行には、これまで登場しなかった要素がいくつも登場します。
+
+- flexible var
+- A.AssocList
+- <Name, Phone>
+- L.nil<(Name, Phone)>()
+
+1 つずつ見ていきましょう！
+
 ### flexible var
+
 `var`宣言では`flexible`がデフォルトなので単に`var`と書いたのと同じ意味になります。
 
 ### AssocList
-AssocListはAssociation Listの略で連想配列です。
+
+AssocList は Association List の略で連想配列です。
 
 電話帳をイメージしてください。名前と電話番号がペアで、たくさんの件数が電話帳に入ります。
 
-Key-Valueが複数入るようなデータ構造が連想配列です。
+Key-Value が複数入るようなデータ構造が連想配列です。
 
 ### <Name, Phone>
-この記法はジェネリクスと呼ばれます。TypeScriptやC++でも使われています。
 
-詳しく知りたい場合はTypeScriptやC++のジェネリクスに関する解説などを参考にしてください。
+この記法はジェネリクスと呼ばれます。TypeScript や C++でも使われています。
 
-NameやPhoneというオリジナルの型でAssocListを利用するため、このように書きます。
+詳しく知りたい場合は TypeScript や C++のジェネリクスに関する解説などを参考にしてください。
+
+Name や Phone というオリジナルの型で AssocList を利用するため、このように書きます。
 
 ### L.nil<(Name, Phone)>()
+
 ここでもジェネリクスが使われています。
 
-nilが予約語のように思えるかもしれませんが、これはList型の関数名です。
+nil が予約語のように思えるかもしれませんが、これは List 型の関数名です。
 
 nil()は空のリストを返します。この例では要素の型が<Name, Phone>という連想配列です。
 
 ### デプロイ
+
 ローカル実行環境を起動します。
+
 ```
 dfx start --clean
 ```
-通常はstopしても過去に作ったキャニスターは残っています。
+
+通常は stop しても過去に作ったキャニスターは残っています。
 起動時に`--clean`オプションを付けることで過去に作成したキャニスターは削除した状態で起動します。
 
 ビルドしてキャニスターをデプロイします。
+
 ```
 dfx deploy phonebook
 ```
 
 ### 実行
-2件の名前と電話番号情報を`insert`します。
+
+2 件の名前と電話番号情報を`insert`します。
+
 ```
 dfx canister call phonebook insert '("Chris Lynn", "01 415 792 1333")'
 dfx canister call phonebook insert '("Maya Garcia", "01 408 395 7276")'
 ```
+
 `Chris Lynn`のデータを連想配列`book`の中から検索します。
+
 ```
 phonebook % dfx canister call phonebook lookup '("Chris Lynn")'
 ```
+
 ```
 出力
 (opt "01 415 792 1333")
 ```
+
 電話番号で逆引きするとどうなるでしょうか？
+
 ```
 dfx canister call phonebook lookup '("01 408 395 7276")'
 ```
-nullを返します。
+
+null を返します。
+
 ```
 出力
 (null)
 ```
-2人の名前を渡すとどうなるでしょうか？
+
+2 人の名前を渡すとどうなるでしょうか？
+
 ```
 phonebook % dfx canister call phonebook lookup '("Maya Garcia","Chris Lynn")'
 ```
+
 最初に渡した名前の電話番号だけを返す実装になっています。
+
 ```
 出力
 (opt "01 408 395 7276")
 ```
 
 ### Candid UI
-Candid UIの使い方は、当ブログのほかの記事で解説しているので割愛します。
+
+Candid UI の使い方は、当ブログのほかの記事で解説しているので割愛します。
 
 ### ローカル実行環境の停止
-終わったらローカルPC上の実行環境を停止します。
+
+終わったらローカル PC 上の実行環境を停止します。
+
 ```
 dfx stop
 ```
 
 ### 拡張
-このプロジェクトでは、連想配列をDBのように扱うのでいろいろ改造してみると勉強になると思います。
 
-下記の例ではEmailというフィールドを追加してみました。
- `src/phonebook/main2.mo`
+このプロジェクトでは、連想配列を DB のように扱うのでいろいろ改造してみると勉強になると思います。
+
+下記の例では Email というフィールドを追加してみました。
+`src/phonebook/main2.mo`
+
 ```ts
 // Import standard library functions for lists
 
@@ -236,4 +274,3 @@ actor {
     };
 };
 ```
-

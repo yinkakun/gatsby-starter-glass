@@ -1,5 +1,5 @@
 ---
-title: "Motoko入門: Increment a natural number"
+title: "Motoko入門: Increment a natural number【DFINITY/ICP】"
 date: 2021-12-29 21:38
 permalink: /motoko-my-counter
 tags:
@@ -7,33 +7,34 @@ tags:
   - tutorial
   - jp
 description: |-
-  DFINITYチュートリアル「Increment a natural number」の日本語解説
+  DFINITY/ICPプログラミング「Increment a natural number」の日本語解説
   実際に使ったコードをGitHubで公開
 ---
 
-このページは、DFINITY/ICPのMotokoのチュートリアルを日本語で解説しています。
+このページは、DFINITY/ICP の Motoko のチュートリアルを日本語で解説しています。
 
 [Increment a natural number](https://smartcontracts.org/docs/developers-guide/tutorials/counter-tutorial.html)
-
 
 実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/motoko-tutorial/tree/main/my_counter)からダウンロードできます。
 
 はじめての方は先にこちらをご覧ください。
 
-[5ステップではじめるMotokoプログラミング入門](/hello-motoko)
+[5 ステップではじめる Motoko プログラミング入門](/hello-motoko)
 
 ### 実行環境
-* dfx: 0.8.4
-* macOS: 11.5.2
-* npm version: 8.1.3
-* 任意のターミナル
-* 任意のテキストエディタ
+
+- dfx: 0.8.4
+- macOS: 11.5.2
+- npm version: 8.1.3
+- 任意のターミナル
+- 任意のテキストエディタ
 
 ターミナルとテキストエディタは好きなソフトウェアを使えば大丈夫です。
 
-はじめはMac標準のターミナルでよいと思います。テキストエディタは筆者はVisual Studio Codeを使っています。
+はじめは Mac 標準のターミナルでよいと思います。テキストエディタは筆者は Visual Studio Code を使っています。
 
 ## 手順
+
 ### プロジェクトの作成
 
 新しいプロジェクトを作ります。
@@ -47,6 +48,7 @@ cd my_counter
 
 今回は`main.mo`というソースファイルの名前を変えます。
 `dfx.json`の以下の行を変更します。
+
 ```
 変更前
 "main": "src/my_counter/main.mo",
@@ -55,12 +57,15 @@ cd my_counter
 ```
 
 そして以下のコマンドでファイル名を変更します。
+
 ```
 mv src/my_counter/main.mo src/my_counter/increment_counter.mo
 ```
 
 ### コーディング
+
 `src/my_counter/increment_counter.mo`を以下のように編集して保存します。
+
 ```ts
 // Create a simple Counter actor.
 actor Counter {
@@ -82,37 +87,45 @@ actor Counter {
   };
 }
 ```
-`Counter`というactorに3つの関数を定義しています。
 
-* `increment`
-* `get`
-* `set`
+`Counter`という actor に 3 つの関数を定義しています。
 
-`increment`は`currentValue`を+1します。
+- `increment`
+- `get`
+- `set`
+
+`increment`は`currentValue`を+1 します。
 
 ### 起動
-以下のどちらかのコマンドでローカルPCで実行環境を起動します。
+
+以下のどちらかのコマンドでローカル PC で実行環境を起動します。
+
 ```
 dfx start
 ```
-オプションをつけない場合、Ctrl+CでICを停止するまで他のコマンドを実行できません。
+
+オプションをつけない場合、Ctrl+C で IC を停止するまで他のコマンドを実行できません。
 そのため別のターミナルウィンドウで他のコマンドを実行する必要があります。
 
 ```
 dfx start --background
 ```
+
 `--background`をつけると起動後も同じウィンドウで他のコマンドを実行できます。
 
 ### ビルド＆デプロイ
+
 以下のコマンドでビルド&デプロイを実行します。
+
 ```
 dfx deploy
 ```
 
-`dfx deploy`では以下の3つの処理を一気に実行できます。
-* `dfx canister create`
-* `dfx build`
-* `dfx canister install`
+`dfx deploy`では以下の 3 つの処理を一気に実行できます。
+
+- `dfx canister create`
+- `dfx build`
+- `dfx canister install`
 
 コンパイルされていなければコンパイルしてからデプロイをしてくれます。
 
@@ -130,52 +143,66 @@ Deployed canisters.
 
 ### 実行
 
-`get` `increment` `set` の3つの関数を使って実行します。
+`get` `increment` `set` の 3 つの関数を使って実行します。
+
 ```
 dfx canister call my_counter get
 ```
+
 ```
 出力
 (0 : nat)
 ```
-初期値は0です。
-`increment`を実行してキャニスターが持つ`currentValue`を+1します。
+
+初期値は 0 です。
+`increment`を実行してキャニスターが持つ`currentValue`を+1 します。
+
 ```
 dfx canister call my_counter increment
 ```
+
 ```
 dfx canister call my_counter get
 ```
+
 ```
 出力
 (1 : nat)
 ```
-結果が1になっています。
+
+結果が 1 になっています。
 
 `set`を使って(987)を設定します。
+
 ```
 dfx canister call my_counter set '(987)'
 dfx canister call my_counter get
 ```
-`increment`で+1します。
+
+`increment`で+1 します。
+
 ```
 dfx canister call my_counter increment
 dfx canister call my_counter get
 ```
-`currentValue`は988になっています。
+
+`currentValue`は 988 になっています。
 
 ### ブラウザから実行 (Candid UI)
-このプロジェクトには、Candid UIというテスト用のキャニスターがデプロイされています。
-Candid UIのキャニスターIDを確認してみましょう。
+
+このプロジェクトには、Candid UI というテスト用のキャニスターがデプロイされています。
+Candid UI のキャニスター ID を確認してみましょう。
+
 ```
 dfx canister id __Candid_UI
 ```
+
 ```
 r7inp-6aaaa-aaaaa-aaabq-cai
 ```
 
-ローカルICにデプロイされたキャニスターの一覧は以下のファイルに保存されています。
-上のコマンドで表示された__Candid_UIというキャニスターもあります。
+ローカル IC にデプロイされたキャニスターの一覧は以下のファイルに保存されています。
+上のコマンドで表示された\_\_Candid_UI というキャニスターもあります。
 
 ```ts
 my_counter % cat .dfx/local/canister_ids.json
@@ -192,30 +219,36 @@ my_counter % cat .dfx/local/canister_ids.json
 }
 ```
 
-もし、dfx stopでICを停止していたら起動しましょう。
+もし、dfx stop で IC を停止していたら起動しましょう。
+
 ```
 dfx start --background
 ```
 
-ブラウザを使って以下のURLにアクセスします。
+ブラウザを使って以下の URL にアクセスします。
+
 ```
 http://127.0.0.1:8000/?canisterId=<CANDID-UI-CANISTER-IDENTIFIER>
 ```
-自分の環境の__Candid_UIのキャニスターIDに置き換えます。
+
+自分の環境の\_\_Candid_UI のキャニスター ID に置き換えます。
+
 ```
 http://127.0.0.1:8000/?canisterId=r7inp-6aaaa-aaaaa-aaabq-cai
 ```
+
 ```
 my_counter % dfx canister id my_counter
 rrkah-fqaaa-aaaaa-aaaaq-cai
 ```
 
-以下のようにCanister IDを入力する画面が表示されるはずです。
+以下のように Canister ID を入力する画面が表示されるはずです。
 
 ![Candid UI](/media/motoko-my-counter/1.png)
 
-ここにmy_counterのキャニスターIDを入力します。
-キャニスターIDはさっき確認した`.dfx/local/canister_ids.json`にも書かれていますが、以下のコマンドでも表示できます。
+ここに my_counter のキャニスター ID を入力します。
+キャニスター ID はさっき確認した`.dfx/local/canister_ids.json`にも書かれていますが、以下のコマンドでも表示できます。
+
 ```
 my_counter % dfx canister id my_counter
 ```
@@ -223,17 +256,20 @@ my_counter % dfx canister id my_counter
 ```
 rrkah-fqaaa-aaaaa-aaaaq-cai
 ```
-このIDをブラウザのフォームの`Provide a canister ID:`に入力します。
+
+この ID をブラウザのフォームの`Provide a canister ID:`に入力します。
 
 ![Candid UI](/media/motoko-my-counter/2.png)
 
-GOをクリックすると以下のような画面表示に変わります。
+GO をクリックすると以下のような画面表示に変わります。
 ![Candid UI](/media/motoko-my-counter/4.png)
 
 `QUERY`, `CALL`, `RANDOM` をクリックして自由に試してみましょう！
 
 ### ローカル実行環境の停止
-終わったらローカルPC上の実行環境を停止します。
+
+終わったらローカル PC 上の実行環境を停止します。
+
 ```
 dfx stop
 ```

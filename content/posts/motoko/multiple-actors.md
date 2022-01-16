@@ -1,5 +1,5 @@
 ---
-title: "Motoko入門: Use multiple actors"
+title: "Motoko入門: Use multiple actors【DFINITY/ICP】"
 date: 2021-12-30 15:38
 permalink: /motoko-multiple-actors
 tags:
@@ -7,37 +7,39 @@ tags:
   - tutorial
   - jp
 description: |-
-  DFINITYチュートリアル「Use multiple actors」の日本語解説
+  DFINITY/ICPプログラミング「Use multiple actors」の日本語解説
   実際に使ったコードをGitHubで公開
 ---
 
-このページは、DFINITYのMotokoのチュートリアルを日本語で解説しています。
+このページは、DFINITY の Motoko のチュートリアルを日本語で解説しています。
 
 [Use multiple actors](https://smartcontracts.org/docs/developers-guide/tutorials/multiple-actors.html)
-
 
 実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/motoko-tutorial/tree/main/multiple_actors)からダウンロードできます。
 
 はじめての方は先にこちらをご覧ください。
 
-[5ステップではじめるMotokoプログラミング入門](/hello-motoko)
+[5 ステップではじめる Motoko プログラミング入門](/hello-motoko)
 
 ### 実行環境
-* dfx: 0.8.4
-* macOS: 11.5.2
-* npm version: 8.1.3
-* 任意のターミナル
-* 任意のテキストエディタ
+
+- dfx: 0.8.4
+- macOS: 11.5.2
+- npm version: 8.1.3
+- 任意のターミナル
+- 任意のテキストエディタ
 
 ターミナルとテキストエディタは好きなソフトウェアを使えば大丈夫です。
 
-はじめはMac標準のターミナルでよいと思います。テキストエディタは筆者はVisual Studio Codeを使っています。
+はじめは Mac 標準のターミナルでよいと思います。テキストエディタは筆者は Visual Studio Code を使っています。
 
 ## 本プロジェクトで学ぶこと
-本プロジェクトでは、`assistant`, `rock_paper_scissors`, `daemon`の3つのキャニスターを作ります。
+
+本プロジェクトでは、`assistant`, `rock_paper_scissors`, `daemon`の 3 つのキャニスターを作ります。
 それぞれのキャニスターの処理に関連性はありません。
 
 ## 手順
+
 ### プロジェクトの作成
 
 新しいプロジェクトを作ります。
@@ -47,9 +49,11 @@ dfx new multiple_actors
 cd multiple_actors
 ```
 
-### dfx.jsonの編集
-当プロジェクトでは、3つのキャニスターを作ります。
-dfx.jsonを以下のように書き換えます。
+### dfx.json の編集
+
+当プロジェクトでは、3 つのキャニスターを作ります。
+dfx.json を以下のように書き換えます。
+
 ```ts
 {
   "canisters": {
@@ -83,7 +87,8 @@ dfx.jsonを以下のように書き換えます。
 }
 ```
 
-dfx.jsonに書いたパスにMotokoのソースファイルをコピーします。
+dfx.json に書いたパスに Motoko のソースファイルをコピーします。
+
 ```
 cp -r src/multiple_actors/ src/assistant/
 cp -r src/assistant/ src/rock_paper_scissors/
@@ -91,7 +96,9 @@ cp -r src/assistant/ src/daemon/
 ```
 
 ### コーディング
+
 `src/assistant/motoko.mo`
+
 ```ts
 import Array "mo:base/Array";
 import Nat "mo:base/Nat";
@@ -142,8 +149,9 @@ actor Assistant {
 ```
 
 `src/rock_paper_scissors/motoko.mo`
+
 ```ts
-import I "mo:base/Iter"; 
+import I "mo:base/Iter";
 
 actor RockPaperScissors {
 
@@ -163,7 +171,7 @@ actor RockPaperScissors {
       battle_round();
     };
     var winner = "The contest was a draw";
-    if (alice_score > bob_score) winner := "Alice won" 
+    if (alice_score > bob_score) winner := "Alice won"
     else if (alice_score < bob_score) winner := "Bob won";
     return (winner);
   };
@@ -189,7 +197,7 @@ actor RockPaperScissors {
 
     return ();
   };
-  
+
   // Hard-coded players and choices
   func bob(last : Choice) : Choice {
     return #paper;
@@ -202,6 +210,7 @@ actor RockPaperScissors {
 ```
 
 `src/daemon/main.mo`
+
 ```ts
 actor Daemon {
   stable var running = false;
@@ -219,7 +228,8 @@ actor Daemon {
 ```
 
 ### 実行
-`assistant`, `rock_paper_scissors`, `daemon`の3つのキャニスターを実行します。
+
+`assistant`, `rock_paper_scissors`, `daemon`の 3 つのキャニスターを実行します。
 
 ```
 dfx canister call assistant addTodo '("Schedule monthly demos")'
@@ -240,7 +250,9 @@ dfx canister call daemon launch
 ```
 
 ### ローカル実行環境の停止
-終わったらローカルPC上の実行環境を停止します。
+
+終わったらローカル PC 上の実行環境を停止します。
+
 ```
 dfx stop
 ```
