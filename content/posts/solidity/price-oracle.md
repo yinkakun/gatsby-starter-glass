@@ -1,5 +1,5 @@
 ---
-title: "Solidity入門: オラクルを使う（Chainlink Data Feeds)"
+title: "Solidity入門: オラクルの基本的な使い方（Chainlink Data Feeds)"
 date: 2022-01-13 21:00
 permalink: /price-oracle
 tags:
@@ -8,8 +8,7 @@ tags:
   - chainlink
   - jp
 description: |-
-  イーサリアムでオラクルを使う方法を解説
-  Chainlink Data Feedsの使い方
+  Solidity開発の基本: イーサリアムでオラクルを使う方法を解説
 ---
 
 このページはこんな人におすすめ
