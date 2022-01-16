@@ -111,7 +111,7 @@ Contract Name: AccessControlledOffchainAggregator
 #### answer
 
 価格情報です。この Aggregator は ETH/USD の価格を持っています。
-桁数が大きいですが 10 の 8 乗で割ってみましょう。
+桁数が大きいので 10 の 8 乗で割ってみましょう。
 
 331512291099 / 10^8 = 3,315
 
