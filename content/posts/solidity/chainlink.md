@@ -67,7 +67,7 @@ https://docs.chain.link/docs/off-chain-reporting/
 ## 実際の Aggregator の state を覗いてみよう
 
 実際に Ethereum のメインネットで Proxy や Aggregator コントラクトの関数を実行してみましょう。
-Chainlink Data Feeds は Read 関数なので Gas 代はかかりません。
+Read 関数なので Gas 代はかかりません。
 
 各チェーンの Proxy のコントラクトアドレスは Chainlink の Documentation に載っています。
 
