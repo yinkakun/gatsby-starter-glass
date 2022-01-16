@@ -32,7 +32,7 @@ description: |-
 #### Consumer
 
 - 一般の開発者が作るスマートコントラクト
-- Consumer がオフチェーンのデータを使いたいときに、同じチェーン上のスマートコントラクトである Proxy の関数を実行する
+- オフチェーンのデータを使いたいときに、同じチェーン上のスマートコントラクトである Proxy の関数を実行する
 
 #### Proxy
 
@@ -55,7 +55,7 @@ description: |-
 
 https://docs.chain.link/docs/off-chain-reporting/
 
-従来は、各 Off Chain Node が個別に Aggregator にデータを送っていたが、トランザクションが輻輳したり全体の Gas 代が高くなるというデメリットがありました。
+従来は、各 Off Chain Node が個別に Aggregator にデータを送っていましたが、トランザクションが輻輳したり全体の Gas 代が高くなるというデメリットがありました。
 
 それを改善するため OCR という新しいしくみになっています。
 
