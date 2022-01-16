@@ -1,5 +1,5 @@
 ---
-title: "Solidity入門: はじめてのスマートコントラクト"
+title: "Solidity入門: はじめてのスマートコントラクト/Dapps開発"
 date: 2022-01-05 21:00
 permalink: /first-app
 tags:
