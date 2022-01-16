@@ -9,7 +9,7 @@ tags:
   - jp
 description: |-
   イーサリアムでオラクルを使う方法を解説
-  Chainlink Data Feed (Price Feed)の使い方
+  Chainlink Data Feedsの使い方
 ---
 
 このページはこんな人におすすめ
