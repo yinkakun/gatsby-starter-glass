@@ -96,7 +96,6 @@ Contract Name: AccessControlledOffchainAggregator
 [Contract] -> [Read Contract] -> [latestRoundData]をクリックすると以下のような複数の値を表示します。
 
 ```
- roundId uint80, answer int256, startedAt uint256, updatedAt uint256, answeredInRound uint80
   roundId|uint80 :  17400
   answer|int256 :  331512291099
   startedAt|uint256 :  1642312505
