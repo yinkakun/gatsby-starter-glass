@@ -10,6 +10,7 @@
     "gatsby": "^3.0.1",
     "gatsby-plugin-feed": "^3.0.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-google-gtag": "^3.14.0",
     "gatsby-plugin-image": "^1.0.0",
     "gatsby-plugin-manifest": "^3.0.0",
     "gatsby-plugin-meta-redirect": "^1.1.1",
