@@ -1,5 +1,5 @@
 ---
-title: "Solidity入門: オラクルを使う（Chainlink Price Oracle)"
+title: "Solidity入門: オラクルを使う（Chainlink Price Feed)"
 date: 2022-01-13 21:00
 permalink: /price-oracle
 tags:
@@ -22,6 +22,23 @@ Solidity by Example のサンプルコードを使ってスマートコントラ
 [Price Oracle (Solidity by Examples)](https://solidity-by-example.org/defi/chainlink-price-oracle/)
 
 このページで実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/solidity-example/tree/main/price-oracle)からダウンロードできます。
+
+## オラクルと Chainlink について
+
+オラクルは、オンチェーンのスマートコントラクトがオフチェーンの情報を利用するときに使います。
+
+一般的な Web サービスの場合、API を呼び出しますが、EVM のスマートコントラクトは、ダイレクトにオフチェーンの API を実行することはできません。
+
+そこで Chainlink では以下のようなしくみで、オフチェーンのデータをオンチェーンで使えるようにしています。
+
+[イーサリアム入門: オラクルのしくみ](/chainlink)
+![chainlink](/media/chainlink/2.png)
+
+上図の Consumer がこのページで作るスマートコントラクトです。
+
+Proxy や Aggregator は Chainlink がデプロイしたスマートコントラクトです。
+
+Consumer は Proxy の latestRoundData() という関数を実行して、Aggregator コントラクトが保持している state を参照します。
 
 ## 新しいプロジェクトを作る
 
