@@ -11,19 +11,23 @@ description: |-
   オラクルではどのようにしてオフチェーンのデータをオンチェーンで利用できるようにしているのか？
 ---
 
-オラクルは、オンチェーンのスマートコントラクトがオフチェーンの情報を利用するときに使います。
+オラクルはスマートコントラクトがオフチェーンの情報を利用するときに使います。
 
-通常の Web サービスの場合、HTTP などのリクエストを投げて API を実行しますが、イーサリアム上のスマートコントラクトは、直接 HTTP リクエストを送ることはできないので、インターネット上の任意の API を実行することはできません。
+通常の Web サービスでは、HTTP などのリクエストを投げて API を実行できます。
 
-そこでオラクルというしくみを使ってオフチェーンのデータをオンチェーンから利用できるようにしています。
+しかしイーサリアム上のスマートコントラクトから直接 HTTP リクエストを投げることはできないので、インターネット上の任意の API を実行してデータを取得するようなことはできません。
 
-代表的なオラクルの１つには Chainlink があります。そこで Chainlink Data Feeds を使ってオラクルのしくみを見ていきましょう。
+そのため、オフチェーンのデータを間接的に取得して、オンチェーンのスマートコントラクトから利用できるようにしています。
 
-#### [Architecture Overview (Chainlink Docs)](https://docs.chain.link/docs/architecture-overview/)
+代表的なオラクルの１つには Chainlink があります。
 
-Solidity におけるオラクルの使い方を知りたい場合はこちらをどうぞ。
+このページでは Chainlink Data Feeds を使ってオラクルのしくみを見ていきましょう。
 
-#### [Solidity 入門: オラクルを使う](/price-oracle)
+[Architecture Overview (Chainlink Docs)](https://docs.chain.link/docs/architecture-overview/)
+
+もし、Solidity におけるオラクルの使い方を知りたい場合はこちらをどうぞ。
+
+[Solidity 入門: オラクルを使う](/price-oracle)
 
 ## 構成要素の説明
 
@@ -32,12 +36,12 @@ Solidity におけるオラクルの使い方を知りたい場合はこちら�
 #### Consumer
 
 - 一般の開発者が作るスマートコントラクト
-- Consumer がオフチェーンのデータを使いたいときに、同じチェーン上のスマートコントラクトである Proxy の関数を実行
+- Consumer がオフチェーンのデータを使いたいときに、同じチェーン上のスマートコントラクトである Proxy の関数を実行する
 
 #### Proxy
 
 - Chainlink によって各チェーン上にデプロイされたスマートコントラクト
-- Proxy は Aggregator のコントラクトアドレスを保持しており、Aggregator を更新する場合でも Proxy のコントラクトアドレスが変わらないため、Consumer は継続してオラクルを利用できる
+- Proxy は Aggregator のコントラクトアドレスを保持しており、Aggregator を変更する場合でも Proxy のコントラクトアドレスが変わらないため、Consumer は継続してオラクルを利用できる
 - Proxy の秘密鍵の保持者に悪意があれば、参照する Aggregator を変更できてしまうので Proxy の Owner を信頼する必要がある
 
 #### Aggregator
@@ -57,17 +61,17 @@ https://docs.chain.link/docs/off-chain-reporting/
 
 従来は、各 Off Chain Node が個別に Aggregator にデータを送っていたが、トランザクションが輻輳したり全体の Gas 代が高くなるというデメリットがありました。
 
-OCR という新しいしくみでは以下のようになっています。
+それを改善するため OCR という新しいしくみになっています。
 
 - P2P ノード間でリーダーを選出して、全体でレポートを作成、署名
 - 全体で署名したレポートを代表するノードが Aggregator に提出
 - Aggregator は署名を確認し、全体の中央値を選ぶ
 - リーダーやレポートを提出するノードはラウンドごとに入れ替わる
 
-## イーサリアム の Proxy/Aggregator コントラクトを実行してみよう
+## Aggregator コントラクトの価格情報を見てみよう
 
 実際に Ethereum のメインネットで Proxy や Aggregator コントラクトの関数を実行してみましょう。
-Chainlink Data Feeds は Read 関数なので Gas 代もかかりません。
+Chainlink Data Feeds は Read 関数なので Gas 代はかかりません。
 
 各チェーンの Proxy のコントラクトアドレスは Chainlink の Documentation に載っています。
 
@@ -125,7 +129,7 @@ Contract Name: AccessControlledOffchainAggregator
 
 2022-01-16T06:31:12+00:00
 
-### Aggregator にレポートを提出したトランザクション
+## 実際のレポート提出トランザクションを見てみよう
 
 Aggregator の Transactions を見ると、Off Chain Node から提出されたレポートの内容がわかります。
 
