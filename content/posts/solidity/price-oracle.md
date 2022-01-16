@@ -8,7 +8,8 @@ tags:
   - chainlink
   - jp
 description: |-
-  イーサリアムでChainlinkオラクルを使う方法を解説
+  イーサリアムでオラクルを使う方法を解説
+  Chainlink Data Feed (Price Feed)の使い方
 ---
 
 このページはこんな人におすすめ
