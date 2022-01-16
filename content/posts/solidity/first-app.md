@@ -8,7 +8,8 @@ tags:
   - beginner
   - jp
 description: |-
-  Solidity by ExmaplesのFirst ApplicationをHardhatで作ります
+  スマートコントラクト開発の基本: Solidity初心者に向けた解説
+  Solidity by Exampleのサンプルを使ってHardhatで開発
 ---
 
 このページはこんな人におすすめ

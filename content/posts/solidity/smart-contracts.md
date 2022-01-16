@@ -8,7 +8,7 @@ tags:
   - beginner
   - jp
 description: |-
-  Hardhatを使い、Solidity by Exampleのスマートコントラクトを作ります。
+  これからSolidityの学習を始める方に向けたスマートコントラクトの作り方を解説
 ---
 
 このページはこんな人におすすめ
