@@ -1,5 +1,5 @@
 ---
-title: "Motoko/DFINITY入門: Explore the default project"
+title: "DFINITY/Motoko入門: Explore the default project"
 date: 2021-12-29 19:38
 permalink: /motoko-explore-hello
 tags:

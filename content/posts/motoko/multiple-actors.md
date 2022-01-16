@@ -1,5 +1,5 @@
 ---
-title: "Motoko/DFINITY入門: Use multiple actors"
+title: "DFINITY/Motoko入門: Use multiple actors"
 date: 2021-12-30 15:38
 permalink: /motoko-multiple-actors
 tags:
