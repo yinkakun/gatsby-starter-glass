@@ -4,7 +4,7 @@ date: 2022-01-09 21:00
 permalink: /smart-contracts
 tags:
   - solidity
-  - Ethereum
+  - ethereum
   - beginner
   - jp
 description: |-
