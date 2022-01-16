@@ -1,5 +1,5 @@
 ---
-title: 5ステップではじめるMotokoプログラミング入門【初心者向け】
+title: 5ステップではじめるMotoko/ICPプログラミング入門【初心者向け】
 date: 2021-08-15 19:38
 permalink: /hello-motoko
 redirect_from:
@@ -15,7 +15,7 @@ tags:
   - icp
 social_image: /media/labs.png
 description: |-
-  DFINITY/ICP(Internet Computer Protocol)でMotokoを使ってDapps開発をはじめよう！
+  ICP(Internet Computer Protocol)でMotokoを使ってDapps開発をはじめよう！
 ---
 
 この記事はこんな人におすすめです
