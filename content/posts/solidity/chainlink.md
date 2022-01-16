@@ -21,7 +21,7 @@ description: |-
 
 [Architecture Overview (Chainlink Docs)](https://docs.chain.link/docs/architecture-overview/)
 
-もし、Solidity におけるオラクルの使い方を知りたい場合はこちらをどうぞ。
+もし、Solidity における実装方法を知りたい場合はこちらをどうぞ。
 
 [Solidity 入門: オラクルを使う](/price-oracle)
 
