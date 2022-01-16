@@ -68,7 +68,7 @@ https://docs.chain.link/docs/off-chain-reporting/
 - Aggregator は署名を確認し、全体の中央値を選ぶ
 - リーダーやレポートを提出するノードはラウンドごとに入れ替わる
 
-## 実際の Aggregator コントラクトの state を覗いてみよう
+## 実際のコントラクトの state を覗いてみよう
 
 実際に Ethereum のメインネットで Proxy や Aggregator コントラクトの関数を実行してみましょう。
 Chainlink Data Feeds は Read 関数なので Gas 代はかかりません。
