@@ -38,7 +38,7 @@ description: |-
 
 - Chainlink によって各チェーン上にデプロイされたスマートコントラクト
 - Proxy は Aggregator のコントラクトアドレスを保持しており、Aggregator を変更する場合でも Proxy のコントラクトアドレスが変わらないため、Consumer は継続してオラクルを利用できる
-- Proxy の秘密鍵の保持者に悪意があれば、参照する Aggregator を変更できてしまうので Proxy の Owner を信頼する必要がある
+- 仮に Proxy の秘密鍵の保持者に悪意があれば、参照する Aggregator を変更できてしまうので Proxy の Owner を信頼しなければならない
 
 #### Aggregator
 
