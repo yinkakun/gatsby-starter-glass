@@ -1,5 +1,5 @@
 ---
-title: "Motoko入門: Use integers in calculator functions【DFINITY/ICP】"
+title: "Motoko/DFINITY入門: Use integers in calculator functions"
 date: 2021-12-29 22:38
 permalink: /motoko-calc
 tags:

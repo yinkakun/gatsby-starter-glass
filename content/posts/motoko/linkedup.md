@@ -1,5 +1,5 @@
 ---
-title: "Motoko入門: Make inter-canister calls【DFINITY/ICP】"
+title: "Motoko/DFINITY入門: Make inter-canister calls"
 date: 2021-12-30 21:00
 permalink: /motoko-linkedup
 tags:
