@@ -1,5 +1,5 @@
 ---
-title: "イーサリアム入門: はじめてのスマートコントラクト開発"
+title: "イーサリアム入門: はじめてのスマートコントラクト開発【Solidity】"
 date: 2022-01-09 21:00
 permalink: /smart-contracts
 tags:
