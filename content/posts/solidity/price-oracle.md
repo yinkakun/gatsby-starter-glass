@@ -1,5 +1,5 @@
 ---
-title: "Solidity入門: オラクルを使う（Chainlink Price Feed)"
+title: "Solidity入門: オラクルを使う（Chainlink Data Feeds)"
 date: 2022-01-13 21:00
 permalink: /price-oracle
 tags:
