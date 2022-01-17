@@ -3,8 +3,8 @@ title: "Solidity入門: Hardhatでスマートコントラクトを作ろう！"
 date: 2022-01-04 22:00
 permalink: /hardhat
 tags:
-  - solidity
-  - hardhat
+  - Solidity
+  - Hardhat
   - beginner
   - jp
 description: |-

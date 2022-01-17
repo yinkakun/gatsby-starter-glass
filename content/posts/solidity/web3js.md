@@ -3,7 +3,7 @@ title: web3.JSを使ってスマートコントラクトを実行する3つの�
 date: 2021-06-06 19:38
 permalink: /web3js
 tags:
-  - solidity
+  - Solidity
   - beginner
   - JavaScript
   - jp
@@ -11,66 +11,69 @@ social_image: /media/labs.png
 description: |-
   JavaScriptからスマートコントラクトを実行する方法
   初心者向け
-
 ---
 
 このページはこんな人におすすめ
 
-* 自分で作ったスマートコントラクトを実行したい
-* JavaScriptからスマコンを実行する方法がわからない
-* Node.jsのモジュールを使ってシンプルにスマコンを実行したい
-* web3.jsの使い方がわからない
+- 自分で作ったスマートコントラクトを実行したい
+- JavaScript からスマコンを実行する方法がわからない
+- Node.js のモジュールを使ってシンプルにスマコンを実行したい
+- web3.js の使い方がわからない
 
-ぼくは2017年ごろからブロックチェーンを触り、2021年現在はWeb系のグローバルスタートアップで働く本業の傍らで、起業してブロックチェーンを使ったサービスを開発しています。
+ぼくは 2017 年ごろからブロックチェーンを触り、2021 年現在は Web 系のグローバルスタートアップで働く本業の傍らで、起業してブロックチェーンを使ったサービスを開発しています。
 
-このページでは、ブロックチェーン上にデプロイしたスマートコントラクトをweb3.jsを使って実行する方法を３つ紹介します。
+このページでは、ブロックチェーン上にデプロイしたスマートコントラクトを web3.js を使って実行する方法を３つ紹介します。
 
-* HTMLとJavaScriptだけのシンプルなweb3.js
-* Next.jsを使ったweb3.js（Chromeのコンソールに表示）
-* Next.jsを使ったweb3.js（HTMLに表示）
+- HTML と JavaScript だけのシンプルな web3.js
+- Next.js を使った web3.js（Chrome のコンソールに表示）
+- Next.js を使った web3.js（HTML に表示）
 
-今回実行するスマートコントラクトは、以下の記事で作ったHello Worldプログラムです。
+今回実行するスマートコントラクトは、以下の記事で作った Hello World プログラムです。
 
 ## 必要なもの
 
-* live-server
-* Next.jsアプリケーション
-* npmのweb3.js
-* スマートコントラクトのアドレス
-* スマートコントラクトのABI
+- live-server
+- Next.js アプリケーション
+- npm の web3.js
+- スマートコントラクトのアドレス
+- スマートコントラクトの ABI
 
 ### live-server
+
 ３つの確認方法のうち、
 
-HTMLとJavaScriptファイルだけのweb3.jsの実行方法
-1番目ではlive-serverを使います。live-serverはnpmを使ってインストールできます。
-live-serverはローカルPC上で利用できる軽量なHTTPサーバです。
-PC上のHTMLファイルをブラウザを通してアクセスできます。
+HTML と JavaScript ファイルだけの web3.js の実行方法
+1 番目では live-server を使います。live-server は npm を使ってインストールできます。
+live-server はローカル PC 上で利用できる軽量な HTTP サーバです。
+PC 上の HTML ファイルをブラウザを通してアクセスできます。
 
-### Next.jsアプリケーション
-JavaScriptを使ったアプリケーションを書く場合、ReactやVue.jsなどいろんなフレームワークを使いますが、それらは基本的にサーバサイドのJavaScript言語であるNode.jsを使っています。
+### Next.js アプリケーション
 
-Node.jsを使ってスマートコントラクトを実行する方法は、いろいろあります。
-なるべくシンプルで汎用的に応用できることを考えてNext.jsを使った2つweb3.jsの実行方法を紹介します。
+JavaScript を使ったアプリケーションを書く場合、React や Vue.js などいろんなフレームワークを使いますが、それらは基本的にサーバサイドの JavaScript 言語である Node.js を使っています。
 
-Next.jsの新しいプロジェクトを用意してください。
+Node.js を使ってスマートコントラクトを実行する方法は、いろいろあります。
+なるべくシンプルで汎用的に応用できることを考えて Next.js を使った 2 つ web3.js の実行方法を紹介します。
+
+Next.js の新しいプロジェクトを用意してください。
 
 https://nextjs.org/docs/getting-started
 
-### npmのweb3.js
-Next.jsのプロジェクトにnpmを使ってweb3.jsをインストールします。
+### npm の web3.js
 
-プロジェクトのトップディレクトリ（package.jsonファイルのある場所）で以下のコマンドを実行しましょう。
+Next.js のプロジェクトに npm を使って web3.js をインストールします。
+
+プロジェクトのトップディレクトリ（package.json ファイルのある場所）で以下のコマンドを実行しましょう。
 
 ```
 npm install web3 --save
 ```
 
 ### スマートコントラクトのアドレス
+
 スマートコントラクトを実行する場合にコントラクトアドレスを指定します。
 今回使うスマートコントラクトのアドレスを調べましょう。
 
-Truffleを使ってGanacheにコントラクトをデプロイした場合は、buildディレクトリの下にhelloWorld.jsonというファイルが作られて、中にコントラクトアドレスがかかれています。
+Truffle を使って Ganache にコントラクトをデプロイした場合は、build ディレクトリの下に helloWorld.json というファイルが作られて、中にコントラクトアドレスがかかれています。
 
 ```js
   "networks": {
@@ -83,11 +86,12 @@ Truffleを使ってGanacheにコントラクトをデプロイした場合は、
   },
 ```
 
-### スマートコントラクトのABI
-スマートコントラクトを実行する場合、そのコントラクトがどんなファンクションを持っているのかやどんな型の情報を返すのかといったインターフェースの情報が必要になります。
-それがABI（Application Binary Interface）です。
+### スマートコントラクトの ABI
 
-Truffleでデプロイした場合は、コントラクトアドレスと同じくbuildディレクトリ配下のhelloWorld.jsonに書かれています。
+スマートコントラクトを実行する場合、そのコントラクトがどんなファンクションを持っているのかやどんな型の情報を返すのかといったインターフェースの情報が必要になります。
+それが ABI（Application Binary Interface）です。
+
+Truffle でデプロイした場合は、コントラクトアドレスと同じく build ディレクトリ配下の helloWorld.json に書かれています。
 
 ```js
   "abi": [
@@ -109,121 +113,135 @@ Truffleでデプロイした場合は、コントラクトアドレスと同じ�
   ],
 ```
 
-## HTMLとJavaScriptだけのシンプルなweb3.js
+## HTML と JavaScript だけのシンプルな web3.js
+
 ### コード
+
 ３つのファイルを作って同じディレクトリに置きましょう。
 
-* index.html
-* app.js
-* helloWorld.js
+- index.html
+- app.js
+- helloWorld.js
 
 #### index.html
+
 ```html
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <title>Ðapps - Hello World</title>
-  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
-  <script type="module" src="app.js"></script>
-</head>
-<body>
-  <div id="contract-result">loading...</div>
-</body>
+  <head>
+    <title>Ðapps - Hello World</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <div id="contract-result">loading...</div>
+  </body>
 </html>
 ```
 
 #### app.js
-```js
-import helloWorld from './helloWorld.js';
 
-window.onload = function() {
+```js
+import helloWorld from "./helloWorld.js";
+
+window.onload = function () {
   helloWorld();
-}
+};
 ```
+
 #### helloWorld.js
+
 ```js
 export default function () {
-  var abi = [{
-      "constant": true,
-      "inputs": [],
-      "name": "get",
-      "outputs": [
+  var abi = [
+    {
+      constant: true,
+      inputs: [],
+      name: "get",
+      outputs: [
         {
-          "name": "",
-          "type": "string"
-        }
+          name: "",
+          type: "string",
+        },
       ],
-      "payable": false,
-      "stateMutability": "pure",
-      "type": "function"
-    }];
+      payable: false,
+      stateMutability: "pure",
+      type: "function",
+    },
+  ];
 
   var address = "0x5B0A7974Aeab510BB344e7f27e607841b4EC4C9f"; // コントラクトアドレス
 
   const web3 = new Web3(Web3.givenProvider || "ws://localhost:7545");
 
   var contract = new web3.eth.Contract(abi, address);
-  contract.methods.get().call(function(err,res){
+  contract.methods.get().call(function (err, res) {
     document.getElementById("contract-result").textContent = res;
     console.log(res);
-  })
+  });
 }
 ```
 
 ### 確認手順
-配置したディレクトリでlive-serverを実行します。
+
+配置したディレクトリで live-server を実行します。
 
 ```
 live-server .
 ```
 
-live-serverを実行すると、自動でブラウザが開いてindex.htmlを表示します。
+live-server を実行すると、自動でブラウザが開いて index.html を表示します。
 
 ### 解説
-HTMLとJavaScriptを使った一番シンプルなやり方です。
 
-ここではインターネット上のweb3.jsをCDNからダウンロードして使っています。あとから紹介するNext.jsを使う2つのやり方では、Node.jsライブラリのweb3.jsを使います。
+HTML と JavaScript を使った一番シンプルなやり方です。
+
+ここではインターネット上の web3.js を CDN からダウンロードして使っています。あとから紹介する Next.js を使う 2 つのやり方では、Node.js ライブラリの web3.js を使います。
 
 ```html
-  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
 ```
 
-どのブロックチェーンに繋ぐかどうかは、helloWorld.jsの以下の行で指定しています。
+どのブロックチェーンに繋ぐかどうかは、helloWorld.js の以下の行で指定しています。
 
 ```js
-  const web3 = new Web3(Web3.givenProvider || "ws://localhost:7545");
+const web3 = new Web3(Web3.givenProvider || "ws://localhost:7545");
 ```
 
-ブラウザにMetamaskなどがある場合は、Web3.givenProviderを指定するとMetamaskが接続しているブロックチェーンのエンドポイントをもとにweb3オブジェクトが作られます。
+ブラウザに Metamask などがある場合は、Web3.givenProvider を指定すると Metamask が接続しているブロックチェーンのエンドポイントをもとに web3 オブジェクトが作られます。
 
-Web3.givenProviderで取得できない場合は、”ws://localhost:7545″に接続するように書いています。
-これはGanacheに接続するときのWebSocketのエンドポイントです。
+Web3.givenProvider で取得できない場合は、”ws://localhost:7545″に接続するように書いています。
+これは Ganache に接続するときの WebSocket のエンドポイントです。
 
-## Next.jsを使ったweb3.js（Chromeのコンソールに表示）
+## Next.js を使った web3.js（Chrome のコンソールに表示）
 
 ### コード
-Next.jsアプリケーションのpagesディレクトリの下にhello1.jsというファイルを作って、以下のコードを貼り付けます。
 
-コントラクトアドレスやABIは自分の使うコントラクトに置き換えましょう。
+Next.js アプリケーションの pages ディレクトリの下に hello1.js というファイルを作って、以下のコードを貼り付けます。
+
+コントラクトアドレスや ABI は自分の使うコントラクトに置き換えましょう。
 
 #### pages/hello1.js
-```js
-import Web3 from 'web3'
 
-var abi = [{
-    "constant": true,
-    "inputs": [],
-    "name": "get",
-    "outputs": [
+```js
+import Web3 from "web3";
+
+var abi = [
+  {
+    constant: true,
+    inputs: [],
+    name: "get",
+    outputs: [
       {
-        "name": "",
-        "type": "string"
-      }
+        name: "",
+        type: "string",
+      },
     ],
-    "payable": false,
-    "stateMutability": "pure",
-    "type": "function"
-  }];
+    payable: false,
+    stateMutability: "pure",
+    type: "function",
+  },
+];
 
 var address = "0x5B0A7974Aeab510BB344e7f27e607841b4EC4C9f"; // コントラクトアドレス
 
@@ -232,102 +250,105 @@ function Hello1() {
   const web3 = new Web3(Web3.givenProvider || "ws://localhost:7545");
 
   var contract = new web3.eth.Contract(abi, address);
-  contract.methods.get().call(function(err,res){
-    console.log(res)
+  contract.methods.get().call(function (err, res) {
+    console.log(res);
     ret = res;
-  })
+  });
 
   return "ret: " + ret;
 }
 
-export default Hello1
+export default Hello1;
 ```
 
 ### 確認手順
-Next.jsのドキュメントに従ってNext.jsを起動します。インストール方法によって起動コマンドは変わります。
+
+Next.js のドキュメントに従って Next.js を起動します。インストール方法によって起動コマンドは変わります。
 
 ```
 yarn dev
 ```
 
-Chromeブラウザから以下のURLにアクセスします。
+Chrome ブラウザから以下の URL にアクセスします。
 
 http://localhost:3000/hello1
 
-ChromeのDeveloper Toolsのコンソールタブを開きます。Macなら「command」＋「option」+「I（アイ）｝で開きます。
+Chrome の Developer Tools のコンソールタブを開きます。Mac なら「command」＋「option」+「I（アイ）｝で開きます。
 
-Consoleに”Hello World!”という文字が表示されています。これはスマートコントラクトから取得した文字列です。
+Console に”Hello World!”という文字が表示されています。これはスマートコントラクトから取得した文字列です。
 
-ブラウザで表示するHTMLは下のようになると思います。HTMLでは”Hello World”を表示できていない状態です。
+ブラウザで表示する HTML は下のようになると思います。HTML では”Hello World”を表示できていない状態です。
 
-HTMLに表示させるやり方は3番目で紹介します。
+HTML に表示させるやり方は 3 番目で紹介します。
 
 ### 解説
-先ほどの1つ目のHTMLを使った実行方法では、web3.jsはCDNからダウンロードしてブラウザ上でJavaScriptを実行しました。
 
-今回は、web3.jsはNode.jsのモジュールを使っています。
+先ほどの 1 つ目の HTML を使った実行方法では、web3.js は CDN からダウンロードしてブラウザ上で JavaScript を実行しました。
 
-一般的なアプリケーション開発では、Node.jsを使ったやり方が主流になると思います。ReactやVueを使う場合もNode.jsのweb3.jsを使います。
+今回は、web3.js は Node.js のモジュールを使っています。
 
-ブロックチェーンとの接続部分やweb3オブジェクトの使い方は1つ目のHTMLの方法と基本的に同じです。
+一般的なアプリケーション開発では、Node.js を使ったやり方が主流になると思います。React や Vue を使う場合も Node.js の web3.js を使います。
 
-取得したHello Worldという文字列を返して、HTMLに表示させようとしていますが、じつはこれはうまく動きません。
+ブロックチェーンとの接続部分や web3 オブジェクトの使い方は 1 つ目の HTML の方法と基本的に同じです。
+
+取得した Hello World という文字列を返して、HTML に表示させようとしていますが、じつはこれはうまく動きません。
 
 ```js
 return "ret: " + ret;
 ```
 
-つぎの3番目の方法では、Next.jsでAPIやスマートコントラクトなど外部から取得したデータをHTMLに表示するやり方で紹介します。
+つぎの 3 番目の方法では、Next.js で API やスマートコントラクトなど外部から取得したデータを HTML に表示するやり方で紹介します。
 
-## Next.jsを使ったweb3.js（HTMLに表示）
+## Next.js を使った web3.js（HTML に表示）
+
 ### コード
-Next.jsアプリケーションのpagesディレクトリの下にhello2.jsというファイルを作って、以下のコードを貼り付けます。
 
-コントラクトアドレスやABIは自分の使うコントラクトに置き換えましょう。
+Next.js アプリケーションの pages ディレクトリの下に hello2.js というファイルを作って、以下のコードを貼り付けます。
+
+コントラクトアドレスや ABI は自分の使うコントラクトに置き換えましょう。
 
 #### pages/hello2.js
+
 ```js
-import Web3 from 'web3'
+import Web3 from "web3";
 
 function Hello2({ message }) {
   console.log("message: " + message);
-  return (
-    <ul>
-      { message }
-    </ul>
-  );
+  return <ul>{message}</ul>;
 }
 
 export async function getStaticProps() {
   let message = "hoge22";
-  let abi = [{
-      "constant": true,
-      "inputs": [],
-      "name": "get",
-      "outputs": [
+  let abi = [
+    {
+      constant: true,
+      inputs: [],
+      name: "get",
+      outputs: [
         {
-          "name": "",
-          "type": "string"
-        }
+          name: "",
+          type: "string",
+        },
       ],
-      "payable": false,
-      "stateMutability": "pure",
-      "type": "function"
-    }];
+      payable: false,
+      stateMutability: "pure",
+      type: "function",
+    },
+  ];
 
   let address = "0x5B0A7974Aeab510BB344e7f27e607841b4EC4C9f";
 
   const web3 = new Web3(Web3.givenProvider || "ws://localhost:7545");
   const contract = new web3.eth.Contract(abi, address);
 
-  await contract.methods.get().call(function(err,res){
+  await contract.methods.get().call(function (err, res) {
     message = res;
-  })
+  });
 
   return {
     props: {
-      message
-    }
+      message,
+    },
   };
 }
 
@@ -335,33 +356,36 @@ export default Hello2;
 ```
 
 ### 確認手順
-Next.jsのドキュメントに従ってNext.jsを起動します。インストール方法によって起動コマンドは変わります。
+
+Next.js のドキュメントに従って Next.js を起動します。インストール方法によって起動コマンドは変わります。
 
 ```
 yarn dev
 ```
 
-Chromeブラウザから以下のURLにアクセスします。
+Chrome ブラウザから以下の URL にアクセスします。
 
 http://localhost:3000/hello2
 
-今度はHTMLに”Hello World!”を表示できるはずです。
+今度は HTML に”Hello World!”を表示できるはずです。
 
 ### 解説
-2番目と3番目の違いは、スマートコントラクトのように外部から取得するデータをConsoleに表示しているか、HTMLに表示しているかの違いです。
 
-実際のアプリケーション開発に近いのはこの3番目のやり方ではないでしょうか。
+2 番目と 3 番目の違いは、スマートコントラクトのように外部から取得するデータを Console に表示しているか、HTML に表示しているかの違いです。
+
+実際のアプリケーション開発に近いのはこの 3 番目のやり方ではないでしょうか。
 
 しかし、このやり方はうまく動かないときに、何が原因でうごかないのか見分けにくいというデメリットがあります。
 
-* JavaScritptの非同期による問題
-* Next.jsの記述方法の問題
-* スマートコントラクトの実行方法の問題
+- JavaScritpt の非同期による問題
+- Next.js の記述方法の問題
+- スマートコントラクトの実行方法の問題
 
-そういう時に、1番目や2番目のやり方を合わせて使うことで、どこがうまく動いて、どこが動いていないのかを見分けることができます。
+そういう時に、1 番目や 2 番目のやり方を合わせて使うことで、どこがうまく動いて、どこが動いていないのかを見分けることができます。
 
 ##
-最新のWeb3開発情報をTwitterで発信しています。
+
+最新の Web3 開発情報を Twitter で発信しています。
 よかったらフォローお願いします！
 
 https://twitter.com/motosakanosita

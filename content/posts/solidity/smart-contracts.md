@@ -3,8 +3,8 @@ title: "イーサリアム入門: はじめてのスマートコントラクト�
 date: 2022-01-09 21:00
 permalink: /smart-contracts
 tags:
-  - solidity
-  - ethereum
+  - Solidity
+  - Ethereum
   - beginner
   - jp
 description: |-

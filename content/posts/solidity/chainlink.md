@@ -3,9 +3,9 @@ title: "イーサリアム入門: オラクルのしくみ（Chainlink Data Feed
 date: 2022-01-15 19:00
 permalink: /chainlink
 tags:
-  - ethereum
+  - Ethereum
   - oracle
-  - chainlink
+  - Chainlink
   - jp
 description: |-
   Dapps開発の基本: オラクルではどのようにしてオフチェーンのデータをオンチェーンで利用できるようにしているのか？

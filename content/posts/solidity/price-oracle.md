@@ -3,9 +3,9 @@ title: "Solidity入門: オラクルの基本的な使い方（Chainlink Data Fe
 date: 2022-01-13 21:00
 permalink: /price-oracle
 tags:
-  - solidity
+  - Solidity
   - oracle
-  - chainlink
+  - Chainlink
   - jp
 description: |-
   Solidity開発の基本: イーサリアムでオラクルを使う方法を解説

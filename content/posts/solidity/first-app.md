@@ -3,8 +3,8 @@ title: "Solidity入門: はじめてのイーサリアムDapps開発"
 date: 2022-01-05 21:00
 permalink: /first-app
 tags:
-  - solidity
-  - hardhat
+  - Solidity
+  - Hardhat
   - beginner
   - jp
 description: |-

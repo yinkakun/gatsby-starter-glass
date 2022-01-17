@@ -3,10 +3,10 @@ title: "NFTプログラミング入門: EVM独自コントラクトの作り方9
 date: 2022-01-07 21:00
 permalink: /original-nft
 tags:
-  - ethereum
-  - nft
-  - loot
-  - solidity
+  - Ethereum
+  - NFT
+  - Loot
+  - Solidity
 description: |-
   ERC721, Loot, フルオンチェーン、ジェネラティブNFTの作り方
 ---

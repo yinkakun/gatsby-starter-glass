@@ -4,7 +4,7 @@ date: 2022-01-03 00:00
 permalink: /solidity-beginner
 pinned: 3
 tags:
-  - solidity
+  - Solidity
   - beginner
   - jp
 description: |-
