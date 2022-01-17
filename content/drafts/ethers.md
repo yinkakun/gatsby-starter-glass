@@ -3,7 +3,7 @@ title: "Ethers.jsを使ってNext.jsからスマートコントラクトを実�
 date: 2022-01-13 10:00
 permalink: /ethers
 tags:
-  - solidity
+  - Solidity
   - ethers.js
   - beginner
   - jp

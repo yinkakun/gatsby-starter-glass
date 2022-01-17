@@ -3,8 +3,8 @@ title: "Solidity入門: Variables"
 date: 2022-01-06 21:00
 permalink: /variables
 tags:
-  - solidity
-  - hardhat
+  - Solidity
+  - Hardhat
   - beginner
   - jp
 description: |-

@@ -3,8 +3,8 @@ title: "Solidity入門: マークル木(Merkle Tree)"
 date: 2000-01-16 08:00
 permalink: /merkle-tree
 tags:
-  - solidity
-  - merkle tree
+  - Solidity
+  - Merkle Tree
   - jp
 description: |-
   Solidity by ExmaplesのMerkle Treeのコントラクトを作ります
