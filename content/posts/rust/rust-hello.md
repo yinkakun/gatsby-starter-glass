@@ -4,8 +4,8 @@ date: 2022-01-04 19:38
 pinned: 2
 permalink: /rust-hello
 tags:
-  - dfinity
-  - rust
+  - DFINITY
+  - Rust
   - beginner
   - jp
 description: |-
@@ -14,58 +14,72 @@ description: |-
 
 このページはこんな人におすすめ
 
-* Rustを勉強したい
-* DFINITY/ICPの開発に興味がある
+- Rust を勉強したい
+- DFINITY/ICP の開発に興味がある
 
-このページは、以下のDFINITY/ICPのRustのチュートリアルを日本語で解説しています。
+このページは、以下の DFINITY/ICP の Rust のチュートリアルを日本語で解説しています。
 
 [Hello, World! Rust CDK Quick Start](https://smartcontracts.org/docs/rust-guide/rust-quickstart.html)
 
 このページで実際に使ったソースコードは[GitHub](https://github.com/smacon-dev/rust-tutorial/tree/main/rust_hello)からダウンロードできます。
 
 ### 実行環境
-* dfx: 0.8.4
-* macOS: 11.5.2
-* rustup: 1.24.3
-* rustc: 1.57.0
-* cargo: 1.57.0
+
+- dfx: 0.8.4
+- macOS: 11.5.2
+- rustup: 1.24.3
+- rustc: 1.57.0
+- cargo: 1.57.0
 
 ## インストール
-### dfxのインストール
-dfxコマンドはDFINITY/ICPのキャニスターをビルドしたりデプロイしたりするためのツールです。
 
-[dfxのインストールガイド](https://smartcontracts.org/docs/developers-guide/install-upgrade-remove.html)
+### dfx のインストール
 
-以下のコマンドでdfxをインストールします。
+dfx コマンドは DFINITY/ICP のキャニスターをビルドしたりデプロイしたりするためのツールです。
+
+[dfx のインストールガイド](https://smartcontracts.org/docs/developers-guide/install-upgrade-remove.html)
+
+以下のコマンドで dfx をインストールします。
+
 ```
 sh -ci "$(curl -fsSL https://sdk.dfinity.org/install.sh)"
 ```
+
 ### rustup (Rust Toolchain)
-以下のコマンドによってRust系のツールをまとめてインストールします。
+
+以下のコマンドによって Rust 系のツールをまとめてインストールします。
+
 ```
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 ```
 
-* rustc: Rustコンパイラ
-* cargo: Rustのパッケージマネージャ
-* rustup: Rustのビルドツール全体を管理
+- rustc: Rust コンパイラ
+- cargo: Rust のパッケージマネージャ
+- rustup: Rust のビルドツール全体を管理
 
-### CMakeのインストール
-以下のコマンドでcmakeをインストールします。
+### CMake のインストール
+
+以下のコマンドで cmake をインストールします。
+
 ```
 brew install cmake
 ```
 
 ### プロジェクトの作成
-DFINITY/ICPのデフォルトの開発言語はMotokoです。
-`--type=rust`をつけてRust用のプロジェクトを作成します。
+
+DFINITY/ICP のデフォルトの開発言語は Motoko です。
+`--type=rust`をつけて Rust 用のプロジェクトを作成します。
+
 ```
 dfx new --type=rust rust_hello
 cd rust_hello
 ```
-dfx.jsonというファイルを見てみましょう。
-dfxコマンドでビルドするときにはこのファイルの設定が使われます。
+
+dfx.json というファイルを見てみましょう。
+dfx コマンドでビルドするときにはこのファイルの設定が使われます。
+
 #### dfx.json
+
 ```js
 {
   "canisters": {
@@ -105,18 +119,24 @@ dfxコマンドでビルドするときにはこのファイルの設定が使�
 ```
 
 ## キャニスター(スマートコントラクト)の作成
+
 ### ソースコード
-cargoはRustのビルドに使うツールです。
-Cargo.tomlには、cargoで使う設定が書かれています。
-rust_helloプロジェクトには、2つのCargo.tomlがあります。
+
+cargo は Rust のビルドに使うツールです。
+Cargo.toml には、cargo で使う設定が書かれています。
+rust_hello プロジェクトには、2 つの Cargo.toml があります。
+
 #### Cargo.toml
+
 ```toml
 [workspace]
 members = [
     "src/rust_hello",
 ]
 ```
+
 #### src/rust_hello/Cargo.toml
+
 ```toml
 [package]
 name = "rust_hello"
@@ -133,9 +153,12 @@ crate-type = ["cdylib"]
 ic-cdk = "0.3"
 ic-cdk-macros = "0.3"
 ```
+
 #### src/rust_hello/lib.rs
+
 スマートコントラクト本体のソースコードです。
-今回はgreetというシンプルな関数だけが書かれています。
+今回は greet というシンプルな関数だけが書かれています。
+
 ```rust
 #[ic_cdk_macros::query]
 fn greet(name: String) -> String {
@@ -144,27 +167,34 @@ fn greet(name: String) -> String {
 ```
 
 #### Candid
-Candidはキャニスターのインターフェースの情報が書かれており、
+
+Candid はキャニスターのインターフェースの情報が書かれており、
 フロントエンドからキャニスターを実行するときにはこのインターフェースの情報を利用します。
+
 ```rust
 service : {
     "greet": (text) -> (text) query;
 }
 ```
-この場合は、greetというqueryがあり、引数と戻りはtextです。
+
+この場合は、greet という query があり、引数と戻りは text です。
 
 ### ビルド&デプロイ
-PC上にローカル実行環境を起動します。
+
+PC 上にローカル実行環境を起動します。
+
 ```
 dfx start --background
 ```
 
-WASMにはいろんなフォーマットがあるため、DFINITY用のWASM32を追加します。
+WASM にはいろんなフォーマットがあるため、DFINITY 用の WASM32 を追加します。
+
 ```
 rustup target add wasm32-unknown-unknown
 ```
 
-RustのWASMキャニスターをビルドしてローカル実行環境にデプロイします。
+Rust の WASM キャニスターをビルドしてローカル実行環境にデプロイします。
+
 ```
 dfx deploy
 ```
@@ -182,7 +212,9 @@ Deployed canisters.
 ```
 
 ## キャニスターの実行
-rust_helloというキャニスターのgreet()という関数にworldという引数を渡して実行します。
+
+rust_hello というキャニスターの greet()という関数に world という引数を渡して実行します。
+
 ```
 dfx canister call rust_hello greet world
 ```
@@ -193,21 +225,26 @@ dfx canister call rust_hello greet world
 ```
 
 ### フロントエンドの起動
-公式手順には載っていませんが、Motokoのチュートリアルと同様に
+
+公式手順には載っていませんが、Motoko のチュートリアルと同様に
 フロントエンドを起動して、フロントエンドからキャニスターを実行することもできます。
+
 ```
 npm install
 npm start
 ```
+
 http://localhost:8080
 
 ![Rust](/media/rust-hello/1.png)
 
 ### 停止
+
 ローカル実行環境を停止します。
+
 ```
 dfx stop
 ```
 
-Rustエンジニアへの第一歩を踏み出しました！
+Rust エンジニアへの第一歩を踏み出しました！
 ソースコードを変えていろんなキャニスターを作ってみましょう。

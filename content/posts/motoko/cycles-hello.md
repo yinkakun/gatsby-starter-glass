@@ -4,9 +4,9 @@ date: 2022-01-03 20:38
 permalink: /cycles-hello
 tags:
   - tutorial
-  - dfinity
-  - motoko
-  - icp
+  - DFINITY
+  - Motoko
+  - ICP
   - jp
 description: |-
   DFINITY/ICPプログラミングでキャニスターを動かす際に必要になるCycle Cost

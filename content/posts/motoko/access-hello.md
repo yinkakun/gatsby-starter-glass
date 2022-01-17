@@ -3,7 +3,7 @@ title: "DFINITY/Motoko入門: Add access control with identities"
 date: 2022-01-02 20:38
 permalink: /access-hello
 tags:
-  - motoko
+  - Motoko
   - tutorial
   - jp
 description: |-

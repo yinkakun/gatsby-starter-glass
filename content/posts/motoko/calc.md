@@ -3,7 +3,7 @@ title: "DFINITY/Motoko入門: Use integers in calculator functions"
 date: 2021-12-29 22:38
 permalink: /motoko-calc
 tags:
-  - motoko
+  - Motoko
   - tutorial
   - jp
 description: |-

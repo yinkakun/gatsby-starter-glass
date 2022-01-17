@@ -9,8 +9,8 @@ redirect_from:
   - /hello-icp/
 pinned: 1
 tags:
-  - dfinity
-  - motoko
+  - DFINITY
+  - Motoko
   - beginner
   - icp
 social_image: /media/labs.png

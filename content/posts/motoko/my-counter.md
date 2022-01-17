@@ -3,7 +3,7 @@ title: "DFINITY/Motoko入門: Increment a natural number"
 date: 2021-12-29 21:38
 permalink: /motoko-my-counter
 tags:
-  - motoko
+  - Motoko
   - tutorial
   - jp
 description: |-
