@@ -1,9 +1,13 @@
 ---
 title: Nobody exists on purpose
 date: 2020-09-09
-tags: [rick and morty, tv series]
-social_image: '/media/rocket.jpg'
-description: This is a custom description for SEO and Open Graph purposes. If it's not provided, it defaults to auto-generated excerpts of the page content.
+tags:
+  - rick and morty
+  - tv series
+  - "2022"
+social_image: /media/rocket.jpg
+description: This is a custom description for SEO and Open Graph purposes. If
+  it's not provided, it defaults to auto-generated excerpts of the page content.
 ---
 
 Nobody exists on purpose. Nobody belongs anywhere. We're all going to die. Come watch TV. Nobody exists on purpose. Nobody belongs anywhere. We're all going to die. Come watch TV. Weddings are basically funerals with cake. I mean, why would a Pop-Tart want to live inside a toaster, Rick? I mean, that would be like the scariest place for them to live. You know what I mean?. Those guys are inside you building a piece of shit Ethan!! They're inside you building a monument to compromise!! Fuck them. Fuck those people. Fuck this whole thing Ethan.
