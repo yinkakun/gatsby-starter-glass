@@ -110,23 +110,23 @@ body {
   font-smoothing: antialiased;
 }
 
-body.light-theme {
+body.light-mode {
   color: #37292C;
   background-color: white;
   background-image: linear-gradient(315deg, #ccfbf1 0%, #ffe4e6 50%);
 }
 
-body.dark-theme {
+body.dark-mode {
   color: #e9e9e9;
   background-color: #252526;
 }
 
-body.dark-theme ::selection{
+body.dark-mode ::selection{
   background: #e9e9e9;
   color: #252526;
 }
 
-body.light-theme ::selection{
+body.light-mode ::selection{
   background: #37292C;
   color: white;
 }

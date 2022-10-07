@@ -31,15 +31,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: "gatsby-plugin-use-dark-mode",
-      options: {
-        classNameDark: "dark-theme",
-        classNameLight: "light-theme",
-        storageKey: "theme",
-        minify: true,
-      },
-    },
+    "gatsby-plugin-use-dark-mode",
     {
       resolve: "gatsby-source-filesystem",
       options: {

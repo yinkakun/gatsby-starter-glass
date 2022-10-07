@@ -66,27 +66,27 @@ const TagItem = styled.li`
     border-radius: 4px;
   }
 
-  body.light-theme & a {
+  body.light-mode & a {
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.5);
     background-color: rgba(255, 255, 255, 0.7);
   }
 
-  body.light-theme & a:hover {
+  body.light-mode & a:hover {
     background-color: rgba(255, 255, 255, 1);
   }
 
-  body.dark-theme & a {
+  body.dark-mode & a {
     background-color: #212122;
     border: 1px solid #3b3b3c;
     opacity: 0.8;
   }
 
-  body.light-theme & a:hover {
+  body.light-mode & a:hover {
     background-color: rgba(255, 255, 255, 0.9);
   }
 
-  body.dark-theme & a:hover {
+  body.dark-mode & a:hover {
     background-color: #3b3b3c;
     opacity: 1;
   }

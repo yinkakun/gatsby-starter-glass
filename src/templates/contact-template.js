@@ -1,14 +1,14 @@
-import React from 'react';
-import Layout from '../components/layout';
-import { graphql } from 'gatsby';
-import { useForm } from 'react-hook-form';
+import React from "react";
+import Layout from "../components/layout";
+import { graphql } from "gatsby";
+import { useForm } from "react-hook-form";
 import {
   useNetlifyForm,
   NetlifyFormProvider,
   NetlifyFormComponent,
   Honeypot,
-} from 'react-netlify-forms';
-import styled from 'styled-components';
+} from "react-netlify-forms";
+import styled, { css } from "styled-components";
 
 const ContactTemplate = ({ data }) => {
   const { html, frontmatter } = data.markdownRemark;
@@ -26,15 +26,18 @@ const ContactTemplate = ({ data }) => {
 export default ContactTemplate;
 
 const ContactForm = () => {
-  const { register, handleSubmit, errors } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
   const netlify = useNetlifyForm({
-    name: 'Contact',
-    action: '/thanks',
-    honeypotName: 'bot-field',
+    name: "Contact",
+    action: "/thanks",
+    honeypotName: "bot-field",
   });
   const onSubmit = (data) => {
     netlify.handleSubmit(null, data);
-    console.log(data);
   };
 
   return (
@@ -49,11 +52,13 @@ const ContactForm = () => {
               id="name"
               name="name"
               type="text"
-              ref={register({ required: 'Name is required' })}
+              {...register("name", { required: "Name is required" })}
             />
-            {errors.name && (
-              <FormErrorMessage>{errors.name.message}</FormErrorMessage>
-            )}
+            <div css={{ height: "1rem" }}>
+              {errors.name && (
+                <FormErrorMessage>{errors.name.message}</FormErrorMessage>
+              )}
+            </div>
           </FormGroup>
 
           <FormGroup>
@@ -62,17 +67,19 @@ const ContactForm = () => {
               id="email"
               name="email"
               type="text"
-              ref={register({
-                required: 'Email is required.',
+              {...register("email", {
+                required: "Email is required.",
                 pattern: {
-                  message: 'Email is not valid.',
+                  message: "Email is not valid.",
                   value: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
                 },
               })}
             />
-            {errors.email && (
-              <FormErrorMessage>{errors.email.message}</FormErrorMessage>
-            )}
+            <div css={{ height: "1rem" }}>
+              {errors.email && (
+                <FormErrorMessage>{errors.email.message}</FormErrorMessage>
+              )}
+            </div>
           </FormGroup>
 
           <FormGroup>
@@ -81,16 +88,20 @@ const ContactForm = () => {
               id="message"
               name="message"
               rows="4"
-              ref={register({ required: 'Message is required' })}
+              {...register("message", { required: "Message is required" })}
             />
-            {errors.message && (
-              <FormErrorMessage>{errors.message.message}</FormErrorMessage>
-            )}
+            <div css={{ height: "1rem" }}>
+              {errors.message && (
+                <FormErrorMessage>{errors.message.message}</FormErrorMessage>
+              )}
+            </div>
           </FormGroup>
 
           <FormFeedbackWrapper>
             {netlify.success && (
-              <FormSucessFeedback>Message sent succesfully</FormSucessFeedback>
+              <FormSuccessFeedback>
+                Message sent successfully
+              </FormSuccessFeedback>
             )}
             {netlify.error && (
               <FormErrorFeedback>
@@ -138,6 +149,10 @@ const ContactCopy = styled.div`
   & p {
     font-size: var(--size-400);
   }
+
+  & a {
+    color: #f43f5e;
+  }
 `;
 
 const FormWrapper = styled.div`
@@ -148,6 +163,11 @@ const FormWrapper = styled.div`
   border: 1px solid rgba(255, 255, 255, 0.7);
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
+
+  body.dark-mode & {
+    background-color: #3b3b3c;
+    border: 1px solid #515151;
+  }
 `;
 
 const FormGroup = styled.div`
@@ -168,14 +188,20 @@ const FormGroup = styled.div`
     font-family: inherit;
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
-    background-color: #e4b8c7;
-    border: 2px solid transparent;
+    background-color: #fecdd3;
+    border: 1px solid #fda4af;
+  }
+
+  body.dark-mode & input,
+  body.dark-mode & textarea {
+    background-color: #4f4f50;
+    border: 1px solid #89898a;
   }
 
   & textarea:focus,
   input:focus {
     outline: none;
-    border: 2px solid #80576e;
+    border: 1px solid #665b5c;
   }
 `;
 
@@ -191,7 +217,7 @@ const FormFeedbackWrapper = styled.div`
   font-size: var(--size-300);
 `;
 
-const FormSucessFeedback = styled.span`
+const FormSuccessFeedback = styled.span`
   color: green;
 `;
 
@@ -204,9 +230,9 @@ const FormButton = styled.button`
   padding: 0.45rem;
   padding-left: 1.25rem;
   padding-right: 1.5rem;
-  background-color: #37292c;
+  background-color: #f43f5e;
   color: #fafafa;
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: none;
   text-transform: uppercase;
   border-radius: 4px;
 `;
