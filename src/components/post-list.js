@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import useDarkMode from "use-dark-mode";
 import { Link } from "gatsby";
 import Tags from "./tags";
 
@@ -37,8 +36,6 @@ const PostListItem = ({
   description,
   slug,
 }) => {
-  const { isDarkMode: value } = useDarkMode();
-
   return (
     <StyledPostListItem>
       <Tags tags={tags} />
