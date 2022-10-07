@@ -1,8 +1,27 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'gatsby';
-import Container from './container';
-import { useStaticQuery, graphql } from 'gatsby';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "gatsby";
+import Container from "./container";
+import ThemeSwitch from "./theme-switch";
+import { useStaticQuery, graphql } from "gatsby";
+
+const HEADER_NAV_ITEM = [
+  {
+    label: "Blog",
+    url: "/blog",
+    isExternal: false,
+  },
+  {
+    label: "About",
+    url: "/about",
+    isExternal: false,
+  },
+  {
+    label: "Contact",
+    url: "/contact",
+    isExternal: false,
+  },
+];
 
 const Header = () => {
   const { site } = useStaticQuery(
@@ -25,16 +44,25 @@ const Header = () => {
         </HeaderTitle>
 
         <HeaderNavList>
-          <HeaderNavListItem>
-            <Link to="/blog">Blog</Link>
-          </HeaderNavListItem>
+          {HEADER_NAV_ITEM.map((item, index) => {
+            if (item.isExternal) {
+              return (
+                <HeaderNavListItem key={index}>
+                  <a href={item.url} target="_blank" rel="noopener noreferrer">
+                    {item.label}
+                  </a>
+                </HeaderNavListItem>
+              );
+            }
 
+            return (
+              <HeaderNavListItem key={index}>
+                <Link to={item.url}>{item.label}</Link>
+              </HeaderNavListItem>
+            );
+          })}
           <HeaderNavListItem>
-            <Link to="/about">About</Link>
-          </HeaderNavListItem>
-
-          <HeaderNavListItem>
-            <Link to="/contact">Contact</Link>
+            <ThemeSwitch />
           </HeaderNavListItem>
         </HeaderNavList>
       </HeaderWrapper>
