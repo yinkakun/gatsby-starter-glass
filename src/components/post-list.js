@@ -1,7 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'gatsby';
-import Tags from './tags';
+import React from "react";
+import styled from "styled-components";
+import useDarkMode from "use-dark-mode";
+import { Link } from "gatsby";
+import Tags from "./tags";
 
 const PostList = ({ posts }) => {
   const PostList = posts.map(({ frontmatter, fields, excerpt, timeToRead }) => {
@@ -36,6 +37,8 @@ const PostListItem = ({
   description,
   slug,
 }) => {
+  const { isDarkMode: value } = useDarkMode();
+
   return (
     <StyledPostListItem>
       <Tags tags={tags} />
@@ -73,17 +76,26 @@ const StyledPostList = styled.ul`
 `;
 
 const StyledPostListItem = styled.li`
-  position: relative;
   display: flex;
-  flex-direction: column;
   padding: 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px);
   border-radius: 8px;
+  position: relative;
+  flex-direction: column;
+  transition: all 0.3s ease-out;
 
-  &:hover {
+  body.light-theme & {
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  body.light-theme &:hover {
     background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  body.dark-theme & {
+    background-color: #3b3b3c;
+    border: 1px solid #515151;
   }
 
   @media screen and (max-width: 500px) {
@@ -107,7 +119,7 @@ const PostListTitle = styled.h2`
   }
 
   & a::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     bottom: 0;

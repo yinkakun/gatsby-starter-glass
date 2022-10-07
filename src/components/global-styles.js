@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 *,
@@ -103,11 +103,32 @@ body::-webkit-scrollbar-track {
 body {
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue,
     helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-  color: #37292C;
+  transition-property: background-color, color, background;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
   background-attachment: fixed;
-  background-color: #d9e4f5;
-  background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+  font-smoothing: antialiased;
+}
 
+body.light-theme {
+  color: #37292C;
+  background-color: white;
+  background-image: linear-gradient(315deg, #ccfbf1 0%, #ffe4e6 50%);
+}
+
+body.dark-theme {
+  color: #e9e9e9;
+  background-color: #252526;
+}
+
+body.dark-theme ::selection{
+  background: #e9e9e9;
+  color: #252526;
+}
+
+body.light-theme ::selection{
+  background: #37292C;
+  color: white;
 }
 
 h1,
@@ -137,10 +158,6 @@ h3 {
 
 p {
   font-size: var(--size-400);
-}
-
-::selection {
-  background: rgba(255, 255, 255, 0.9);
 }
 
 p, li {

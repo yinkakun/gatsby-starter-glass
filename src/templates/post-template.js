@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link, graphql } from 'gatsby';
-import Layout from '../components/layout';
-import styled from 'styled-components';
-import Tags from '../components/tags';
+import React from "react";
+import { Link, graphql } from "gatsby";
+import Layout from "../components/layout";
+import styled from "styled-components";
+import Tags from "../components/tags";
 
 const PostTemplate = ({ data }) => {
   const { frontmatter, excerpt, html } = data.markdownRemark;
@@ -14,7 +14,7 @@ const PostTemplate = ({ data }) => {
       title={frontmatter.title}
       description={frontmatter.description || excerpt}
       socialImage={
-        frontmatter.social_image ? frontmatter.social_image.absolutePath : ''
+        frontmatter.social_image ? frontmatter.social_image.absolutePath : ""
       }
     >
       <PostWrapper>
@@ -63,7 +63,8 @@ const PostTitle = styled.h1`
 
 const PostDate = styled.span`
   font-size: var(--size-400);
-  padding-top: 1rem;
+  display: block;
+  margin-top: 0.5rem;
   text-transform: uppercase;
 `;
 
@@ -114,7 +115,7 @@ const PostContent = styled.section`
   }
 
   code {
-    font-family: 'Source Sans Pro', monospace;
+    font-family: "Source Sans Pro", monospace;
     overflow-x: auto;
     white-space: pre-wrap;
   }
@@ -128,6 +129,7 @@ const PostContent = styled.section`
 
 const PostPagination = styled.nav`
   display: flex;
+  gap: 1rem;
   flex-wrap: wrap;
   margin-top: var(--size-900);
 
@@ -143,7 +145,7 @@ const PostPagination = styled.nav`
     border: 1px solid rgba(255, 255, 255, 0.5);
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
-    margin: 0.5rem;
+    margin-bottom: 1rem;
   }
 
   & > *:hover {
@@ -165,7 +167,7 @@ const PostPagination = styled.nav`
   }
 
   & a::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     right: 0;

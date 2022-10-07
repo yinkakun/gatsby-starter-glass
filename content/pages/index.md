@@ -1,8 +1,8 @@
 ---
-template: 'index-template'
-title: 'Gatsby Starter Glass'
+template: "index-template"
+title: "Gatsby Starter Glass"
 ---
 
-#Hello World
+# Hello World
 
 A minimal & beautiful gatsby personal blog starter with nice glassmorphism UI.
