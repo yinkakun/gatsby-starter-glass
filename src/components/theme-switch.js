@@ -4,11 +4,7 @@ import useDarkMode from "use-dark-mode";
 import styled from "styled-components";
 
 const ThemeSwitch = () => {
-  const { toggle, value } = useDarkMode(false, {
-    storageKey: "theme",
-    classNameDark: "dark-theme",
-    classNameLight: "light-theme",
-  });
+  const { toggle, value } = useDarkMode(false);
 
   return (
     <StyledThemeSwitch>

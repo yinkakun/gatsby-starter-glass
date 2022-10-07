@@ -80,17 +80,17 @@ const StyledPostListItem = styled.li`
   flex-direction: column;
   transition: all 0.3s ease-out;
 
-  body.light-theme & {
+  body.light-mode & {
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.5);
     background-color: rgba(255, 255, 255, 0.3);
   }
 
-  body.light-theme &:hover {
+  body.light-mode &:hover {
     background-color: rgba(255, 255, 255, 0.5);
   }
 
-  body.dark-theme & {
+  body.dark-mode & {
     background-color: #3b3b3c;
     border: 1px solid #515151;
   }
